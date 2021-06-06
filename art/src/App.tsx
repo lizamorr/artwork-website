@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={asheville} className="asheville-photo" alt="asheville" />
-        <div className="nav-bar">
+        <div className="nav-text">
           <p>Gallery</p>
           <p>Contact</p>
           <p>About</p>
