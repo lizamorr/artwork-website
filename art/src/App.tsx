@@ -1,23 +1,19 @@
 import React from 'react';
 import asheville from './Liza-Asheville.jpg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={asheville} className="App-logo" alt="logo" />
-        <p>
+        <img src={asheville} className="asheville-photo" alt="asheville" />
+        <div className="nav-bar">
+          <p>Gallery</p>
+          <p>Contact</p>
+          <p>About</p>
+        </div>
+        <div className="title">
           Liza Morrison Art
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        </div>
       </header>
     </div>
   );
