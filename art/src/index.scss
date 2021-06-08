@@ -1,4 +1,7 @@
-@import 'App.scss';
+@import 'Home.scss';
+@import 'Burger.scss';
+@import 'Menu.scss';
 
-
-
+.container {
+  display: flex;
+}

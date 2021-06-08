@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  text-align: right;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 5;
+
+  div {
+    padding: 0;
+    transition: color 0.3s linear;
+
+    &:hover {
+      font-weight: bolder;
+      font-style: italic;
+    }
+
+    a {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: black;
+      text-decoration-line: none;
+      font-size: 1.5rem;
+      font-family: 'Montserrat', regular;
+    }
+  }
+}
