@@ -1,6 +1,6 @@
-@import 'Home.scss';
-@import 'Burger.scss';
-@import 'Menu.scss';
+@import './Home/Home.scss';
+@import './Burger/Burger.scss';
+@import './Burger/Menu/Menu.scss';
 
 .container {
   display: flex;

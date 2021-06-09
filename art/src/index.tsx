@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route } from 'react-router-dom';
-import About from './About';
-import Burger from './Burger';
-import Contact from './Contact';
-import Gallery from './Gallery';
-import Home from './Home';
+import About from './About/About';
+import Burger from './Burger/Burger';
+import Contact from './Contact/Contact';
+import Gallery from './Gallery/Gallery';
+import Home from './Home/Home';
 import './index.scss';
 
 import reportWebVitals from './reportWebVitals';
