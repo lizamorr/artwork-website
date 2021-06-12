@@ -4,6 +4,9 @@
 @import './Footer/Footer.scss';
 @import './Gallery/Gallery.scss';
 
-.container {
-  display: flex;
+.body {
+  margin: 0;
+  .container {
+    display: block;
+  }
 }
