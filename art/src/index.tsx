@@ -4,6 +4,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import About from './About/About';
 import Burger from './Burger/Burger';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
 import Home from './Home/Home';
 import './index.scss';
@@ -12,13 +13,14 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-      <HashRouter>
-        <Route exact path="/" component={Home}/>
-        <Route path="/gallery" component={Gallery}/>
-        <Route path="/contact" component={Contact}/>
-        <Route path="/about" component={About}/>
-      </HashRouter>
+    <HashRouter>
+      <Route exact path="/" component={Home} />
+      <Route path="/gallery" component={Gallery} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/about" component={About} />
+    </HashRouter>
     <Burger />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
