@@ -37,14 +37,17 @@ const Gallery: React.FC = () => {
         </span>
       </div>
       {images.map((photo, index) => (
-        <img
-          src={photo.src}
-          alt={photo.alt}
-          key={index}
-          height={photo.height}
-          width={photo.width}
-          id={photo.id}
-        />
+        <div className="photo-item">
+          <img
+            src={photo.src}
+            alt={photo.alt}
+            key={index}
+            height={photo.height}
+            width={photo.width}
+            id={photo.id}
+          />
+          <div className="photo-desc">{photo.desc}</div>
+        </div>
       ))}
     </div>
   );

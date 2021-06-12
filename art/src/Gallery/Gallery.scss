@@ -3,11 +3,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  img {
+  .photo-item {
+    display: flex;
+    flex-direction: column;
     margin: 15px;
     transition: transform 500ms ease;
     &:hover {
       transform: scale(1.1);
+    }
+    .photo-desc {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: black;
+      font-size: 1.3rem;
+      font-family: 'Montserrat', regular;
+      font-variant: all-small-caps;
+      text-align: center;
     }
   }
   .gallery-type {
