@@ -75,6 +75,53 @@ import westhamptonLake from './Images/westhampton-lake.jpg';
 import westhamptonLake2 from './Images/westhampton-lake2.jpg';
 import dogsMiniStand from './Images/dogs-mini-stand.jpg';
 import pieMiniStand from './Images/pie-mini-stand.jpg';
+import carlySteve from './Images/carly-steve.jpg';
+import carlyStevePic from './Images/carly-steve-pic.jpg';
+import momGooey from './Images/mom-gooey.jpg';
+import emma from './Images/emma.jpg';
+import bracelet1 from './Images/bracelet1.jpg';
+import duncanOil from './Images/duncan-oil.jpg';
+import babyPortrait from './Images/baby-portrait.jpg';
+import kanyeFrame from './Images/kanye-frame.jpg';
+import steveFrame from './Images/steve-frame.jpg';
+import duncanEtch from './Images/duncan-etch.jpg';
+import donutPrints from './Images/donut-prints.jpg';
+import trideltaPaddle from './Images/tridelta-paddle.jpg';
+import hsMural from './Images/hs-mural.jpg';
+import picassoPortrait from './Images/picasso-portrait.jpg';
+import llama from './Images/llama.jpg';
+import converses from './Images/converses.jpg';
+import theOffice from './Images/the-office.jpg';
+import ladyDog from './Images/lady-dog.jpg';
+import smallConverse from './Images/small-converse.jpg';
+import pot from './Images/pot.jpg';
+import bee from './Images/bee.jpg';
+import paigeEmmy from './Images/paige-emmy.jpg';
+import grogo from './Images/grogo.jpg';
+import romain from './Images/romain.jpg';
+import travis from './Images/travis.jpg';
+import poppiCarving from './Images/poppi-carving.jpg';
+import racoons from './Images/racoons.jpg';
+import guyDog from './Images/guy-dog.jpg';
+import danSkye from './Images/dan-skye.jpg';
+import carlySteveWedding from './Images/carly-steve-wedding.jpg';
+import whiteDog from './Images/white-dog.jpg';
+import derekTurtle from './Images/derek-turtle.jpg';
+import trideltChill from './Images/tridelt-chill.jpg';
+import abbeyPs from './Images/abbey-ps.jpg';
+import plantsBees from './Images/plants-bees.jpg';
+import julieMe from './Images/julie-me.jpg';
+import shamim from './Images/shamim.jpg';
+import lionGouche from './Images/lion-gouche.jpg';
+import trideltPaddle2 from './Images/tridelt-paddle2.jpg';
+import plantAnatomyFrame from './Images/plant-anatomy-frame.jpg';
+import odell from './Images/odell.jpg';
+import artFestival from './Images/art-festival.jpg';
+import wallArt from './Images/wall-art.jpg';
+import streetArtFish from './Images/street-art-fish.jpg';
+import miniBeach from './Images/mini-beach.jpg';
+import abstract from './Images/abstract.jpg';
+import moon from './Images/moon.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -760,7 +807,7 @@ export const photos: IGalleryImage[] = [
   {
     src: danSkye,
     width: 200,
-    height: auto,
+    height: 'auto',
     id: 'drawing',
     alt: 'Small drawing of Dan and Skye',
   },
