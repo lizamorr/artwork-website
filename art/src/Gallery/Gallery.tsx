@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { photos } from './GalleryImages';
+import { imageGroups } from './GalleryImages';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Gallery: React.FC = () => {
-  const [images, setImages] = useState(photos);
+  const [imgGroups, setImageGroups] = useState(imageGroups);
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
 
   const scrollToTop = () => {
@@ -37,51 +39,91 @@ const Gallery: React.FC = () => {
         <div className="gallery-type">
           <span
             onClick={() =>
-              setImages(photos.filter((img) => img.id.includes('drawing')))
+              setImageGroups(
+                imageGroups.filter((imgGroup) =>
+                  imgGroup.find((img) => img.id.includes('drawing'))
+                )
+              )
             }
           >
             Drawings
           </span>
           <span
             onClick={() =>
-              setImages(photos.filter((img) => img.id.includes('painting')))
+              setImageGroups(
+                imageGroups.filter((imgGroup) =>
+                  imgGroup.find((img) => img.id.includes('painting'))
+                )
+              )
             }
           >
             Paintings
           </span>
           <span
             onClick={() =>
-              setImages(photos.filter((img) => img.id.includes('print')))
+              setImageGroups(
+                imageGroups.filter((imgGroup) =>
+                  imgGroup.find((img) => img.id.includes('print'))
+                )
+              )
             }
           >
             Prints
           </span>
           <span
             onClick={() =>
-              setImages(photos.filter((img) => img.id.includes('misc')))
+              imageGroups.filter((imgGroup) =>
+                imgGroup.find((img) => img.id.includes('misc'))
+              )
             }
           >
             Misc
           </span>
         </div>
-        {images.map((photo, index) => (
-          <div className="photo-item" key={index}>
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              key={index}
-              id={photo.id}
-              style={{
-                maxWidth: photo.maxWidth,
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <div style={{ width: photo.maxWidth }} className="photo-desc">
-              {photo.desc}
+        {imgGroups.map((imgGroup, index) => {
+          return imgGroup.length === 1 ? (
+            <div className="photo-item" key={index}>
+              <img
+                src={imgGroup[0].src}
+                alt={imgGroup[0].alt}
+                key={index}
+                id={imgGroup[0].id}
+                style={{
+                  maxWidth: imgGroup[0].maxWidth,
+                  width: '100%',
+                  height: 'auto',
+                }}
+              />
+              <div
+                style={{ width: imgGroup[0].maxWidth }}
+                className="photo-desc"
+              >
+                {imgGroup[0].desc}
+              </div>
             </div>
-          </div>
-        ))}
+          ) : (
+            <Carousel>
+              {imgGroup.map((photo, index) => (
+                <div className="photo-item" key={index}>
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    key={index}
+                    id={photo.id}
+                    style={{
+                      maxWidth: photo.maxWidth,
+                      width: '100%',
+                      height: 'auto',
+                    }}
+                  />
+                  <div style={{ width: photo.maxWidth }} className="photo-desc">
+                    {photo.desc}
+                  </div>
+                </div>
+              ))}
+            </Carousel>
+          );
+        })}
       </div>
     </>
   );
