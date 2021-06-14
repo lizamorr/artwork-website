@@ -1,5 +1,21 @@
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: 'Montserrat', regular;
+  font-variant: all-small-caps;
+}
 .gallery-grid {
-  margin: 75px;
+  margin: 42px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
