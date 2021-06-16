@@ -316,11 +316,27 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: dinah,
+      src: robinWilliams,
       maxWidth: 400,
-      id: 'painting',
-      alt: 'Oil painting of Dinah',
-      desc: 'Oil, 18x24", 2012',
+      id: 'drawing',
+      alt: 'Pen drawing of Robin Williams',
+      desc: 'Blue pen, 9x12", 2014',
+    },
+    {
+      src: robinFrame,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Drawing of Robin Williams framed',
+      desc: 'Blue pen, 9x12", 2014',
+    },
+  ],
+  [
+    {
+      src: fatherDaughter,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Drawing of a father and his daughter',
+      desc: 'Charcoal & conte, 11x14", April 2019',
     },
   ],
   [
@@ -330,6 +346,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       alt: 'Acrylic painting of dogs',
       desc: 'Acrylic, 11x14", Dec 2018',
+    },
+  ],
+  [
+    {
+      src: dinah,
+      maxWidth: 400,
+      id: 'painting',
+      alt: 'Oil painting of Dinah',
+      desc: 'Oil, 18x24", 2012',
     },
   ],
   [
@@ -462,22 +487,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: robinWilliams,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Pen drawing of Robin Williams',
-      desc: 'Blue pen, 9x12", 2014',
-    },
-    {
-      src: robinFrame,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Drawing of Robin Williams framed',
-      desc: 'Blue pen, 9x12", 2014',
-    },
-  ],
-  [
-    {
       src: walterWhite,
       maxWidth: 500,
       id: 'drawing',
@@ -532,20 +541,20 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: fatherDaughter,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Drawing of a father and his daughter',
-      desc: 'Charcoal & conte, 11x14", April 2019',
-    },
-  ],
-  [
-    {
       src: jonas,
       maxWidth: 400,
       id: 'drawing-watercolor',
       alt: 'Drawing of Jonas',
       desc: 'Watercolor & Graphite, 9x12", June 2020',
+    },
+  ],
+  [
+    {
+      src: octopus,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Drawing of an octopus and ship',
+      desc: 'Charcoal, 22x30", Aug 2018',
     },
   ],
   [
@@ -573,15 +582,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       alt: 'Ticket drawing as a gift',
       desc: 'Graphite, colored pencils & pen, 3.5x3.5" (portrait), Dec 2018',
-    },
-  ],
-  [
-    {
-      src: octopus,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Drawing of an octopus and ship',
-      desc: 'Charcoal, 22x30", Aug 2018',
     },
   ],
   [
@@ -645,6 +645,22 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: parentsPrint,
+      maxWidth: 400,
+      id: 'print',
+      alt: 'Print of parents',
+      desc: 'Screenprint with drawing fluid, 11x14", 2016',
+    },
+    {
+      src: parentsPrints,
+      maxWidth: 400,
+      id: 'print',
+      alt: 'Screenprints of my parents',
+      desc: 'Screenprints, 11x14" each, 2016',
+    },
+  ],
+  [
+    {
       src: sisterGift,
       maxWidth: 500,
       id: 'drawing',
@@ -677,22 +693,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'print',
       desc: 'Copper plate print, 4x6", 2016',
       alt: 'Etching of a mountain framed',
-    },
-  ],
-  [
-    {
-      src: parentsPrint,
-      maxWidth: 400,
-      id: 'print',
-      alt: 'Print of parents',
-      desc: 'Screenprint with drawing fluid, 11x14", 2016',
-    },
-    {
-      src: parentsPrints,
-      maxWidth: 400,
-      id: 'print',
-      alt: 'Screenprints of my parents',
-      desc: 'Screenprints, 11x14" each, 2016',
     },
   ],
   [

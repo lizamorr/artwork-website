@@ -16,11 +16,13 @@
 }
 .gallery-grid {
   margin: 42px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .gallery-images {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
   .img-carousel {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     width: 100%;
     max-width: fit-content;

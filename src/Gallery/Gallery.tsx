@@ -82,57 +82,63 @@ const Gallery: React.FC = () => {
             Misc
           </span>
         </div>
-        {imgGroups.map((imgGroup, index) => {
-          return imgGroup.length === 1 ? (
-            <div className="photo-item" key={index}>
-              <img
-                src={imgGroup[0].src}
-                alt={imgGroup[0].alt}
-                key={index}
-                id={imgGroup[0].id}
-                style={{
-                  maxWidth: imgGroup[0].maxWidth,
-                  width: '100%',
-                  height: 'auto',
-                }}
-              />
-              <div
-                style={{ width: imgGroup[0].maxWidth }}
-                className="photo-desc"
-              >
-                {imgGroup[0].desc}
-              </div>
-            </div>
-          ) : (
-            <Carousel
-              className="img-carousel"
-              showStatus={false}
-              showIndicators={false}
-              showArrows={false}
-              swipeable={true}
-            >
-              {imgGroup.map((photo, index) => (
-                <div
-                  className="photo-item"
-                  style={{
-                    maxWidth: photo.maxWidth,
-                  }}
+        <div className="gallery-images">
+          {imgGroups.map((imgGroup, index) => {
+            return imgGroup.length === 1 ? (
+              <div className="photo-item" key={index}>
+                <img
+                  src={imgGroup[0].src}
+                  alt={imgGroup[0].alt}
                   key={index}
+                  id={imgGroup[0].id}
+                  style={{
+                    maxWidth: imgGroup[0].maxWidth,
+                    width: '100%',
+                    height: 'auto',
+                  }}
+                />
+                <div
+                  style={{ width: imgGroup[0].maxWidth }}
+                  className="photo-desc"
                 >
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    key={index}
-                    id={photo.id}
-                  />
-                  <div style={{ width: photo.maxWidth }} className="photo-desc">
-                    {photo.desc}
-                  </div>
+                  {imgGroup[0].desc}
                 </div>
-              ))}
-            </Carousel>
-          );
-        })}
+              </div>
+            ) : (
+              <Carousel
+                className="img-carousel"
+                showStatus={false}
+                showIndicators={false}
+                showArrows={false}
+                swipeable={true}
+                axis="vertical"
+              >
+                {imgGroup.map((photo, index) => (
+                  <div
+                    className="photo-item"
+                    style={{
+                      maxWidth: photo.maxWidth,
+                    }}
+                    key={index}
+                  >
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      key={index}
+                      id={photo.id}
+                    />
+                    <div
+                      style={{ width: photo.maxWidth }}
+                      className="photo-desc"
+                    >
+                      {photo.desc}
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+            );
+          })}
+        </div>
       </div>
     </>
   );
