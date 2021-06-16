@@ -72,8 +72,10 @@ const Gallery: React.FC = () => {
           </span>
           <span
             onClick={() =>
-              imageGroups.filter((imgGroup) =>
-                imgGroup.find((img) => img.id.includes('misc'))
+              setImageGroups(
+                imageGroups.filter((imgGroup) =>
+                  imgGroup.find((img) => img.id.includes('misc'))
+                )
               )
             }
           >

@@ -73,6 +73,7 @@ import pieMiniStand from './Images/pie-mini-stand.jpg';
 import momGooey from './Images/mom-gooey.jpg';
 import emma from './Images/emma.jpg';
 import bracelet1 from './Images/bracelet1.jpg';
+import bracelet2 from './Images/bracelet2.jpg';
 import duncanOil from './Images/duncan-oil.jpg';
 import babyPortrait from './Images/baby-portrait.jpg';
 import kanyeFrame from './Images/kanye-frame.jpg';
@@ -121,6 +122,7 @@ import chloeRed from './Images/chloe-red.jpg';
 import abstractRoom from './Images/abstract-room.jpg';
 import sticky from './Images/sticky.jpg';
 import donutPrint from './Images/donut-print.jpg';
+import bigFish from './Images/big-fish.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -131,6 +133,15 @@ interface IGalleryImage {
 }
 
 export const imageGroups: IGalleryImage[][] = [
+  [
+    {
+      src: couple,
+      maxWidth: 600,
+      id: 'drawing',
+      alt: 'Drawing of a couple',
+      desc: 'Graphite, 19.5x25.5", March 2020',
+    },
+  ],
   [
     {
       src: titanic,
@@ -144,6 +155,39 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 500,
       id: 'painting',
       alt: 'Oil painting of the Titanic framed',
+    },
+  ],
+  [
+    {
+      src: carlySteveWedding,
+      maxWidth: 600,
+      id: 'drawing',
+      alt: 'Wedding drawing for Carly and Steve',
+      desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+    {
+      src: steveFrame,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Steve with drawing',
+      desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+  ],
+
+  [
+    {
+      src: plantAnatomy,
+      maxWidth: 600,
+      id: 'drawing',
+      alt: 'Ink drawing of plants',
+      desc: 'Ink, 36x40", March 2017',
+    },
+    {
+      src: plantAnatomyFrame,
+      maxWidth: 500,
+      id: 'drawing',
+      alt: 'Frame plant drawing',
+      desc: 'Ink, 36x40", March 2017',
     },
   ],
   [
@@ -188,6 +232,15 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: odellAndSaquon,
+      maxWidth: 700,
+      id: 'drawing',
+      alt: 'Pen drawings of Odell and Saquon',
+      desc: 'Blue pen, 9x12" each, Dec 2018',
+    },
+  ],
+  [
+    {
       src: banditBeetles,
       maxWidth: 600,
       id: 'painting',
@@ -212,11 +265,71 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: emma,
+      maxWidth: 500,
+      id: 'drawing',
+      alt: 'Emma and Elyse wedding gift',
+      desc: 'Graphite, 19.5x25.5", May 2019',
+    },
+  ],
+  [
+    {
+      src: curry,
+      maxWidth: 500,
+      alt: 'Steph Curry drawing',
+      id: 'drawing',
+      desc: 'Graphite & conte, 11x14", Feb 2019',
+    },
+  ],
+  [
+    {
+      src: udareShirley,
+      maxWidth: 500,
+      id: 'drawing-watercolor',
+      alt: 'Drawing of Udare and Shirley',
+      desc: 'Watercolor & Graphite, 11x14", May 2020',
+    },
+    {
+      src: udareShirleyFrame,
+      maxWidth: 500,
+      id: 'drawing-watercolor',
+      alt: 'Drawing of Udare and Shirley',
+    },
+  ],
+  [
+    {
+      src: paigeEmmy,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Drawing of Paige and Emmy',
+      desc: 'Graphite, 11x14", May 2020',
+    },
+  ],
+  [
+    {
+      src: obama,
+      maxWidth: 400,
+      alt: 'Drawing of Obama',
+      id: 'drawing',
+      desc: 'Charcoal, 9x12", 2016',
+    },
+  ],
+  [
+    {
       src: dinah,
       maxWidth: 400,
       id: 'painting',
       alt: 'Oil painting of Dinah',
       desc: 'Oil, 18x24", 2012',
+    },
+  ],
+  [
+    {
+      src: dogsPortrait,
+      maxWidth: 400,
+      id: 'painting',
+      alt: 'Acrylic painting of dogs',
+      desc: 'Acrylic, 11x14", Dec 2018',
     },
   ],
   [
@@ -230,20 +343,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: housewarming,
-      maxWidth: 400,
-      id: 'painting',
-      alt: 'Oil painting of a house',
-      desc: 'Oil, 9x12", Dec 2020',
-    },
-  ],
-  [
-    {
-      src: dogsPortrait,
-      maxWidth: 400,
-      id: 'painting',
-      alt: 'Acrylic painting of dogs',
-      desc: 'Acrylic, 11x14", Dec 2018',
+      src: sticky,
+      maxWidth: 500,
+      id: 'drawing',
+      alt: 'Colored pencil drawing of Sticky Rice',
+      desc: 'Colored pencil, 9x12", Dec 2017',
     },
   ],
   [
@@ -293,28 +397,21 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: dogsMini,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini painting of Tipper and Snickers photoshopped in photo',
-      desc: 'Acrylic, 3x4", Feb 2021',
-    },
-    {
       src: dogsMiniStand,
       maxWidth: 300,
       id: 'painting',
       alt: 'Mini painting of Tipper and Snickers',
       desc: 'Acrylic, 3x4", Feb 2021',
     },
-  ],
-  [
     {
-      src: pieMini,
+      src: dogsMini,
       maxWidth: 300,
       id: 'painting',
-      alt: 'Mini painting of proper pie photoshopped in photo',
-      desc: 'Acrylic, 3x3", Feb 2021',
+      alt: 'Mini painting of Tipper and Snickers photoshopped in photo',
+      desc: 'Acrylic, 3x4", Feb 2021',
     },
+  ],
+  [
     {
       src: pieMiniStand,
       maxWidth: 300,
@@ -322,233 +419,27 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Mini painting of proper pie',
       desc: 'Acrylic, 3x3", Feb 2021',
     },
+    {
+      src: pieMini,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini painting of proper pie photoshopped in photo',
+      desc: 'Acrylic, 3x3", Feb 2021',
+    },
   ],
   [
     {
       src: underwater,
-      maxWidth: 400,
+      maxWidth: 500,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
     },
     {
       src: underwater2,
-      maxWidth: 400,
+      maxWidth: 500,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
-    },
-  ],
-  [
-    {
-      src: blackDog,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Acrylic painting of a black dog',
-      desc: 'Acrylic, 11x14", 2017',
-    },
-  ],
-  [
-    {
-      src: llama,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini llama painting',
-      desc: 'Acrylic, 3x3", Aug 2018',
-    },
-  ],
-  [
-    {
-      src: sammy,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Acrylic painting of Sammy',
-      desc: 'Acrylic, 4x4", July 2020',
-    },
-  ],
-  [
-    {
-      src: moon,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini moon painting',
-      desc: 'Acrylic, 3x3", 2016',
-    },
-  ],
-  [
-    {
-      src: bee,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini bumblebee painting',
-      desc: 'Acrylic, 4x4", Aug 2020',
-    },
-  ],
-  [
-    {
-      src: grogo,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Small grogo painting',
-      desc: 'Acrylic, 5x5", April 2020',
-    },
-  ],
-  [
-    {
-      src: whiteDog,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Acrylic painting of a white dog',
-      desc: 'Acrylic, 11x14", Dec 2018',
-    },
-  ],
-  [
-    {
-      src: picassoPortrait,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Picasso-styled portraits',
-      desc: 'Acrylic, 8x10", May 2020',
-    },
-  ],
-  [
-    {
-      src: abbeyPs,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Graduation painting for Abbey',
-      desc: 'Acrylic, 9x12", Aug 2020',
-    },
-  ],
-  [
-    {
-      src: jeter,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini painting of Derek Jeter',
-      desc: 'Acrylic, 3x3", 2014',
-    },
-  ],
-  [
-    {
-      src: miniBeach,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini beach painting',
-      desc: 'Acrylic, 3x3", 2014',
-    },
-  ],
-  [
-    {
-      src: sisters,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Oil painting of my sister and I',
-      desc: 'Oil, 18x24", 2013',
-    },
-  ],
-  [
-    {
-      src: momCaptiva,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Oil painting of mom on Captiva',
-      desc: 'Oil, 18x24", 2012',
-    },
-  ],
-  [
-    {
-      src: duncanOil,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Oil painting of Duncan',
-      desc: 'Oil, 18x24", 2012',
-    },
-  ],
-
-  [
-    {
-      src: carlySteveWedding,
-      maxWidth: 600,
-      id: 'drawing',
-      alt: 'Wedding drawing for Carly and Steve',
-      desc: 'Graphite, 19.5x25.5", Dec 2020',
-    },
-    {
-      src: steveFrame,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Steve with drawing',
-      desc: 'Graphite, 19.5x25.5", Dec 2020',
-    },
-  ],
-  [
-    {
-      src: couple,
-      maxWidth: 600,
-      id: 'drawing',
-      alt: 'Drawing of a couple',
-      desc: 'Graphite, 19.5x25.5", March 2020',
-    },
-  ],
-  [
-    {
-      src: plantAnatomy,
-      maxWidth: 600,
-      id: 'drawing',
-      alt: 'Ink drawing of plants',
-      desc: 'Ink, 36x40", March 2017',
-    },
-    {
-      src: plantAnatomyFrame,
-      maxWidth: 500,
-      id: 'drawing',
-      alt: 'Frame plant drawing',
-      desc: 'Ink, 36x40", March 2017',
-    },
-  ],
-  [
-    {
-      src: emma,
-      maxWidth: 500,
-      id: 'drawing',
-      alt: 'Emma and Elyse wedding gift',
-      desc: 'Graphite, 19.5x25.5", May 2019',
-    },
-  ],
-  [
-    {
-      src: curry,
-      maxWidth: 500,
-      alt: 'Steph Curry drawing',
-      id: 'drawing',
-      desc: 'Graphite & conte, 11x14", Feb 2019',
-    },
-  ],
-  [
-    {
-      src: paigeEmmy,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Drawing of Paige and Emmy',
-      desc: 'Graphite, 11x14", May 2020',
-    },
-  ],
-  [
-    {
-      src: obama,
-      maxWidth: 400,
-      alt: 'Drawing of Obama',
-      id: 'drawing',
-      desc: 'Charcoal, 9x12", 2016',
-    },
-  ],
-  [
-    {
-      src: odellAndSaquon,
-      maxWidth: 700,
-      id: 'drawing',
-      alt: 'Pen drawings of Odell and Saquon',
-      desc: 'Blue pen, 9x12" each, Dec 2018',
     },
   ],
   [
@@ -623,17 +514,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: udareShirley,
+      src: housewarming,
       maxWidth: 400,
-      id: 'drawing-watercolor',
-      alt: 'Drawing of Udare and Shirley',
-      desc: 'Watercolor & Graphite, 11x14", May 2020',
-    },
-    {
-      src: udareShirleyFrame,
-      maxWidth: 400,
-      id: 'drawing-watercolor',
-      alt: 'Drawing of Udare and Shirley',
+      id: 'painting',
+      alt: 'Oil painting of a house',
+      desc: 'Oil, 9x12", Dec 2020',
     },
   ],
   [
@@ -726,28 +611,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: sticky,
-      maxWidth: 500,
-      id: 'drawing',
-      alt: 'Colored pencil drawing of Sticky Rice',
-      desc: 'Colored pencil, 9x12", Dec 2017',
-    },
-  ],
-  [
-    {
       src: michaelKobe,
       maxWidth: 400,
       id: 'drawing-watercolor',
       alt: 'Drawing of Michael and Kobe',
       desc: 'Watercolor & Graphite, 9x12", May 2020',
-    },
-  ],
-  [
-    {
-      src: lbiPrint,
-      maxWidth: 400,
-      id: 'print',
-      alt: 'Screenprint of LBI',
     },
   ],
   [
@@ -765,7 +633,7 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 400,
       id: 'misc',
       alt: 'Lion made out of a Fruit Loops box',
-      desc: 'Front of a Fruit Loops box, 2014',
+      desc: 'Front of a Fruit Loops box & ink, 2014',
     },
     {
       src: lionGouche,
@@ -806,7 +674,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: mountainEtching,
       maxWidth: 400,
-      id: 'misc',
+      id: 'print',
       desc: 'Copper plate print, 4x6", 2016',
       alt: 'Etching of a mountain framed',
     },
@@ -829,11 +697,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: penguins,
-      maxWidth: 300,
-      id: 'misc',
-      alt: 'Painting of Crosby on a wood block',
-      desc: 'Acrylic on wood block, 5x6", 2015',
+      src: lbiPrint,
+      maxWidth: 400,
+      id: 'print',
+      alt: 'Screenprint of LBI',
+      desc: 'Screenprint, 11x14", 2016',
     },
   ],
   [
@@ -843,6 +711,22 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'print',
       alt: 'Print of me on the pipeline',
       desc: 'Copper plate print with ink, 5x7" on 9x11" paper, 2016',
+    },
+  ],
+  [
+    {
+      src: donutPrint,
+      maxWidth: 300,
+      id: 'prints',
+      alt: 'Donut print',
+      desc: 'Screenprint, 11x14", 2016',
+    },
+    {
+      src: donutPrints,
+      maxWidth: 400,
+      id: 'prints',
+      alt: 'Donut prints',
+      desc: 'Screenprints, 11x14" each, 2016',
     },
   ],
   [
@@ -883,11 +767,134 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: blackDog,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Acrylic painting of a black dog',
+      desc: 'Acrylic, 11x14", 2017',
+    },
+  ],
+  [
+    {
+      src: llama,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini llama painting',
+      desc: 'Acrylic, 3x3", Aug 2018',
+    },
+  ],
+  [
+    {
+      src: sammy,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Acrylic painting of Sammy',
+      desc: 'Acrylic, 4x4", July 2020',
+    },
+  ],
+  [
+    {
+      src: moon,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini moon painting',
+      desc: 'Acrylic, 3x3", 2016',
+    },
+  ],
+  [
+    {
+      src: bee,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini bumblebee painting',
+      desc: 'Acrylic, 4x4", Aug 2020',
+    },
+  ],
+  [
+    {
+      src: grogo,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Small grogo painting',
+      desc: 'Acrylic, 5x5", April 2020',
+    },
+  ],
+  [
+    {
+      src: whiteDog,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Acrylic painting of a white dog',
+      desc: 'Acrylic, 11x14", Dec 2018',
+    },
+  ],
+  [
+    {
+      src: picassoPortrait,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Picasso-styled portraits',
+      desc: 'Acrylic, 8x10", May 2020',
+    },
+  ],
+  [
+    {
+      src: penguins,
+      maxWidth: 300,
+      id: 'misc',
+      alt: 'Painting of Crosby on a wood block',
+      desc: 'Acrylic on wood block, 5x6", 2015',
+    },
+  ],
+  [
+    {
+      src: abbeyPs,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Graduation painting for Abbey',
+      desc: 'Acrylic, 9x12", Aug 2020',
+    },
+  ],
+  [
+    {
+      src: jeter,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini painting of Derek Jeter',
+      desc: 'Acrylic, 3x3", 2014',
+    },
+  ],
+  [
+    {
+      src: miniBeach,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Mini beach painting',
+      desc: 'Acrylic, 3x3", 2014',
+    },
+  ],
+  [
+    {
+      src: sisters,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Oil painting of my sister and I',
+      desc: 'Oil, 18x24", 2013',
+    },
+  ],
+  [
+    {
       src: tridelta,
       maxWidth: 400,
       id: 'misc',
       alt: 'Tridelta banner',
       desc: 'Acrylic, 2015',
+    },
+    {
+      src: trideltChill,
+      maxWidth: 400,
+      id: 'misc',
+      alt: 'Tridelt and chill banner',
     },
   ],
   [
@@ -907,6 +914,13 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Leather beaded bracelet',
       desc: 'Leather beaded wrap bracelet, 2013',
     },
+    {
+      src: bracelet2,
+      maxWidth: 400,
+      id: 'misc',
+      alt: 'Leather beaded bracelet',
+      desc: 'Leather beaded wrap bracelet, 2017',
+    },
   ],
   [
     {
@@ -915,22 +929,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'print',
       alt: 'Duncan etching',
       desc: 'Solar plate print, 2013',
-    },
-  ],
-  [
-    {
-      src: donutPrint,
-      maxWidth: 300,
-      id: 'prints',
-      alt: 'Donut print',
-      desc: 'Screenprint, 11x14", 2016',
-    },
-    {
-      src: donutPrints,
-      maxWidth: 400,
-      id: 'prints',
-      alt: 'Donut prints',
-      desc: 'Screenprints, 11x14" each, 2016',
     },
   ],
   [
@@ -1059,18 +1057,25 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: bigFish,
+      maxWidth: 500,
+      id: 'misc',
+      alt: 'Me holding a painted fish',
+      desc: 'RVA Street Art Festival, Aug 2017',
+    },
+    {
+      src: streetArtFish,
+      maxWidth: 500,
+      id: 'misc',
+      alt: 'Me painting a wooden fish',
+      desc: 'RVA Street Art Festival, Aug 2017',
+    },
+    {
       src: artFestival,
       maxWidth: 500,
       id: 'misc',
       alt: 'Street Art festival',
-      desc: 'RVA Street Art Festival, 2017',
-    },
-    {
-      src: streetArtFish,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Me painting a wooden fish',
-      desc: 'RVA Street Art Festival, 2018',
+      desc: 'RVA Street Art Festival, Aug 2017',
     },
   ],
   [
@@ -1116,6 +1121,24 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: momCaptiva,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Oil painting of mom on Captiva',
+      desc: 'Oil, 18x24", 2012',
+    },
+  ],
+  [
+    {
+      src: duncanOil,
+      maxWidth: 300,
+      id: 'painting',
+      alt: 'Oil painting of Duncan',
+      desc: 'Oil, 18x24", 2012',
+    },
+  ],
+  [
+    {
       src: chloeRed,
       maxWidth: 300,
       id: 'drawing',
@@ -1144,25 +1167,17 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: basketball,
-      maxWidth: 300,
+      maxWidth: 400,
       id: 'misc',
       alt: 'Painted basketball',
       desc: 'Acrylic, 2013',
     },
     {
       src: basketball2,
-      maxWidth: 300,
+      maxWidth: 400,
       id: 'misc',
       alt: 'Painted basketball',
       desc: 'Acrylic, 2013',
-    },
-  ],
-  [
-    {
-      src: trideltChill,
-      maxWidth: 300,
-      id: 'misc',
-      alt: 'Tridelt and chill banner',
     },
   ],
   [

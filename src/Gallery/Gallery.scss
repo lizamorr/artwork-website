@@ -31,6 +31,9 @@
       }
       .thumbs-wrapper {
         margin: 0;
+        .thumbs {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -41,9 +44,6 @@
     transition: transform 500ms ease;
     width: '100%';
     height: auto;
-    &:hover {
-      transform: scale(1.1);
-    }
     .photo-desc {
       font-size: 2rem;
       letter-spacing: 0.1rem;

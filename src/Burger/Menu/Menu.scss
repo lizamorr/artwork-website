@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
-
-.menu {
+.menu-gallery {
+  background: white;
+  padding: 0 !important;
+  margin: 2rem 2rem 1rem 1rem;
+  padding-left: 6px !important;
+}
+.menu,
+.menu-gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
