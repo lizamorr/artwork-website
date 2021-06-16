@@ -19,11 +19,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  .photo-item {
+  .img-carousel {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: fit-content;
+    .carousel {
+      text-align: center;
+      .slide {
+        align-self: center;
+      }
+      .thumbs-wrapper {
+        margin: 0;
+      }
+    }
+  }
+  .photo-item {
+    display: inline-flex;
     flex-direction: column;
     margin: 15px;
     transition: transform 500ms ease;
+    width: '100%';
+    height: auto;
     &:hover {
       transform: scale(1.1);
     }

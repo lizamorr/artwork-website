@@ -102,19 +102,26 @@ const Gallery: React.FC = () => {
               </div>
             </div>
           ) : (
-            <Carousel>
+            <Carousel
+              className="img-carousel"
+              showStatus={false}
+              showIndicators={false}
+              showArrows={false}
+              swipeable={true}
+            >
               {imgGroup.map((photo, index) => (
-                <div className="photo-item" key={index}>
+                <div
+                  className="photo-item"
+                  style={{
+                    maxWidth: photo.maxWidth,
+                  }}
+                  key={index}
+                >
                   <img
                     src={photo.src}
                     alt={photo.alt}
                     key={index}
                     id={photo.id}
-                    style={{
-                      maxWidth: photo.maxWidth,
-                      width: '100%',
-                      height: 'auto',
-                    }}
                   />
                   <div style={{ width: photo.maxWidth }} className="photo-desc">
                     {photo.desc}
