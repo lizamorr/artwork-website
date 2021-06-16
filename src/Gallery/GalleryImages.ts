@@ -46,7 +46,6 @@ import mom from './Images/mom.jpg';
 import mountainEtching from './Images/mountain-etching.jpg';
 import octopus from './Images/octopus.jpg';
 import parentsPrint from './Images/parents-print.jpg';
-import parentsPrints from './Images/parents-prints.jpg';
 import penguins from './Images/penguins.jpg';
 import pieMini from './Images/pie-mini.jpg';
 import pipelineEtch from './Images/pipeline-etch.jpg';
@@ -78,8 +77,6 @@ import duncanOil from './Images/duncan-oil.jpg';
 import babyPortrait from './Images/baby-portrait.jpg';
 import kanyeFrame from './Images/kanye-frame.jpg';
 import steveFrame from './Images/steve-frame.jpg';
-import duncanEtch from './Images/duncan-etch.jpg';
-import donutPrints from './Images/donut-prints.jpg';
 import trideltaPaddle from './Images/tridelta-paddle.jpg';
 import hsMural from './Images/hs-mural.jpg';
 import picassoPortrait from './Images/picasso-portrait.jpg';
@@ -123,6 +120,7 @@ import abstractRoom from './Images/abstract-room.jpg';
 import sticky from './Images/sticky.jpg';
 import donutPrint from './Images/donut-print.jpg';
 import bigFish from './Images/big-fish.jpg';
+import titanicJon from './Images/titanic-jon.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -152,9 +150,17 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: titanicFrame,
-      maxWidth: 500,
+      maxWidth: 600,
       id: 'painting',
       alt: 'Oil painting of the Titanic framed',
+      desc: 'Oil, 48x36", May 2021',
+    },
+    {
+      src: titanicJon,
+      maxWidth: 500,
+      id: 'painting',
+      alt: 'Oil painting of the Titanic with Jon and Pancake',
+      desc: 'Oil, 48x36", May 2021',
     },
   ],
   [
@@ -167,13 +173,12 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: steveFrame,
-      maxWidth: 400,
+      maxWidth: 500,
       id: 'drawing',
       alt: 'Steve with drawing',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
     },
   ],
-
   [
     {
       src: plantAnatomy,
@@ -184,7 +189,7 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: plantAnatomyFrame,
-      maxWidth: 500,
+      maxWidth: 550,
       id: 'drawing',
       alt: 'Frame plant drawing',
       desc: 'Ink, 36x40", March 2017',
@@ -200,9 +205,10 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: lbiPainting2,
-      maxWidth: 500,
+      maxWidth: 600,
       id: 'painting',
       alt: 'Oil painting of Harvey Cedars in house',
+      desc: 'Oil, Dec 2020',
     },
   ],
   [
@@ -215,7 +221,7 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: abstract,
-      maxWidth: 500,
+      maxWidth: 400,
       id: 'painting',
       alt: 'Large abstract painting',
       desc: 'Acrylic, 48x60", July 2019',
@@ -249,9 +255,10 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: connorBeetles,
-      maxWidth: 300,
+      maxWidth: 400,
       id: 'painting',
       alt: 'Connor with his Beetles painting',
+      desc: 'Acrylic, Aug 2018',
     },
   ],
   [
@@ -284,7 +291,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: udareShirley,
-      maxWidth: 500,
+      maxWidth: 550,
       id: 'drawing-watercolor',
       alt: 'Drawing of Udare and Shirley',
       desc: 'Watercolor & Graphite, 11x14", May 2020',
@@ -294,6 +301,7 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 500,
       id: 'drawing-watercolor',
       alt: 'Drawing of Udare and Shirley',
+      desc: 'Watercolor & Graphite, 11x14", May 2020',
     },
   ],
   [
@@ -455,7 +463,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: underwater,
-      maxWidth: 500,
+      maxWidth: 550,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
@@ -465,6 +473,7 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 500,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
+      desc: 'Acrylic, 4x12" panels (5), Oct 2018',
     },
   ],
   [
@@ -651,13 +660,6 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Print of parents',
       desc: 'Screenprint with drawing fluid, 11x14", 2016',
     },
-    {
-      src: parentsPrints,
-      maxWidth: 400,
-      id: 'print',
-      alt: 'Screenprints of my parents',
-      desc: 'Screenprints, 11x14" each, 2016',
-    },
   ],
   [
     {
@@ -720,13 +722,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'prints',
       alt: 'Donut print',
       desc: 'Screenprint, 11x14", 2016',
-    },
-    {
-      src: donutPrints,
-      maxWidth: 400,
-      id: 'prints',
-      alt: 'Donut prints',
-      desc: 'Screenprints, 11x14" each, 2016',
     },
   ],
   [
@@ -895,6 +890,7 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 400,
       id: 'misc',
       alt: 'Tridelt and chill banner',
+      desc: 'Acrylic, 2015',
     },
   ],
   [
@@ -920,15 +916,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       alt: 'Leather beaded bracelet',
       desc: 'Leather beaded wrap bracelet, 2017',
-    },
-  ],
-  [
-    {
-      src: duncanEtch,
-      maxWidth: 400,
-      id: 'print',
-      alt: 'Duncan etching',
-      desc: 'Solar plate print, 2013',
     },
   ],
   [
@@ -1065,7 +1052,7 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: streetArtFish,
-      maxWidth: 500,
+      maxWidth: 475,
       id: 'misc',
       alt: 'Me painting a wooden fish',
       desc: 'RVA Street Art Festival, Aug 2017',
@@ -1098,13 +1085,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: carly,
-      maxWidth: 300,
-      id: 'drawing',
-      alt: 'Charcoal drawing of Carly',
-      desc: 'Charcoal, 2016',
-    },
-    {
       src: mom,
       maxWidth: 300,
       id: 'drawing',
@@ -1112,8 +1092,15 @@ export const imageGroups: IGalleryImage[][] = [
       desc: 'Charcoal, 2016',
     },
     {
+      src: carly,
+      maxWidth: 340,
+      id: 'drawing',
+      alt: 'Charcoal drawing of Carly',
+      desc: 'Charcoal, 2016',
+    },
+    {
       src: chloe,
-      maxWidth: 300,
+      maxWidth: 330,
       id: 'drawing',
       alt: 'Charcoal drawing of Chloe',
       desc: 'Charcoal, 2016',
@@ -1190,7 +1177,7 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       src: trideltPaddle2,
-      maxWidth: 200,
+      maxWidth: 170,
       id: 'misc',
       alt: 'Tridelta paddle',
       desc: 'Acrylic, 2015',
