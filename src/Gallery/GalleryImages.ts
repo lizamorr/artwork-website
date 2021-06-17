@@ -20,6 +20,7 @@ import carly from './Images/carly.jpg';
 import connorBeetles from './Images/connor-beetles.jpg';
 import converse from './Images/converse.jpg';
 import couple from './Images/couple.jpg';
+import couple2 from './Images/couple2.jpg';
 import dinah from './Images/dinah.jpg';
 import dogsMini from './Images/dogs-mini.jpg';
 import dogsPortrait from './Images/dogs-portrait.jpg';
@@ -71,6 +72,7 @@ import dogsMiniStand from './Images/dogs-mini-stand.jpg';
 import pieMiniStand from './Images/pie-mini-stand.jpg';
 import momGooey from './Images/mom-gooey.jpg';
 import emma from './Images/emma.jpg';
+import emmaFrame from './Images/emma-frame.jpg';
 import bracelet1 from './Images/bracelet1.jpg';
 import bracelet2 from './Images/bracelet2.jpg';
 import duncanOil from './Images/duncan-oil.jpg';
@@ -108,11 +110,13 @@ import plantAnatomyFrame from './Images/plant-anatomy-frame.jpg';
 import odell from './Images/odell.jpg';
 import artFestival from './Images/art-festival.jpg';
 import wallArt from './Images/wall-art.jpg';
+import wallArt2 from './Images/wall-art2.jpg';
 import streetArtFish from './Images/street-art-fish.jpg';
 import miniBeach from './Images/mini-beach.jpg';
 import abstract from './Images/abstract.jpg';
 import moon from './Images/moon.jpg';
 import zion from './Images/zion.jpg';
+import zion2 from './Images/zion2.jpg';
 import obama from './Images/obama.jpg';
 import chloe from './Images/chloe.jpg';
 import chloeRed from './Images/chloe-red.jpg';
@@ -121,6 +125,14 @@ import sticky from './Images/sticky.jpg';
 import donutPrint from './Images/donut-print.jpg';
 import bigFish from './Images/big-fish.jpg';
 import titanicJon from './Images/titanic-jon.jpg';
+import carlyStevePic from './Images/carly-steve-pic.jpg';
+import carlySteve from './Images/carly-steve.jpg';
+import puzzle from './Images/puzzle.jpg';
+import puzzleBox from './Images/puzzle-box.jpg';
+import puzzleBoxFront from './Images/puzzle-box-front.jpg';
+import derekTurtle from './Images/derek-turtle.jpg';
+import momCar from './Images/mom-car.jpg';
+import grogoOrnament from './Images/grogo-ornament.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -134,6 +146,13 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: couple,
+      maxWidth: 600,
+      id: 'drawing',
+      alt: 'Drawing of a couple',
+      desc: 'Graphite, 19.5x25.5", March 2020',
+    },
+    {
+      src: couple2,
       maxWidth: 600,
       id: 'drawing',
       alt: 'Drawing of a couple',
@@ -172,10 +191,24 @@ export const imageGroups: IGalleryImage[][] = [
       desc: 'Graphite, 19.5x25.5", Dec 2020',
     },
     {
+      src: carlySteve,
+      maxWidth: 450,
+      id: 'drawing',
+      alt: 'Carly and Steve with their drawing',
+      desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+    {
       src: steveFrame,
-      maxWidth: 500,
+      maxWidth: 520,
       id: 'drawing',
       alt: 'Steve with drawing',
+      desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+    {
+      src: carlyStevePic,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Drawing with actual photo',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
     },
   ],
@@ -269,11 +302,25 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Acrylic painting of Zion',
       desc: 'Acrylic, 24x36", May 2020',
     },
+    {
+      src: zion2,
+      maxWidth: 500,
+      id: 'painting',
+      alt: 'Acrylic painting of Zion',
+      desc: 'Acrylic, 24x36", May 2020',
+    },
   ],
   [
     {
       src: emma,
       maxWidth: 500,
+      id: 'drawing',
+      alt: 'Emma and Elyse wedding gift',
+      desc: 'Graphite, 19.5x25.5", May 2019',
+    },
+    {
+      src: emmaFrame,
+      maxWidth: 450,
       id: 'drawing',
       alt: 'Emma and Elyse wedding gift',
       desc: 'Graphite, 19.5x25.5", May 2019',
@@ -412,6 +459,29 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: puzzle,
+      maxWidth: 500,
+      id: 'misc',
+      alt: 'Handmade puzzle',
+      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
+    },
+    {
+      src: puzzleBox,
+      maxWidth: 245,
+      id: 'misc',
+      alt: 'Handmade puzzle',
+      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
+    },
+    {
+      src: puzzleBoxFront,
+      maxWidth: 400,
+      id: 'misc',
+      alt: 'Handmade puzzle',
+      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
+    },
+  ],
+  [
+    {
       src: blueMoon,
       maxWidth: 400,
       id: 'painting',
@@ -471,6 +541,13 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: underwater2,
       maxWidth: 500,
+      id: 'painting',
+      alt: 'Acrylic painting of a turtle',
+      desc: 'Acrylic, 4x12" panels (5), Oct 2018',
+    },
+    {
+      src: derekTurtle,
+      maxWidth: 315,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
@@ -762,6 +839,15 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: momCar,
+      maxWidth: 400,
+      id: 'painting',
+      alt: 'Acrylic painting of a bird in a car',
+      desc: 'Acrylic, 36x36", Feb 2020',
+    },
+  ],
+  [
+    {
       src: blackDog,
       maxWidth: 300,
       id: 'painting',
@@ -1008,6 +1094,15 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: grogoOrnament,
+      maxWidth: 300,
+      id: 'misc',
+      alt: 'Painted baby grogo',
+      desc: 'Created & painted ornament, Dec 2020',
+    },
+  ],
+  [
+    {
       src: guyDog,
       maxWidth: 500,
       id: 'drawing',
@@ -1066,6 +1161,13 @@ export const imageGroups: IGalleryImage[][] = [
     },
   ],
   [
+    {
+      src: wallArt2,
+      maxWidth: 500,
+      id: 'misc',
+      alt: 'Wall art',
+      desc: 'Framed wall art',
+    },
     {
       src: wallArt,
       maxWidth: 500,
