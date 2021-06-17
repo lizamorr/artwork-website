@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <img src={parisPhoto} alt="New York City" />
+        <img src={parisPhoto} alt="Me in Paris" />
         <div className="about-text">
           <div className="about-title">Liza Morrison</div>
           <div className="about-subtitle">Artist & Software Engineer</div>
@@ -19,7 +19,7 @@ class About extends Component {
           specialities range across various mediums: graphite, charcoal, pen,
           oils, acrylic, watercolor, and colored pencils. I currently reside in
           Belgium with my partner and our three pets (2 dogs and 1 cat). Please
-          contact me with more information and about commissions. Thank you for
+          contact me with more information about commissions. Thank you for
           checking out my work.
           <div className="about-follow">
             Follow:{' '}
