@@ -20,6 +20,9 @@
     letter-spacing: 0.1rem;
     color: black;
     font-family: 'Montserrat', regular;
+    .about-paragraph {
+      line-height: 1.4;
+    }
   }
   img {
     flex: 1;
