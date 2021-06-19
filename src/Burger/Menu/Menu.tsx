@@ -6,7 +6,10 @@ const Menu = () => {
     <HashRouter>
       <div
         className={
-          window.location.href.includes('/gallery') ? 'menu-gallery' : 'menu'
+          window.location.href.includes('/gallery') ||
+          window.location.href.includes('/about')
+            ? 'menu-gallery'
+            : 'menu'
         }
       >
         <div>

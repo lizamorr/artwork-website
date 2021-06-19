@@ -1,0 +1,80 @@
+.contact-form {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding-bottom: 2vh;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      border: none;
+      background-image: url('../Gallery/Images/plant-anatomy.jpg');
+      background-size: cover;
+      border-radius: 10px;
+      padding: 5%;
+      input {
+        border: none;
+        border-bottom: groove;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', regular;
+        font-weight: bolder;
+        letter-spacing: 0.1rem;
+        color: black;
+        background: #f8f8ef;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: black;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: black;
+      }
+      textarea {
+        min-height: 200px;
+        border: none;
+        border-bottom: groove;
+        font-family: 'Montserrat', regular;
+        font-weight: bolder;
+        letter-spacing: 0.1rem;
+        color: black;
+        background: #f8f8ef;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      button {
+        border: none;
+        background: none;
+        margin-top: 10px;
+        font-family: 'Montserrat', regular;
+        font-weight: bolder;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        font-variant: all-small-caps;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+  .instagram-container {
+    display: flex;
+    justify-content: center;
+    .instagram {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+    }
+  }
+}
