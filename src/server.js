@@ -1,12 +1,17 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
-const cors = require('cors');
 require('dotenv').config();
 
-// middleware
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
 app.use(express.json());
-app.use(cors());
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -26,15 +31,15 @@ transporter.verify((err, success) => {
     : console.log(`=== Server is ready to take messages: ${success} ===`);
 });
 
-app.post('/send', function (req, res) {
+app.post('/send', (req, res) => {
   let mailOptions = {
-    from: `${req.body.mailerState.email}`,
+    from: `${req.body.data.name} <${req.body.data.email}>`,
     to: process.env.EMAIL,
-    subject: `Message from: ${req.body.mailerState.email}`,
-    text: `${req.body.mailerState.message}`,
+    subject: `Art message from: ${req.body.data.name} (${req.body.data.email})`,
+    text: req.body.data.message,
   };
 
-  transporter.sendMail(mailOptions, function (err, data) {
+  transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
       res.json({
         status: 'fail',

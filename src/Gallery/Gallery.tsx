@@ -7,15 +7,15 @@ const Gallery: React.FC = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
 
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     setIsScrollBtnDisplayed(false);
   };
-  const showScrollToTop = () => {
+  const showScrollToTop = (): void => {
     setIsScrollBtnDisplayed(true);
   };
-  window.onscroll = () => {
+  window.onscroll = (): void => {
     if (
       (document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20) &&

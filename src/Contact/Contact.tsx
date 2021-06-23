@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 
@@ -8,45 +9,51 @@ const Contact: React.FC = () => {
     message: '',
   });
 
-  const handleStateChange = (e: any) => {
+  const handleStateChange = (e: any): void => {
     setMailerState((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   };
 
-  const submitEmail = async (e: any) => {
+  const submitEmail = async (e: any): Promise<void> => {
     e.preventDefault();
-    console.log({ mailerState });
-    await fetch('/send', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({ mailerState }),
-    })
-      .then((res) => res.json())
-      .then(async (res) => {
-        const resData = await res;
-        console.log(resData);
-        if (resData.status === 'success') {
-          alert('Message Sent');
-        } else if (resData.status === 'fail') {
-          alert('Message failed to send');
+    return axios
+      .post('http://localhost:3001/send', {
+        method: 'POST',
+        data: mailerState,
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        referrer: 'no-referrer',
+        mode: 'no-cors',
+      })
+      .then((response) => {
+        if (response?.data?.status === 'success') {
+          resetForm();
+        } else if (response?.data?.status === 'fail') {
+          alert('Message failed to send. Please try again.');
         }
       })
-      .then(() => {
-        setMailerState({
-          email: '',
-          name: '',
-          message: '',
-        });
-      });
+      .catch(() =>
+        alert(
+          'Please try again. If the problem persists, please email me at lizammorrison@gmail.com instead.'
+        )
+      );
+  };
+
+  const resetForm = (): void => {
+    setMailerState({
+      email: '',
+      name: '',
+      message: '',
+    });
   };
 
   return (
     <div className="contact-form">
-      <form onSubmit={submitEmail}>
+      <form method="POST" onSubmit={submitEmail}>
         <fieldset>
           <input
             placeholder="Name"
@@ -66,7 +73,18 @@ const Contact: React.FC = () => {
             name="message"
             value={mailerState.message}
           />
-          <button>Send</button>
+          <button
+            disabled={
+              !mailerState.email || !mailerState.name || !mailerState.message
+            }
+            className={
+              mailerState.email && mailerState.name && mailerState.message
+                ? 'send-btn'
+                : 'send-btn--none'
+            }
+          >
+            <span>Send</span>
+          </button>
         </fieldset>
       </form>
       <div className="instagram-container">
