@@ -28,7 +28,8 @@ jobs:
 
     - name: start nodemailer server
       run: |
-        node server.js    
+        cd src
+        node server.js  
         
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
