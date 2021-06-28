@@ -9,6 +9,11 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  AZURE_WEBAPP_NAME: lizamorrisonart
+  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  NODE_VERSION: "14.x"
+
 jobs:
   build-and-deploy:
     name: Build and Deploy
@@ -17,26 +22,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Node.js version
+      - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: npm install & build
         run: |
           npm install
-          npm run build
-
-      # - name: Upload artifact for deployment job
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: node-app
-      #     path: .
+          npm run build --if-present
 
       - name: "Deploy to Azure WebApp"
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "lizamorrisonart"
-          slot-name: "production"
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_f9b5df4651c44783bb58aaf6a3df9dd8 }}
-          package: .
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          _PROFILE }}
+        
