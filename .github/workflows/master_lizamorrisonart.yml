@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: lizamorrisonart
-  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  AZURE_WEBAPP_PACKAGE_PATH: "."
   NODE_VERSION: "14.x"
 
 jobs:
@@ -38,5 +38,3 @@ jobs:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          _PROFILE }}
-        
