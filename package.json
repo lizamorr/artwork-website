@@ -22,6 +22,7 @@
     "react-scripts": "4.0.3",
     "rimraf": "^3.0.2",
     "sass": "^1.34.1",
+    "serve": "^12.0.0",
     "typescript": "^4.3.2",
     "web-vitals": "^1.1.2"
   },
