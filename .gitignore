@@ -3,6 +3,5 @@ node_modules/
 .env
 build/
 .vscode/
-public/
 logs
 *.logs/dist
