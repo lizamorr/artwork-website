@@ -112,6 +112,7 @@ const Gallery: React.FC = () => {
                 showArrows={false}
                 swipeable={true}
                 axis="vertical"
+                key={index}
               >
                 {imgGroup.map((photo, index) => (
                   <div
