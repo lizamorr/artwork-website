@@ -33,10 +33,10 @@ module.exports = {
           },
           { loader: "sass-loader", options: { sourceMap: true } },
         ],
-        include: path.resolve(__dirname, "../"),
+        include: [path.resolve(__dirname, "../"), /node_modules/],
       },
       {
-        test: /\.(png|jpeg|jpg|gif|jp2|webp)$/,
+        test: /\.(png|jpeg|jpg|gif|jp2|webp|ico)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
@@ -52,6 +52,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
       template: "./src/index.html",
+      favicon: "src/favicon.ico",
     }),
   ],
   output: {
