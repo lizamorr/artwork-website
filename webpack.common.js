@@ -52,7 +52,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
       template: "./src/index.html",
-      favicon: "./src/favicon.ico",
     }),
   ],
   output: {
