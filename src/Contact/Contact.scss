@@ -5,12 +5,19 @@
     align-items: center;
     margin-top: 10vh;
     padding-bottom: 2vh;
+    .spinner {
+      position: absolute;
+      z-index: 1;
+    }
+    .low-opacity {
+      opacity: 0.5;
+    }
     fieldset {
       background-image: url('plant-anatomy-edit.jpg');
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 50%;
+      width: 70%;
       border: none;
       background-size: cover;
       border-radius: 10px;

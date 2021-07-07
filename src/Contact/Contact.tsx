@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
+import emailjs, { init } from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [mailerState, setMailerState] = useState({
@@ -8,6 +8,7 @@ const Contact: React.FC = () => {
     email: '',
     message: '',
   });
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
 
   const handleStateChange = (e: any): void => {
     setMailerState((prevState) => ({
@@ -17,30 +18,26 @@ const Contact: React.FC = () => {
   };
 
   const submitEmail = async (e: any): Promise<void> => {
+    setIsSendingEmail(true);
     e.preventDefault();
-    return axios
-      .post('http://localhost:3001/send', {
-        method: 'POST',
-        data: mailerState,
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        referrer: 'no-referrer',
-        mode: 'no-cors',
+    init(process.env.USER_ID ? process.env.USER_ID : '');
+    return emailjs
+      .sendForm(
+        process.env.SERVICE_ID ? process.env.SERVICE_ID : '',
+        process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
+        e.target,
+        process.env.USER_ID
+      )
+      .then(() => {
+        resetForm();
+        setIsSendingEmail(false);
       })
-      .then((response) => {
-        if (response?.data?.status === 'success') {
-          resetForm();
-        } else if (response?.data?.status === 'fail') {
-          alert('Message failed to send. Please try again.');
-        }
-      })
-      .catch(() =>
+      .catch(() => {
         alert(
           'Please try again. If the problem persists, please email me at lizammorrison@gmail.com instead.'
-        )
-      );
+        );
+        setIsSendingEmail(false);
+      });
   };
 
   const resetForm = (): void => {
@@ -54,7 +51,14 @@ const Contact: React.FC = () => {
   return (
     <div className="contact-form">
       <form method="POST" onSubmit={submitEmail}>
-        <fieldset>
+        {isSendingEmail && (
+          <div className="spinner">
+            <div className="spinner-border" role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
+          </div>
+        )}
+        <fieldset className={isSendingEmail ? 'low-opacity' : ''}>
           <input
             placeholder="Name"
             onChange={handleStateChange}
