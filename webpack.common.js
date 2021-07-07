@@ -33,6 +33,7 @@ module.exports = {
             options: { rsourceMap: true },
           },
           { loader: "sass-loader", options: { sourceMap: true } },
+          // { loader: "style-loader", options: { sourceMap: true } },
         ],
         include: [path.resolve(__dirname, "../"), /node_modules/],
       },
