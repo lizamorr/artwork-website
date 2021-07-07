@@ -32,6 +32,12 @@ module.exports = {
             options: { rsourceMap: true },
           },
           { loader: "sass-loader", options: { sourceMap: true } },
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: () => [require("autoprefixer")()],
+            },
+          },
         ],
         include: [path.resolve(__dirname, "../"), /node_modules/],
       },
