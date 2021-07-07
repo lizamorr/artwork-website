@@ -20,7 +20,6 @@ ReactDOM.render(
       <Route path="/about" component={About} />
     </HashRouter>
     <Burger />
-    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

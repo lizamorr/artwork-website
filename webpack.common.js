@@ -25,10 +25,13 @@ module.exports = {
       {
         test: /\.(s[ac]ss|css)$/i,
         use: [
-          "style-loader",
-          "css-loader",
-          "resolve-url-loader",
-          "sass-loader",
+          { loader: "style-loader", options: { sourceMap: true } },
+          { loader: "css-loader", options: { sourceMap: true } },
+          {
+            loader: "resolve-url-loader",
+            options: { rsourceMap: true },
+          },
+          { loader: "sass-loader", options: { sourceMap: true } },
         ],
         include: path.resolve(__dirname, "../"),
       },
