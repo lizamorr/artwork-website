@@ -8,6 +8,7 @@ import Gallery from './Gallery';
 import Home from './Home';
 import './index.scss';
 import './favicon.ico';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
