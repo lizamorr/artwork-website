@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   resolve: {
@@ -25,19 +26,13 @@ module.exports = {
       {
         test: /\.(s[ac]ss|css)$/i,
         use: [
-          { loader: "style-loader", options: { sourceMap: true } },
+          { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader", options: { sourceMap: true } },
           {
             loader: "resolve-url-loader",
             options: { rsourceMap: true },
           },
           { loader: "sass-loader", options: { sourceMap: true } },
-          {
-            loader: "postcss-loader",
-            options: {
-              plugins: () => [require("autoprefixer")()],
-            },
-          },
         ],
         include: [path.resolve(__dirname, "../"), /node_modules/],
       },
@@ -53,6 +48,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
