@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { imageGroups } from './GalleryImages';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { setFooterMargin } from '../Footer/Footer-helper';
 
 const Gallery: React.FC = () => {
+  setFooterMargin(false);
   const [imgGroups, setImageGroups] = useState(imageGroups);
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
 

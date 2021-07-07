@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import emailjs, { init } from 'emailjs-com';
+import { setFooterMargin } from '../Footer/Footer-helper';
 
 const Contact: React.FC = () => {
+  setFooterMargin(false);
   const [mailerState, setMailerState] = useState({
     name: '',
     email: '',

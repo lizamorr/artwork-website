@@ -1,7 +1,9 @@
 import React from 'react';
+import { setFooterMargin } from '../Footer/Footer-helper';
 import parisPhoto from './me-paris.jpg';
 
 const About: React.FC = () => {
+  setFooterMargin(false);
   return (
     <div className="about-container">
       <img src={parisPhoto} alt="Me in Paris" />
