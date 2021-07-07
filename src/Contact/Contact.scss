@@ -78,19 +78,24 @@
         text-align: center;
         -webkit-text-stroke: thin;
         transition: all 0.2344s;
+        &:focus {
+          outline: 0;
+        }
         span {
           cursor: pointer;
           display: inline-block;
           position: relative;
           transition: 0.5s;
+          top: -4px;
         }
         span:after {
           content: '\00bb';
           position: absolute;
           opacity: 0;
-          top: 0;
+          top: -4px;
           right: -20px;
           transition: 0.5s;
+          font-size: larger;
         }
       }
       .send-btn:hover span {
