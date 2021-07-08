@@ -1,0 +1,8 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d767dc17-59a1-4ac4-8033-487b3ff72c41/resourceGroups/liza-art/providers/Microsoft.Web/sites/lizamorrison"
+}

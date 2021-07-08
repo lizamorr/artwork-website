@@ -2,8 +2,6 @@ node_modules/
 .DS_Store
 .env
 build/
-dist/
-.vscode/
+scode/
 logs
-*.logs/dist
 .eslintcache
