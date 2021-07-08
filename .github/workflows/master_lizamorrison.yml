@@ -32,5 +32,5 @@ jobs:
         with:
           app-name: lizamorrison
           slot-name: Production
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A081B74250084A778A822B783C054FD1 }}
-          package: .
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
+          output_location: "dist"
