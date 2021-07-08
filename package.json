@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "clean": "rm -rf node_modules"
   },
   "eslintConfig": {
     "extends": [

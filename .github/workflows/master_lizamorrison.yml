@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       # checkout the repo
@@ -22,9 +22,10 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: npm install, build, and test
+      - name: npm clean, install, build
         run: |
-          npm ci
+          npm run clean
+          npm install
           npm run build
 
       - name: Run Azure webapp deploy action using publish profile credentials
