@@ -33,4 +33,3 @@ jobs:
           app-name: lizamorrison
           slot-name: Production
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
-          output_location: "dist"
