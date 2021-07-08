@@ -13,7 +13,7 @@ pool:
 variables:
   directory: artwork-website
   stage: production
-  serviceConnection: AZURE_SUBSCRIPTION
+  serviceConnection: {{ AZURE_SUBSCRIPTION }}
   appServiceName: lizamorrison
  
 steps:
