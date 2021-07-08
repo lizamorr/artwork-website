@@ -50,7 +50,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new Dotenv(),
+    new Dotenv({ systemvars: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
