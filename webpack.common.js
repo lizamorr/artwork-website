@@ -46,6 +46,10 @@ module.exports = {
           esModule: false,
         },
       },
+      {
+        test: /\.config$/,
+        loader: "file-loader",
+      },
     ],
   },
   plugins: [

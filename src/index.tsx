@@ -8,6 +8,7 @@ import Gallery from './Gallery';
 import Home from './Home';
 import './index.scss';
 import './favicon.ico';
+import './web.config';
 
 ReactDOM.render(
   <React.StrictMode>
