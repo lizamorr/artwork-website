@@ -2,12 +2,12 @@
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
- 
+
 trigger:
-- master
- 
+  - master
+
 pool:
-  vmImage: 'windows-latest'
+  vmImage: "windows-latest"
 
 # Set variables
 variables:
@@ -15,61 +15,60 @@ variables:
   stage: production
   appServiceName: lizamorrison
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
 
-- task: DownloadSecureFile@1
-  name: env
-  inputs:
-    secureFile: '.env'
-  displayName: 'Copy .env'
+  - task: DownloadSecureFile@1
+    name: env
+    inputs:
+      secureFile: ".env"
+    displayName: "Copy .env"
 
-- script: 
-    npm install
-  displayName: 'npm install'
-  workingDirectory: $(directory)
+  - script: npm install
+    displayName: "npm install"
+    workingDirectory: $(directory)
 
-- script: 
-    set "REACT_APP_STAGE=$(stage)" && npm run build
-  displayName: 'npm build'
-  workingDirectory: $(directory)
+  - script: set "REACT_APP_STAGE=$(stage)" && npm run build
+    displayName: "npm build"
+    workingDirectory: $(directory)
 
-- task: CopyFiles@2
-  displayName: 'Copy files'
-  inputs:
-    sourceFolder: '$(directory)/dist' 
-    Contents: '**/*'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    cleanTargetFolder: true
+  - task: CopyFiles@2
+    displayName: "Copy files"
+    inputs:
+      sourceFolder: "$(directory)/dist"
+      Contents: "**/*"
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      cleanTargetFolder: true
 
-- task: CopyFiles@2
-  displayName: 'Copy files'
-  inputs:
-    sourceFolder: '$(env)' 
-    Contents: '**/*'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    cleanTargetFolder: false
+  - task: CopyFiles@2
+    displayName: "Copy files"
+    inputs:
+      sourceFolder: "$(env)"
+      Contents: "**/*"
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      cleanTargetFolder: false
 
-- task: ArchiveFiles@2
-  displayName: 'Archive files'
-  inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
-    includeRootFolder: false
-    archiveType: zip
-    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-    replaceExistingArchive: true
+  - task: ArchiveFiles@2
+    displayName: "Archive files"
+    inputs:
+      rootFolderOrFile: "$(Build.ArtifactStagingDirectory)"
+      includeRootFolder: false
+      archiveType: zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      replaceExistingArchive: true
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Build Artifacts'
-  inputs: 
-    pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish Build Artifacts"
+    inputs:
+      pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
 
-- task: AzureWebApp@1
-  displayName: 'Deploy to App Service'
-  inputs:
-    azureSubscription: '$(AZURE_SUBSCRIPTION)'
-    appName: '$(appServiceName)'
-    appType: 'webApp'
-    package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'
+  - task: AzureWebApp@1
+    displayName: "Deploy to App Service"
+    inputs:
+      azureSubscription: "$(AZURE_SUBSCRIPTION)"
+      appName: "$(appServiceName)"
+      appType: "webApp"
+      package: "$(System.ArtifactsDirectory)/$(Build.BuildId).zip"
