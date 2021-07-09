@@ -6,4 +6,3 @@ scode/
 dist/
 logs
 .eslintcache
-azure-pipelines.yml
