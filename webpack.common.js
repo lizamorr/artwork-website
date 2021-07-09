@@ -68,12 +68,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
       template: "./src/index.html",
-      favicon: "src/favicon.ico",
+      favicon: "./src/favicon.ico",
     }),
   ],
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     clean: true,
   },
 };
