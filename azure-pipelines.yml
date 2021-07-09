@@ -13,7 +13,6 @@ pool:
 variables:
   directory: artwork-website
   stage: production
-  serviceConnection: 692d4aeb-719e-4f83-8e8e-5c16ea3d9cd0
   appServiceName: lizamorrison
 
 - task: NodeTool@0
@@ -22,6 +21,7 @@ variables:
   displayName: 'Install Node.js'
 
 - task: DownloadSecureFile@1
+  name: env
   inputs:
     secureFile: '.env'
   displayName: 'Copy .env'
@@ -47,7 +47,7 @@ variables:
 - task: CopyFiles@2
   displayName: 'Copy files'
   inputs:
-    sourceFolder: '$(Agent.BuildDirectory)' 
+    sourceFolder: '$(env)' 
     Contents: '**/*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     cleanTargetFolder: false
@@ -69,7 +69,7 @@ variables:
 - task: AzureWebApp@1
   displayName: 'Deploy to App Service'
   inputs:
-    azureSubscription: '$(serviceConnection)'
+    azureSubscription: '$(AZURE_SUBSCRIPTION)'
     appName: '$(appServiceName)'
     appType: 'webApp'
     package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'
