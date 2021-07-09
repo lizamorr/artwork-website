@@ -51,6 +51,14 @@ module.exports = {
         test: /\.config$/,
         loader: "file-loader",
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+        ],
+      },
     ],
   },
   plugins: [

@@ -23,8 +23,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --mode development --config webpack.dev.js",
+    "build": "webpack --mode production --config webpack.prod.js",
     "clean": "rm -rf node_modules"
   },
   "eslintConfig": {
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.14.5",
     "@types/autoprefixer": "^10.2.0",
     "@types/cors": "^2.8.10",
