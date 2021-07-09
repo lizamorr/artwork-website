@@ -24,6 +24,7 @@ variables:
 - task: DownloadSecureFile@1
   inputs:
     secureFile: '.env'
+  displayName: 'Copy .env'
 
 - script: 
     npm install
