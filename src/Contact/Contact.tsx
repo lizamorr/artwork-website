@@ -21,11 +21,11 @@ const Contact: React.FC = () => {
   const submitEmail = async (e: any): Promise<void> => {
     setIsSendingEmail(true);
     e.preventDefault();
-    init(process.env.USER_ID ? process.env.USER_ID : '');
+    init(process?.env?.USER_ID ? process.env.USER_ID : '');
     return emailjs
       .sendForm(
-        process.env.SERVICE_ID ? process.env.SERVICE_ID : '',
-        process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
+        process?.env?.SERVICE_ID ? process.env.SERVICE_ID : '',
+        process?.env?.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
         e.target,
         process.env.USER_ID
       )
