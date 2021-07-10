@@ -2,6 +2,10 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+require("dotenv").config({
+  path: ".env.webpack",
+});
+const DotenvPlugin = require("webpack-dotenv-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -63,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new Dotenv({ systemvars: true }),
+    new DotenvPlugin({ path: ".env.webpack" }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
