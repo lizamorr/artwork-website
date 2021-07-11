@@ -21,24 +21,21 @@ const Contact: React.FC = () => {
   const submitEmail = async (e: any): Promise<void> => {
     setIsSendingEmail(true);
     e.preventDefault();
-    init(process?.env?.USER_ID ? process.env.USER_ID : '');
-    return emailjs
-      .sendForm(
-        process?.env?.SERVICE_ID ? process.env.SERVICE_ID : '',
-        process?.env?.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
+    try {
+      init(process.env.USER_ID ? process.env.USER_ID : '');
+      await emailjs.sendForm(
+        process.env.SERVICE_ID ? process.env.SERVICE_ID : '',
+        process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
         e.target,
         process.env.USER_ID
-      )
-      .then(() => {
-        resetForm();
-        setIsSendingEmail(false);
-      })
-      .catch(() => {
-        alert(
-          'Please try again. If the problem persists, please email me at lizammorrison@gmail.com instead.'
-        );
-        setIsSendingEmail(false);
-      });
+      );
+      resetForm();
+    } catch {
+      alert(
+        'Please try again. If the problem persists, please email me at lizammorrison@gmail.com instead.'
+      );
+    }
+    setIsSendingEmail(false);
   };
 
   const resetForm = (): void => {
