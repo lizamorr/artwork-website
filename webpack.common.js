@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 require("dotenv").config({
-  path: ".env.webpack",
+  path: "./env",
 });
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -66,7 +66,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new Dotenv({ path: ".env.webpack" }),
+    new Dotenv({ path: "./env" }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Liza Morrison Art",
