@@ -24,8 +24,8 @@ const Contact: React.FC = () => {
     try {
       init(process.env.USER_ID ? process.env.USER_ID : '');
       await emailjs.sendForm(
-        process.env.SERVICE_ID ? process.env.SERVICE_ID : '',
-        process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
+        'service_art',
+        'template_art',
         e.target,
         process.env.USER_ID
       );
