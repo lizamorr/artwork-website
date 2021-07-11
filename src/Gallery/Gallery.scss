@@ -30,11 +30,13 @@
       text-align: center;
       .slide {
         align-self: center;
+        display: flex;
       }
       .thumbs-wrapper {
         margin: 0;
         .thumbs {
           margin-top: 0;
+          padding: 0;
         }
       }
     }
@@ -44,11 +46,13 @@
     flex-direction: column;
     margin: 15px;
     transition: transform 500ms ease;
-    width: '100%';
+    width: 100%;
     height: auto;
     .photo-desc {
-      font-size: 2rem;
+      width: 100%;
+      height: auto;
       letter-spacing: 0.1rem;
+      line-height: 1;
       color: black;
       font-size: 1.3rem;
       font-family: 'Montserrat', regular;

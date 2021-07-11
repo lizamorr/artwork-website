@@ -99,7 +99,7 @@ const Gallery: React.FC = () => {
                   }}
                 />
                 <div
-                  style={{ width: imgGroup[0].maxWidth }}
+                  style={{ maxWidth: imgGroup[0].maxWidth }}
                   className="photo-desc"
                 >
                   {imgGroup[0].desc}
@@ -130,7 +130,7 @@ const Gallery: React.FC = () => {
                       id={photo.id}
                     />
                     <div
-                      style={{ width: photo.maxWidth }}
+                      style={{ maxWidth: photo.maxWidth }}
                       className="photo-desc"
                     >
                       {photo.desc}
