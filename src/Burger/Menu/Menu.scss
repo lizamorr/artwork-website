@@ -1,42 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
-.menu-gallery {
+.menu--white {
   background: white;
-  padding: 0 !important;
-  margin: 1rem 2rem 1rem 1rem;
-  padding-left: 6px !important;
-  padding-right: 6px !important;
-  border-radius: 5px;
 }
 .menu,
 .menu-gallery {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 16vh;
   text-align: right;
-  padding: 1rem 2rem 1rem 1rem;
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 5;
+  padding: 0 !important;
+  margin: 1rem 2rem 1rem 1rem;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  border-radius: 5px;
 
   div {
     padding: 0;
     transition: color 0.3s linear;
-
-    &:hover {
-      font-weight: bolder;
-      font-style: italic;
-    }
-
     a {
       letter-spacing: 0.1rem;
       color: black;
       text-decoration-line: none;
-      font-size: 1.3rem;
+      font-size: 100%;
       font-family: 'Montserrat', regular;
       font-variant: all-small-caps;
+      &:hover {
+        font-weight: bolder;
+        text-decoration-line: underline;
+      }
     }
   }
 }
