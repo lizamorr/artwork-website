@@ -7,6 +7,10 @@ import Footer from '../Footer';
 const Gallery: React.FC = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
+  const [isDrawingSelected, setIsDrawingSelected] = useState(false);
+  const [isPaintingSelected, setIsPaintingSelected] = useState(false);
+  const [isPrintsSelected, setIsPrintsSelected] = useState(false);
+  const [isMiscSelected, setIsMiscSelected] = useState(false);
 
   const scrollToTop = (): void => {
     document.body.scrollTop = 0;
@@ -39,46 +43,66 @@ const Gallery: React.FC = () => {
       <div className="gallery-grid">
         <div className="gallery-type">
           <span
-            onClick={() =>
+            className={isDrawingSelected ? 'gallery-type--underlined' : ''}
+            onClick={() => {
               setImageGroups(
                 imageGroups.filter((imgGroup) =>
                   imgGroup.find((img) => img.id.includes('drawing'))
                 )
-              )
-            }
+              );
+              setIsDrawingSelected(true);
+              setIsPaintingSelected(false);
+              setIsPrintsSelected(false);
+              setIsMiscSelected(false);
+            }}
           >
             Drawings
           </span>
           <span
-            onClick={() =>
+            className={isPaintingSelected ? 'gallery-type--underlined' : ''}
+            onClick={() => {
               setImageGroups(
                 imageGroups.filter((imgGroup) =>
                   imgGroup.find((img) => img.id.includes('painting'))
                 )
-              )
-            }
+              );
+              setIsDrawingSelected(false);
+              setIsPaintingSelected(true);
+              setIsPrintsSelected(false);
+              setIsMiscSelected(false);
+            }}
           >
             Paintings
           </span>
           <span
-            onClick={() =>
+            className={isPrintsSelected ? 'gallery-type--underlined' : ''}
+            onClick={() => {
               setImageGroups(
                 imageGroups.filter((imgGroup) =>
                   imgGroup.find((img) => img.id.includes('print'))
                 )
-              )
-            }
+              );
+              setIsDrawingSelected(false);
+              setIsPaintingSelected(false);
+              setIsPrintsSelected(true);
+              setIsMiscSelected(false);
+            }}
           >
             Prints
           </span>
           <span
-            onClick={() =>
+            className={isMiscSelected ? 'gallery-type--underlined' : ''}
+            onClick={() => {
               setImageGroups(
                 imageGroups.filter((imgGroup) =>
                   imgGroup.find((img) => img.id.includes('misc'))
                 )
-              )
-            }
+              );
+              setIsDrawingSelected(false);
+              setIsPaintingSelected(false);
+              setIsPrintsSelected(false);
+              setIsMiscSelected(true);
+            }}
           >
             Misc
           </span>
