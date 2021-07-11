@@ -1,32 +1,30 @@
-import { NavLink, HashRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Menu = () => {
   return (
-    <HashRouter>
-      <div
-        className={
-          window.location.href.includes('/gallery') ||
-          window.location.href.includes('/about') ||
-          window.location.href.includes('/contact')
-            ? 'menu-gallery'
-            : 'menu'
-        }
-      >
-        <div>
-          <NavLink to="/">Home</NavLink>
-        </div>
-        <div>
-          <NavLink to="/gallery">Gallery</NavLink>
-        </div>
-        <div>
-          <NavLink to="/contact">Contact</NavLink>
-        </div>
-        <div>
-          <NavLink to="/about">About</NavLink>
-        </div>
+    <div
+      className={
+        window.location.href.includes('/gallery') ||
+        window.location.href.includes('/about') ||
+        window.location.href.includes('/contact')
+          ? 'menu-gallery'
+          : 'menu'
+      }
+    >
+      <div>
+        <Link to="/">Home</Link>
       </div>
-    </HashRouter>
+      <div>
+        <Link to="/gallery">Gallery</Link>
+      </div>
+      <div>
+        <Link to="/contact">Contact</Link>
+      </div>
+      <div>
+        <Link to="/about">About</Link>
+      </div>
+    </div>
   );
 };
 export default Menu;

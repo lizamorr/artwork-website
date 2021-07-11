@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import About from './About';
 import Burger from './Burger';
 import Contact from './Contact';
@@ -11,14 +11,14 @@ import './favicon.ico';
 import './web.config';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
+  <BrowserRouter>
+    <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
-    </HashRouter>
+    </Switch>
     <Burger />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
