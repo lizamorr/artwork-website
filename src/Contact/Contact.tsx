@@ -33,15 +33,16 @@ const Contact: React.FC = () => {
         e.target,
         process.env.USER_ID
       );
+      setIsSendingEmail(false);
       setIsEmailSent(true);
       resetForm();
     } catch {
       alert(
         'Whoops, please try again. If the problem persists, email me at lizammorrison@gmail.com instead.'
       );
+      setIsSendingEmail(false);
     }
-    setIsEmailSent(false);
-    setIsSendingEmail(false);
+    setTimeout(() => setIsEmailSent(false), 1000);
   };
 
   const resetForm = (): void => {
@@ -61,8 +62,10 @@ const Contact: React.FC = () => {
         <div onLoad={() => setIsLoading(false)} className="contact-form">
           <form method="POST" onSubmit={submitEmail}>
             {isSendingEmail && <LoadingSpinner />}
-            {isEmailSent && <img src={Check} className="bi bi-check" />}
-            <fieldset className={isSendingEmail ? 'low-opacity' : ''}>
+            {isEmailSent && <img src={Check} className="check" />}
+            <fieldset
+              className={isSendingEmail || isEmailSent ? 'low-opacity' : ''}
+            >
               <input
                 placeholder="Name"
                 onChange={handleStateChange}

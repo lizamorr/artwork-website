@@ -5,6 +5,17 @@
     align-items: center;
     margin-top: 10vh;
     padding-bottom: 2vh;
+    .spinner {
+      position: absolute;
+      margin-top: 0;
+    }
+    .check {
+      width: 5em;
+      height: 5em;
+      position: absolute;
+      margin-top: 0;
+      z-index: 1;
+    }
     .low-opacity {
       opacity: 0.5;
     }
@@ -24,7 +35,7 @@
         margin-bottom: 10px;
         font-family: 'Montserrat', regular;
         letter-spacing: 0.1rem;
-        color: black;
+        font-size: larger;
         background: white;
         padding: 8px;
         border-radius: 5px;
@@ -52,7 +63,7 @@
         border-bottom: groove;
         font-family: 'Montserrat', regular;
         letter-spacing: 0.1rem;
-        color: black;
+        font-size: larger;
         background: white;
         padding: 8px;
         border-radius: 5px;
@@ -69,10 +80,9 @@
         font-family: 'Montserrat', regular;
         font-weight: bolder;
         letter-spacing: 0.1rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-variant: all-small-caps;
         cursor: pointer;
-        color: black;
         text-align: center;
         -webkit-text-stroke: thin;
         transition: all 0.2344s;
@@ -85,6 +95,7 @@
           position: relative;
           transition: 0.5s;
           top: -4px;
+          background-color: white;
         }
         span:after {
           content: '\00bb';
