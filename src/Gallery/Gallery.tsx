@@ -13,9 +13,7 @@ const Gallery: React.FC = () => {
   const [isPrintsSelected, setIsPrintsSelected] = useState(false);
   const [isMiscSelected, setIsMiscSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const galleryLoaded = () => {
-    setIsLoading(false);
-  };
+  const [counter, setCounter] = useState(0);
 
   const scrollToTop = (): void => {
     document.body.scrollTop = 0;
@@ -33,6 +31,12 @@ const Gallery: React.FC = () => {
     )
       showScrollToTop();
   };
+  const onImgLoaded = (): void => {
+    setCounter(counter + 1);
+    if (counter > 120) {
+      setIsLoading(false);
+    }
+  };
 
   const renderImages = (): JSX.Element => {
     return (
@@ -41,7 +45,7 @@ const Gallery: React.FC = () => {
           <LoadingSpinner />
         </div>
         <div style={{ display: isLoading ? 'none' : 'block' }}>
-          <div onLoad={galleryLoaded} className="gallery-images">
+          <div className="gallery-images">
             {imgGroups.map((imgGroup, index) => {
               return imgGroup.length === 1 ? (
                 <div className="photo-item" key={index}>
@@ -55,6 +59,7 @@ const Gallery: React.FC = () => {
                       width: '100%',
                       height: 'auto',
                     }}
+                    onLoad={() => onImgLoaded()}
                   />
                   <div
                     style={{ maxWidth: imgGroup[0].maxWidth }}
@@ -86,6 +91,7 @@ const Gallery: React.FC = () => {
                         alt={photo.alt}
                         key={index}
                         id={photo.id}
+                        onLoad={() => onImgLoaded()}
                       />
                       <div
                         style={{ maxWidth: photo.maxWidth }}

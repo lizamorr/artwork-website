@@ -12,9 +12,6 @@ const Contact: React.FC = () => {
   });
   const [isSendingEmail, setIsSendingEmail] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const formLoaded = () => {
-    setIsLoading(false);
-  };
 
   const handleStateChange = (e: any): void => {
     setMailerState((prevState) => ({
@@ -57,7 +54,7 @@ const Contact: React.FC = () => {
         <LoadingSpinner />
       </div>
       <div style={{ display: isLoading ? 'none' : 'block' }}>
-        <div onLoad={formLoaded} className="contact-form">
+        <div onLoad={() => setIsLoading(false)} className="contact-form">
           <form method="POST" onSubmit={submitEmail}>
             {isSendingEmail && <LoadingSpinner />}
             <fieldset className={isSendingEmail ? 'low-opacity' : ''}>
