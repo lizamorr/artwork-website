@@ -9,7 +9,6 @@ import Home from './Home';
 import './index.scss';
 import './favicon.ico';
 import './web.config';
-import { NOTFOUND } from 'dns';
 
 ReactDOM.render(
   <BrowserRouter>
