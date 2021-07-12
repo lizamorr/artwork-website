@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import About from './About';
 import Burger from './Burger';
 import Contact from './Contact';
@@ -17,7 +17,7 @@ ReactDOM.render(
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
-      <Route exact path="*" component={Home} />
+      <Route path="*" component={Home} />
     </Switch>
     <Burger />
   </BrowserRouter>,
