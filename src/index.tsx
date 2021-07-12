@@ -11,7 +11,7 @@ import './favicon.ico';
 import './web.config';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/gallery" component={Gallery} />

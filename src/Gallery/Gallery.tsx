@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
   const [isDrawingSelected, setIsDrawingSelected] = useState(false);
   const [isPaintingSelected, setIsPaintingSelected] = useState(false);
-  const [isPrintsSelected, setIsPrintsSelected] = useState(false);
+  const [isPrintSelected, setIsPrintSelected] = useState(false);
   const [isMiscSelected, setIsMiscSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [counter, setCounter] = useState(0);
@@ -33,7 +33,7 @@ const Gallery: React.FC = () => {
   };
   const onImgLoaded = (): void => {
     setCounter(counter + 1);
-    if (counter > 120) {
+    if (counter > 100) {
       setIsLoading(false);
     }
   };
@@ -133,7 +133,7 @@ const Gallery: React.FC = () => {
               );
               setIsDrawingSelected(true);
               setIsPaintingSelected(false);
-              setIsPrintsSelected(false);
+              setIsPrintSelected(false);
               setIsMiscSelected(false);
             }}
           >
@@ -149,14 +149,14 @@ const Gallery: React.FC = () => {
               );
               setIsDrawingSelected(false);
               setIsPaintingSelected(true);
-              setIsPrintsSelected(false);
+              setIsPrintSelected(false);
               setIsMiscSelected(false);
             }}
           >
             Paintings
           </span>
           <span
-            className={isPrintsSelected ? 'gallery-type--underlined' : ''}
+            className={isPrintSelected ? 'gallery-type--underlined' : ''}
             onClick={() => {
               setImageGroups(
                 imageGroups.filter((imgGroup) =>
@@ -165,7 +165,7 @@ const Gallery: React.FC = () => {
               );
               setIsDrawingSelected(false);
               setIsPaintingSelected(false);
-              setIsPrintsSelected(true);
+              setIsPrintSelected(true);
               setIsMiscSelected(false);
             }}
           >
@@ -181,7 +181,7 @@ const Gallery: React.FC = () => {
               );
               setIsDrawingSelected(false);
               setIsPaintingSelected(false);
-              setIsPrintsSelected(false);
+              setIsPrintSelected(false);
               setIsMiscSelected(true);
             }}
           >
