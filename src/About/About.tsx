@@ -17,10 +17,17 @@ const About: React.FC = () => {
         <div className="about-container">
           <div className="img-follow">
             <img src={parisPhoto} onLoad={imgLoaded} alt="Me in Paris" />
-            <div className="about-follow">
-              Follow:{' '}
-              <a href="https://www.instagram.com/lizamorrisonart/">
-                @Lizamorrisonart
+            <div className="instagram-container">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/lizamorrisonart/"
+              >
+                <img
+                  alt="Instagram"
+                  src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
+                  className="instagram"
+                />
               </a>
             </div>
           </div>
@@ -34,9 +41,9 @@ const About: React.FC = () => {
               my second home. Aside from being a scientist, web developer, and
               software engineer, I'm an Artist. My specialities include:
               graphite, charcoal, pen, oil, acrylic, watercolor, and colored
-              pencils. I currently reside in Belgium with my partner, Julie, and
+              pencils. I currently reside in Belgium with my partner Julie and
               our three pets (Snickers, Tipper, and Pancake). Thank you for
-              checking out my work.
+              checking out my work!
             </div>
           </div>
         </div>

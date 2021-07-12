@@ -72,11 +72,14 @@ const Gallery: React.FC = () => {
                 <Carousel
                   className="img-carousel"
                   showStatus={false}
-                  showIndicators={false}
+                  showIndicators={true}
                   showArrows={false}
-                  swipeable={false}
+                  swipeable={true}
                   axis="horizontal"
                   key={index}
+                  centerMode={false}
+                  emulateTouch={true}
+                  showThumbs={false}
                 >
                   {imgGroup.map((photo, index) => (
                     <div

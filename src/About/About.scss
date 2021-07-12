@@ -6,7 +6,9 @@
   .img-follow {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
   }
   .about-text {
     min-width: 237px;
@@ -21,7 +23,7 @@
       font-variant: all-small-caps;
     }
     .about-subtitle {
-      color: gray;
+      color: darkslategray;
       margin-bottom: 24px;
       font-size: 1.8rem;
       line-height: 1;
@@ -41,18 +43,15 @@
     max-height: 500px;
     width: auto;
     height: auto;
-    margin-right: 30px;
   }
-  .about-follow {
-    margin-top: 15px;
-    letter-spacing: 0.1rem;
-    font-size: 1.3rem;
-    font-family: 'Montserrat', regular;
-    font-weight: bolder;
-    font-variant: all-small-caps;
-    a {
-      color: black;
-      text-decoration: none;
+  .instagram-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    .instagram {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
     }
   }
 }
