@@ -17,21 +17,25 @@
 .gallery-grid {
   margin-top: 48px;
   .gallery-images {
-    width: 100%;
-    display: inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: fit-content;
+    flex-flow: wrap;
+    justify-content: center;
   }
   .img-carousel {
     display: inline-flex;
     flex-direction: column;
     width: 100%;
-    max-width: fit-content;
+    max-width: 75%;
     .carousel {
       text-align: center;
       .slide {
         align-self: center;
         display: flex;
-        justify-content: center;
+        align-items: center;
       }
       .thumbs-wrapper {
         margin: 0;
@@ -50,6 +54,8 @@
     transition: transform 500ms ease;
     width: 100%;
     height: auto;
+    max-width: fit-content;
+    justify-content: center;
     .photo-desc {
       width: 100%;
       height: auto;

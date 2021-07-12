@@ -64,7 +64,6 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: "./",
-    hot: true,
   },
   plugins: [
     new MiniCssExtractPlugin(),

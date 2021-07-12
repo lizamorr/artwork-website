@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple');
 
 .home-screen {
+  overflow: hidden;
   .asheville-photo {
     /* fill background */
     min-height: 100%;
@@ -22,100 +23,204 @@
     display: flex;
     text-align: center;
     margin-right: 15px;
-
+    float: right;
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+    font-size: -webkit-xxx-large;
+    margin-top: 40vh;
+    padding-right: 16vw;
+    padding-left: 42%;
     // fade in
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation-duration: 1s;
   }
 
-  @media only screen and (max-width: 405px) {
-    .asheville-photo {
-      left: -87%;
-    }
+  @media only screen and (max-width: 330px) {
     .title {
-      margin-top: 30vh;
-      margin-left: 47vw;
-      font-size: 30px;
+      font-size: xx-large;
+      margin-top: 33vh;
+      padding-right: 10vw;
+    }
+    .asheville-photo {
+      left: -100%;
     }
   }
-  @media only screen and (max-width: 420px) and (min-width: 406px) {
-    .asheville-photo {
-      left: -65%;
-    }
+  @media only screen and (max-width: 352px) and (min-width: 331px) {
     .title {
-      margin-top: 30vh;
-      margin-left: 30vw;
-      font-size: 40px;
+      font-size: xx-large;
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+    .asheville-photo {
+      left: -80%;
     }
   }
-  @media only screen and (max-width: 450px) and (min-width: 421px) {
-    .asheville-photo {
-      left: -58%;
-    }
+  @media only screen and (max-width: 362px) and (min-width: 353px) {
     .title {
-      margin-top: 30vh;
-      margin-left: 30vw;
-      font-size: 40px;
+      font-size: xx-large;
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+    .asheville-photo {
+      left: -76%;
     }
   }
-  @media only screen and (max-width: 500px) and (min-width: 451px) {
-    .asheville-photo {
-      left: -40%;
-    }
+  @media only screen and (max-width: 380px) and (min-width: 363px) {
     .title {
-      margin-top: 30vh;
-      margin-left: 48%;
-      font-size: 42px;
+      margin-top: 34vh;
+      font-size: xx-large;
+      padding-right: 10vw;
+    }
+    .asheville-photo {
+      left: -68%;
     }
   }
-  @media only screen and (max-width: 530px) and (min-width: 501px) {
-    .asheville-photo {
-      left: -30%;
-    }
+  @media only screen and (max-width: 430px) and (min-width: 381px) {
     .title {
-      margin-top: 30vh;
-      margin-left: 48%;
-      font-size: 48px;
+      font-size: xx-large;
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+    .asheville-photo {
+      left: -62%;
     }
   }
-  @media only screen and (max-width: 630px) and (min-width: 531px) {
+  @media only screen and (max-width: 445px) and (min-width: 431px) {
     .asheville-photo {
-      left: -25%;
+      left: -62%;
     }
     .title {
-      margin-top: 30vh;
-      margin-left: 48%;
-      font-size: 48px;
+      margin-top: 34vh;
+      padding-right: 10vw;
     }
   }
-  @media only screen and (max-width: 770px) and (min-width: 631px) {
+  @media only screen and (max-width: 478px) and (min-width: 446px) {
+    .asheville-photo {
+      left: -56%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 505px) and (min-width: 479px) {
+    .asheville-photo {
+      left: -46%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 530px) and (min-width: 506px) {
+    .asheville-photo {
+      left: -38%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 560px) and (min-width: 531px) {
+    .asheville-photo {
+      left: -32%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 590px) and (min-width: 561px) {
+    .asheville-photo {
+      left: -28%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 610px) and (min-width: 591px) {
+    .asheville-photo {
+      left: -24%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 650px) and (min-width: 611px) {
+    .asheville-photo {
+      left: -20%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 680px) and (min-width: 651px) {
+    .asheville-photo {
+      left: -16%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 780px) and (min-width: 681px) {
+    .asheville-photo {
+      left: -12%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 790px) and (min-width: 781px) {
     .asheville-photo {
       left: -10%;
     }
     .title {
-      margin-top: 30vh;
-      margin-left: 48%;
-      font-size: 48px;
+      margin-top: 34vh;
+      padding-right: 10vw;
     }
   }
-  @media only screen and (max-width: 815px) and (min-width: 771px) {
+  @media only screen and (max-width: 820px) and (min-width: 791px) {
+    .asheville-photo {
+      left: -8%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 850px) and (min-width: 821px) {
+    .asheville-photo {
+      left: -6%;
+    }
+    .title {
+      margin-top: 34vh;
+      padding-right: 10vw;
+    }
+  }
+  @media only screen and (max-width: 920px) and (min-width: 851px) {
     .asheville-photo {
       left: -4%;
     }
     .title {
-      margin-top: 30vh;
-      margin-left: 48%;
-      font-size: 48px;
+      margin-top: 34vh;
+      padding-right: 10vw;
     }
   }
-  @media only screen and (min-width: 816px) {
+  @media only screen and (max-width: 1023px) and (min-width: 921px) {
+    .asheville-photo {
+      left: -4%;
+    }
     .title {
       margin-top: 36vh;
-      margin-left: 48%;
-      font-size: 48px;
+      padding-right: 10vw;
     }
   }
 
