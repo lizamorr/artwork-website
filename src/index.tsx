@@ -9,6 +9,7 @@ import Home from './Home';
 import './index.scss';
 import './favicon.ico';
 import './web.config';
+import { NOTFOUND } from 'dns';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,10 +18,7 @@ ReactDOM.render(
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
-      <Redirect exact from="/" to="/" />
-      <Redirect exact from="/gallery" to="/gallery" />
-      <Redirect exact from="/contact" to="/contact" />
-      <Redirect exact from="/about" to="/about" />
+      <Route exact path="*" component={Home} />
     </Switch>
     <Burger />
   </BrowserRouter>,
