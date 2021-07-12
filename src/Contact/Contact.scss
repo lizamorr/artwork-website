@@ -27,12 +27,13 @@
         border-bottom: groove;
         margin-bottom: 10px;
         font-family: 'Montserrat', regular;
-        font-weight: bolder;
         letter-spacing: 0.1rem;
         color: black;
         background: white;
         padding: 8px;
         border-radius: 5px;
+        font-variant: all-small-caps;
+        font-weight: bold;
       }
       ::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -54,13 +55,14 @@
         border: none;
         border-bottom: groove;
         font-family: 'Montserrat', regular;
-        font-weight: bolder;
         letter-spacing: 0.1rem;
         color: black;
         background: white;
         padding: 8px;
         border-radius: 5px;
         margin-bottom: 10px;
+        font-variant: all-small-caps;
+        font-weight: bold;
       }
       .send-btn--none {
         opacity: 0;

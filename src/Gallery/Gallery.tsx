@@ -3,6 +3,7 @@ import { imageGroups } from './GalleryImages';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Footer from '../Footer';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const Gallery: React.FC = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
@@ -11,6 +12,10 @@ const Gallery: React.FC = () => {
   const [isPaintingSelected, setIsPaintingSelected] = useState(false);
   const [isPrintsSelected, setIsPrintsSelected] = useState(false);
   const [isMiscSelected, setIsMiscSelected] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const galleryLoaded = () => {
+    setIsLoading(false);
+  };
 
   const scrollToTop = (): void => {
     document.body.scrollTop = 0;
@@ -31,64 +36,71 @@ const Gallery: React.FC = () => {
 
   const renderImages = (): JSX.Element => {
     return (
-      <div className="gallery-images">
-        {imgGroups.map((imgGroup, index) => {
-          return imgGroup.length === 1 ? (
-            <div className="photo-item" key={index}>
-              <img
-                src={imgGroup[0].src}
-                alt={imgGroup[0].alt}
-                key={index}
-                id={imgGroup[0].id}
-                style={{
-                  maxWidth: imgGroup[0].maxWidth,
-                  width: '100%',
-                  height: 'auto',
-                }}
-              />
-              <div
-                style={{ maxWidth: imgGroup[0].maxWidth }}
-                className="photo-desc"
-              >
-                {imgGroup[0].desc}
-              </div>
-            </div>
-          ) : (
-            <Carousel
-              className="img-carousel"
-              showStatus={false}
-              showIndicators={false}
-              showArrows={false}
-              swipeable={false}
-              axis="horizontal"
-              key={index}
-            >
-              {imgGroup.map((photo, index) => (
-                <div
-                  className="photo-item"
-                  style={{
-                    maxWidth: photo.maxWidth,
-                  }}
-                  key={index}
-                >
+      <>
+        <div style={{ display: isLoading ? 'block' : 'none' }}>
+          <LoadingSpinner />
+        </div>
+        <div style={{ display: isLoading ? 'none' : 'block' }}>
+          <div onLoad={galleryLoaded} className="gallery-images">
+            {imgGroups.map((imgGroup, index) => {
+              return imgGroup.length === 1 ? (
+                <div className="photo-item" key={index}>
                   <img
-                    src={photo.src}
-                    alt={photo.alt}
+                    src={imgGroup[0].src}
+                    alt={imgGroup[0].alt}
                     key={index}
-                    id={photo.id}
+                    id={imgGroup[0].id}
+                    style={{
+                      maxWidth: imgGroup[0].maxWidth,
+                      width: '100%',
+                      height: 'auto',
+                    }}
                   />
                   <div
-                    style={{ maxWidth: photo.maxWidth }}
+                    style={{ maxWidth: imgGroup[0].maxWidth }}
                     className="photo-desc"
                   >
-                    {photo.desc}
+                    {imgGroup[0].desc}
                   </div>
                 </div>
-              ))}
-            </Carousel>
-          );
-        })}
-      </div>
+              ) : (
+                <Carousel
+                  className="img-carousel"
+                  showStatus={false}
+                  showIndicators={false}
+                  showArrows={false}
+                  swipeable={false}
+                  axis="horizontal"
+                  key={index}
+                >
+                  {imgGroup.map((photo, index) => (
+                    <div
+                      className="photo-item"
+                      style={{
+                        maxWidth: photo.maxWidth,
+                      }}
+                      key={index}
+                    >
+                      <img
+                        src={photo.src}
+                        alt={photo.alt}
+                        key={index}
+                        id={photo.id}
+                      />
+                      <div
+                        style={{ maxWidth: photo.maxWidth }}
+                        className="photo-desc"
+                      >
+                        {photo.desc}
+                      </div>
+                    </div>
+                  ))}
+                </Carousel>
+              );
+            })}
+          </div>
+        </div>
+      </>
     );
   };
 
