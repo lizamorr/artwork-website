@@ -26,6 +26,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
+      - name: create env file
+        run: |
+          touch .env
+          echo USER_ID=${{ secrets.USER_ID }} >> .env
       - name: npm install, build, and test
         run: |
           npm install
