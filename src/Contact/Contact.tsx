@@ -3,6 +3,7 @@ import { useState } from 'react';
 import emailjs, { init } from 'emailjs-com';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import Check from './check.svg';
 
 const Contact: React.FC = () => {
   const [mailerState, setMailerState] = useState({
@@ -12,6 +13,7 @@ const Contact: React.FC = () => {
   });
   const [isSendingEmail, setIsSendingEmail] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isEmailSent, setIsEmailSent] = useState(false);
 
   const handleStateChange = (e: any): void => {
     setMailerState((prevState) => ({
@@ -31,12 +33,14 @@ const Contact: React.FC = () => {
         e.target,
         process.env.USER_ID
       );
+      setIsEmailSent(true);
       resetForm();
     } catch {
       alert(
-        'Please try again. If the problem persists, please email me at lizammorrison@gmail.com instead.'
+        'Whoops, please try again. If the problem persists, email me at lizammorrison@gmail.com instead.'
       );
     }
+    setIsEmailSent(false);
     setIsSendingEmail(false);
   };
 
@@ -57,6 +61,7 @@ const Contact: React.FC = () => {
         <div onLoad={() => setIsLoading(false)} className="contact-form">
           <form method="POST" onSubmit={submitEmail}>
             {isSendingEmail && <LoadingSpinner />}
+            {isEmailSent && <img src={Check} className="bi bi-check" />}
             <fieldset className={isSendingEmail ? 'low-opacity' : ''}>
               <input
                 placeholder="Name"

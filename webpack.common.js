@@ -39,7 +39,7 @@ module.exports = {
         include: [path.resolve(__dirname, "../"), /node_modules/],
       },
       {
-        test: /\.(png|jpeg|jpg|gif|jp2|webp|ico)$/,
+        test: /\.(png|jpeg|jpg|gif|jp2|webp|ico|svg)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
