@@ -33,7 +33,7 @@ const Gallery: React.FC = () => {
   };
   const onImgLoaded = (): void => {
     setCounter(counter + 1);
-    if (counter > 100) {
+    if (counter > 50) {
       setIsLoading(false);
     }
   };
