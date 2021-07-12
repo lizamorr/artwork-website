@@ -17,10 +17,10 @@ ReactDOM.render(
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
-      <Redirect exact from="/reload" to="/" />
-      <Redirect exact from="/gallery/reload" to="/gallery" />
-      <Redirect exact from="/contact/reload" to="/contact" />
-      <Redirect exact from="/about/reload" to="/about" />
+      <Redirect exact from="/" to="/" />
+      <Redirect exact from="/gallery" to="/gallery" />
+      <Redirect exact from="/contact" to="/contact" />
+      <Redirect exact from="/about" to="/about" />
     </Switch>
     <Burger />
   </BrowserRouter>,
