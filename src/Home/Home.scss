@@ -169,28 +169,17 @@
     }
     .title {
       margin-top: 32vh;
-      padding-right: 0vw;
-      padding-left: 40%;
+      padding-right: 1vw;
+      padding-left: 44%;
     }
   }
-  @media only screen and (max-width: 730px) and (min-width: 700px) {
+  @media only screen and (max-width: 780px) and (min-width: 700px) {
     .asheville-photo {
       left: -16%;
     }
     .title {
-      margin-top: 32vh;
-      padding-right: 0vw;
-      padding-left: 42%;
-    }
-  }
-  @media only screen and (max-width: 780px) and (min-width: 731px) {
-    .asheville-photo {
-      left: -16%;
-    }
-    .title {
-      margin-top: 32vh;
-      padding-right: 0vw;
-      padding-left: 42%;
+      margin-top: 34vh;
+      padding-right: 8vw;
     }
   }
   @media only screen and (max-width: 790px) and (min-width: 781px) {
