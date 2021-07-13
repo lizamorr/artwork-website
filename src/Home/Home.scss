@@ -38,17 +38,17 @@
     animation-duration: 1s;
   }
 
-  @media only screen and (max-width: 330px) {
+  @media only screen and (max-width: 334px) {
     .title {
       font-size: xx-large;
       margin-top: 33vh;
       padding-right: 4vw;
     }
     .asheville-photo {
-      left: -89%;
+      left: -95%;
     }
   }
-  @media only screen and (max-width: 352px) and (min-width: 331px) {
+  @media only screen and (max-width: 352px) and (min-width: 335px) {
     .title {
       font-size: xx-large;
       margin-top: 32vh;

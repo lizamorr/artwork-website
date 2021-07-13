@@ -38,7 +38,8 @@
       }
       .control-dots {
         z-index: 1;
-        bottom: 42px;
+        margin: 0;
+        bottom: 17%;
         .dot {
           width: 10px;
           height: 10px;
@@ -100,6 +101,26 @@
         font-weight: bolder;
         cursor: pointer;
       }
+    }
+  }
+  @media only screen and (max-width: 329px) {
+    .control-dots {
+      bottom: 30% !important;
+    }
+  }
+  @media only screen and (max-width: 384px) and (min-width: 330px) {
+    .control-dots {
+      bottom: 28% !important;
+    }
+  }
+  @media only screen and (max-width: 571px) and (min-width: 385px) {
+    .control-dots {
+      bottom: 24% !important;
+    }
+  }
+  @media only screen and (max-width: 655px) and (min-width: 570px) {
+    .control-dots {
+      bottom: 20% !important;
     }
   }
 }

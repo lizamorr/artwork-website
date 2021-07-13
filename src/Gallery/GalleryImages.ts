@@ -129,7 +129,6 @@ import carlyStevePic from './Images/carly-steve-pic.jpg';
 import carlySteve from './Images/carly-steve.jpg';
 import puzzle from './Images/puzzle.jpg';
 import puzzleBox from './Images/puzzle-box.jpg';
-import puzzleBoxFront from './Images/puzzle-box-front.jpg';
 import derekTurtle from './Images/derek-turtle.jpg';
 import momCar from './Images/mom-car.jpg';
 import grogoOrnament from './Images/grogo-ornament.jpg';
@@ -460,7 +459,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: puzzle,
-      maxWidth: 500,
+      maxWidth: 600,
       id: 'misc',
       alt: 'Handmade puzzle',
       desc: 'Custom puzzle, 1000 pieces, Dec 2018',
@@ -468,13 +467,6 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: puzzleBox,
       maxWidth: 245,
-      id: 'misc',
-      alt: 'Handmade puzzle',
-      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
-    },
-    {
-      src: puzzleBoxFront,
-      maxWidth: 400,
       id: 'misc',
       alt: 'Handmade puzzle',
       desc: 'Custom puzzle, 1000 pieces, Dec 2018',
@@ -533,21 +525,21 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       src: underwater,
-      maxWidth: 550,
+      maxWidth: 600,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
     },
     {
       src: underwater2,
-      maxWidth: 500,
+      maxWidth: 600,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
     },
     {
       src: derekTurtle,
-      maxWidth: 315,
+      maxWidth: 400,
       id: 'painting',
       alt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
