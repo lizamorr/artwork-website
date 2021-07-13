@@ -1,13 +1,14 @@
 import React from 'react';
 import Footer from '../Footer';
 import asheville from './Liza-Asheville.jpg';
+import title from './liza-morrison-art.png';
 
 const Home: React.FC = () => {
   return (
     <>
       <div className="home-screen">
         <img src={asheville} className="asheville-photo" alt="asheville" />
-        <div className="title">Liza Morrison Art</div>
+        <img src={title} className="title" alt="Liza Morrison Art" />
       </div>
       <Footer isHome={true} />
     </>

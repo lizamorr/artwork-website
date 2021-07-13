@@ -10,38 +10,24 @@
     margin-bottom: 20px;
     margin-right: 20px;
   }
-  .about-text {
-    min-width: 237px;
-    max-width: 500px;
+  .about-paragraph {
     flex: 2;
-    .about-title,
-    .about-subtitle {
-      letter-spacing: 0.1rem;
-      font-size: 2.3rem;
-      font-family: 'Montserrat', regular;
-      font-weight: bolder;
-      font-variant: all-small-caps;
-    }
-    .about-subtitle {
-      color: darkslategray;
-      margin-bottom: 24px;
-      font-size: 1.8rem;
-      line-height: 1;
-    }
-    letter-spacing: 0.08rem;
-    color: black;
-    font-family: 'Montserrat', regular;
-    .about-paragraph {
-      line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 450px;
+      min-width: 237px;
+      height: auto;
+      width: 100%;
     }
   }
-  img {
+  .paris-photo {
     flex: 1;
     border-radius: 10px;
     display: block;
     max-width: 350px;
     max-height: 500px;
-    width: auto;
+    width: 100%;
     height: auto;
   }
   .instagram-container {
@@ -53,12 +39,5 @@
       height: 25px;
       object-fit: cover;
     }
-  }
-}
-@media only screen and (max-width: 405px) {
-  img {
-    max-width: 300px;
-    max-height: 450px;
-    margin-right: 0px;
   }
 }
