@@ -132,6 +132,8 @@ import puzzleBox from './Images/puzzle-box.jpg';
 import derekTurtle from './Images/derek-turtle.jpg';
 import momCar from './Images/mom-car.jpg';
 import grogoOrnament from './Images/grogo-ornament.jpg';
+import snickers from './Images/snickers.jpg';
+import tipper from './Images/tipper.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -142,6 +144,22 @@ interface IGalleryImage {
 }
 
 export const imageGroups: IGalleryImage[][] = [
+  [
+    {
+      src: snickers,
+      maxWidth: 400,
+      id: 'misc',
+      alt: 'Digital drawing of Archduke Snickers',
+      desc: 'Procreate drawing, July 2021',
+    },
+    {
+      src: tipper,
+      maxWidth: 400,
+      id: 'misc',
+      alt: 'Digital drawing of Commander Tipper',
+      desc: 'Procreate drawing, July 2021',
+    },
+  ],
   [
     {
       src: couple,
