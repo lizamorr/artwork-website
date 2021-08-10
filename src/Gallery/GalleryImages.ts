@@ -743,7 +743,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: parentsPrint,
       maxWidth: 400,
-      id: 'print',
+      id: 'misc',
       alt: 'Print of parents',
       desc: 'Screenprint with drawing fluid, 11x14", 2016',
     },
@@ -779,7 +779,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: mountainEtching,
       maxWidth: 400,
-      id: 'print',
+      id: 'misc',
       desc: 'Copper plate print, 4x6", 2016',
       alt: 'Etching of a mountain framed',
     },
@@ -788,7 +788,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: lbiPrint,
       maxWidth: 400,
-      id: 'print',
+      id: 'misc',
       alt: 'Screenprint of LBI',
       desc: 'Screenprint, 11x14", 2016',
     },
@@ -797,7 +797,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: pipelineEtch,
       maxWidth: 400,
-      id: 'print',
+      id: 'misc',
       alt: 'Print of me on the pipeline',
       desc: 'Copper plate print with ink, 5x7" on 9x11" paper, 2016',
     },
@@ -806,7 +806,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: donutPrint,
       maxWidth: 300,
-      id: 'prints',
+      id: 'misc',
       alt: 'Donut print',
       desc: 'Screenprint, 11x14", 2016',
     },
@@ -833,7 +833,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       src: richmondPrint,
       maxWidth: 400,
-      id: 'print',
+      id: 'misc',
       alt: 'Screenprint of Richmond',
       desc: 'Screenprint, 11x14", 2016',
     },
