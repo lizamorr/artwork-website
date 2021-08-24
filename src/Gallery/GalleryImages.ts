@@ -80,7 +80,6 @@ import babyPortrait from './Images/baby-portrait.jpg';
 import kanyeFrame from './Images/kanye-frame.jpg';
 import steveFrame from './Images/steve-frame.jpg';
 import trideltaPaddle from './Images/tridelta-paddle.jpg';
-import hsMural from './Images/hs-mural.jpg';
 import picassoPortrait from './Images/picasso-portrait.jpg';
 import llama from './Images/llama.jpg';
 import converses from './Images/converses.jpg';
@@ -134,6 +133,11 @@ import momCar from './Images/mom-car.jpg';
 import grogoOrnament from './Images/grogo-ornament.jpg';
 import snickers from './Images/snickers.jpg';
 import tipper from './Images/tipper.jpg';
+import morrisons from './Images/morrisons.jpg';
+import antwerpBlack from './Images/antwerp-black.png';
+import antwerpDark from './Images/antwerp-dark.png';
+import antwerpGreen from './Images/antwerp-green.png';
+import antwerpMulti from './Images/antwerp-multi.png';
 
 interface IGalleryImage {
   src: string;
@@ -146,18 +150,57 @@ interface IGalleryImage {
 export const imageGroups: IGalleryImage[][] = [
   [
     {
+      src: morrisons,
+      maxWidth: 600,
+      id: 'drawing',
+      alt: 'Digital drawing of family',
+      desc: 'Digital drawing, Aug 2021',
+    },
+  ],
+  [
+    {
+      src: antwerpMulti,
+      maxWidth: 800,
+      id: 'drawing',
+      alt: 'Digital drawing of Antwerp',
+      desc: 'Digital drawing, July 2021',
+    },
+    {
+      src: antwerpBlack,
+      maxWidth: 800,
+      id: 'drawing',
+      alt: 'Digital drawing of Antwerp',
+      desc: 'Digital drawing, July 2021',
+    },
+    {
+      src: antwerpGreen,
+      maxWidth: 800,
+      id: 'drawing',
+      alt: 'Digital drawing of Antwerp',
+      desc: 'Digital drawing, July 2021',
+    },
+    {
+      src: antwerpDark,
+      maxWidth: 800,
+      id: 'drawing',
+      alt: 'Digital drawing of Antwerp',
+      desc: 'Digital drawing, July 2021',
+    },
+  ],
+  [
+    {
       src: snickers,
       maxWidth: 400,
-      id: 'misc',
+      id: 'drawing',
       alt: 'Digital drawing of Archduke Snickers',
-      desc: 'Procreate drawing, July 2021',
+      desc: 'Digital drawing, July 2021',
     },
     {
       src: tipper,
       maxWidth: 400,
-      id: 'misc',
+      id: 'drawing',
       alt: 'Digital drawing of Commander Tipper',
-      desc: 'Procreate drawing, July 2021',
+      desc: 'Digital drawing, July 2021',
     },
   ],
   [
@@ -1293,15 +1336,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       alt: 'Tridelta paddle',
       desc: 'Acrylic, 2015',
-    },
-  ],
-  [
-    {
-      src: hsMural,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Highschool mural',
-      desc: 'Collaborative studio art mural, acrylic on wood panels, June 2013',
     },
   ],
 ];
