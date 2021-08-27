@@ -74,7 +74,6 @@ import steveFrame from './Images/steve-frame.jpg';
 import picassoPortrait from './Images/picasso-portrait.jpg';
 import llama from './Images/llama.jpg';
 import converses from './Images/converses.jpg';
-import theOffice from './Images/the-office.jpg';
 import ladyDog from './Images/lady-dog.jpg';
 import smallConverse from './Images/small-converse.jpg';
 import pot from './Images/pot.jpg';
@@ -117,7 +116,6 @@ import carlySteve from './Images/carly-steve.jpg';
 import puzzle from './Images/puzzle.jpg';
 import puzzleBox from './Images/puzzle-box.jpg';
 import derekTurtle from './Images/derek-turtle.jpg';
-import momCar from './Images/mom-car.jpg';
 import grogoOrnament from './Images/grogo-ornament.jpg';
 import snickers from './Images/snickers.jpg';
 import tipper from './Images/tipper.jpg';
@@ -880,15 +878,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: momCar,
-      maxWidth: 400,
-      id: 'painting',
-      alt: 'Acrylic painting of a bird in a car',
-      desc: 'Acrylic, 36x36", Feb 2020',
-    },
-  ],
-  [
-    {
       src: blackDog,
       maxWidth: 300,
       id: 'painting',
@@ -1077,15 +1066,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       alt: 'Converse pen drawing',
       desc: 'Pen (created with only one line and no value), 19x24", Feb 2017',
-    },
-  ],
-  [
-    {
-      src: theOffice,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Drawing of The Office charicatures',
-      desc: 'Watercolor & ink, 11x14", Oct 2018',
     },
   ],
   [
