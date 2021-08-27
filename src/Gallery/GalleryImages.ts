@@ -10,13 +10,10 @@ import titanic from './Images/titanic.jpg';
 import titanicFrame from './Images/titanic-frame.jpg';
 import auntUncle from './Images/aunt-uncle.jpg';
 import banditBeetles from './Images/bandit-beetles.jpg';
-import basketball from './Images/basketball.jpg';
-import basketball2 from './Images/basketball2.jpg';
 import blackDog from './Images/black-dog.jpg';
 import blueMoon from './Images/blue-moon.jpg';
 import brendanFamily from './Images/brendan-family.jpg';
 import caCollage from './Images/ca-collage.jpg';
-import carly from './Images/carly.jpg';
 import connorBeetles from './Images/connor-beetles.jpg';
 import converse from './Images/converse.jpg';
 import couple from './Images/couple.jpg';
@@ -29,7 +26,6 @@ import grinch from './Images/grinch.jpg';
 import homeGift from './Images/home-gift.jpg';
 import houseGift from './Images/house-gift.jpg';
 import housewarming from './Images/housewarming.jpg';
-import inkProject from './Images/ink-project.jpg';
 import jeter from './Images/jeter.jpg';
 import jonas from './Images/jonas.jpg';
 import kanye from './Images/kanye.jpg';
@@ -42,8 +38,6 @@ import lionFruitLoops from './Images/lion-fruit-loops.jpg';
 import maggieTommy from './Images/maggie-tommy.jpg';
 import mandalorian from './Images/mandalorian.jpg';
 import michaelKobe from './Images/michael-kobe.jpg';
-import momCaptiva from './Images/mom-captiva.jpg';
-import mom from './Images/mom.jpg';
 import mountainEtching from './Images/mountain-etching.jpg';
 import octopus from './Images/octopus.jpg';
 import parentsPrint from './Images/parents-print.jpg';
@@ -75,11 +69,8 @@ import emma from './Images/emma.jpg';
 import emmaFrame from './Images/emma-frame.jpg';
 import bracelet1 from './Images/bracelet1.jpg';
 import bracelet2 from './Images/bracelet2.jpg';
-import duncanOil from './Images/duncan-oil.jpg';
-import babyPortrait from './Images/baby-portrait.jpg';
 import kanyeFrame from './Images/kanye-frame.jpg';
 import steveFrame from './Images/steve-frame.jpg';
-import trideltaPaddle from './Images/tridelta-paddle.jpg';
 import picassoPortrait from './Images/picasso-portrait.jpg';
 import llama from './Images/llama.jpg';
 import converses from './Images/converses.jpg';
@@ -104,7 +95,6 @@ import plantsBees from './Images/plants-bees.jpg';
 import julieMe from './Images/julie-me.jpg';
 import shamim from './Images/shamim.jpg';
 import lionGouche from './Images/lion-gouche.jpg';
-import trideltPaddle2 from './Images/tridelt-paddle2.jpg';
 import plantAnatomyFrame from './Images/plant-anatomy-frame.jpg';
 import odell from './Images/odell.jpg';
 import artFestival from './Images/art-festival.jpg';
@@ -117,8 +107,6 @@ import moon from './Images/moon.jpg';
 import zion from './Images/zion.jpg';
 import zion2 from './Images/zion2.jpg';
 import obama from './Images/obama.jpg';
-import chloe from './Images/chloe.jpg';
-import chloeRed from './Images/chloe-red.jpg';
 import abstractRoom from './Images/abstract-room.jpg';
 import sticky from './Images/sticky.jpg';
 import donutPrint from './Images/donut-print.jpg';
@@ -1236,106 +1224,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       alt: 'Charcoal drawing of a lady and her dog',
       desc: 'Charcoal, 5x7", Aug 2020',
-    },
-  ],
-  [
-    {
-      src: mom,
-      maxWidth: 300,
-      id: 'drawing',
-      alt: 'Charcoal drawing of mom',
-      desc: 'Charcoal, 2016',
-    },
-    {
-      src: carly,
-      maxWidth: 340,
-      id: 'drawing',
-      alt: 'Charcoal drawing of Carly',
-      desc: 'Charcoal, 2016',
-    },
-    {
-      src: chloe,
-      maxWidth: 330,
-      id: 'drawing',
-      alt: 'Charcoal drawing of Chloe',
-      desc: 'Charcoal, 2016',
-    },
-  ],
-  [
-    {
-      src: momCaptiva,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Oil painting of mom on Captiva',
-      desc: 'Oil, 18x24", 2012',
-    },
-  ],
-  [
-    {
-      src: duncanOil,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Oil painting of Duncan',
-      desc: 'Oil, 18x24", 2012',
-    },
-  ],
-  [
-    {
-      src: chloeRed,
-      maxWidth: 300,
-      id: 'drawing',
-      alt: 'Charcoal drawing of Chloe',
-      desc: 'Charcoal, 2016',
-    },
-  ],
-  [
-    {
-      src: babyPortrait,
-      maxWidth: 300,
-      id: 'drawing',
-      alt: 'Baby portrait drawing',
-      desc: 'Charcoal, 8x8", 2012',
-    },
-  ],
-  [
-    {
-      src: inkProject,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Ink drawing for class',
-      desc: 'Pen, marker & graphite, 2014',
-    },
-  ],
-  [
-    {
-      src: basketball,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Painted basketball',
-      desc: 'Acrylic, 2013',
-    },
-    {
-      src: basketball2,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Painted basketball',
-      desc: 'Acrylic, 2013',
-    },
-  ],
-  [
-    {
-      src: trideltaPaddle,
-      maxWidth: 200,
-      id: 'misc',
-      alt: 'Tridelta paddle art',
-      desc: 'Acrylic, 2015',
-    },
-    {
-      src: trideltPaddle2,
-      maxWidth: 170,
-      id: 'misc',
-      alt: 'Tridelta paddle',
-      desc: 'Acrylic, 2015',
     },
   ],
 ];
