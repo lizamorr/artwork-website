@@ -1,6 +1,6 @@
 # Liza Morrison Art
 
-## lizamorrisonart.com
+## [lizamorrisonart.com](https://lizamorrisonart.com)
 
 - React, TypeScript, NodeJS
 - Microsoft Azure Web App
