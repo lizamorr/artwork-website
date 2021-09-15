@@ -12,25 +12,14 @@ const Menu = () => {
           : 'menu'
       }
     >
-      {!window.location.href.endsWith('/') && (
-        <div>
-          <Link to="/">Home</Link>
-        </div>
-      )}
       {!window.location.href.includes('/gallery') && (
-        <div>
-          <Link to="/gallery">Gallery</Link>
-        </div>
+        <Link to="/gallery">Gallery</Link>
       )}
       {!window.location.href.includes('/contact') && (
-        <div>
-          <Link to="/contact">Contact</Link>
-        </div>
+        <Link to="/contact">Contact</Link>
       )}
       {!window.location.href.includes('/about') && (
-        <div>
-          <Link to="/about">About</Link>
-        </div>
+        <Link to="/about">About</Link>
       )}
     </div>
   );

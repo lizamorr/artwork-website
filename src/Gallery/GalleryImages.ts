@@ -122,8 +122,8 @@ import tipper from './Images/tipper.jpg';
 import morrisons from './Images/morrisons.jpg';
 import antwerpBlack from './Images/antwerp-black.png';
 import antwerpDark from './Images/antwerp-dark.png';
-import antwerpGreen from './Images/antwerp-green.png';
 import antwerpMulti from './Images/antwerp-multi.png';
+import digitalDog from './Images/digital-dog.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -140,7 +140,7 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 600,
       id: 'drawing',
       alt: 'Digital drawing of family',
-      desc: 'Digital drawing, Aug 2021',
+      desc: 'Digital drawing, 10x8", Aug 2021',
     },
   ],
   [
@@ -149,44 +149,21 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 800,
       id: 'drawing',
       alt: 'Digital drawing of Antwerp',
-      desc: 'Digital drawing, July 2021',
+      desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       src: antwerpBlack,
       maxWidth: 800,
       id: 'drawing',
       alt: 'Digital drawing of Antwerp',
-      desc: 'Digital drawing, July 2021',
-    },
-    {
-      src: antwerpGreen,
-      maxWidth: 800,
-      id: 'drawing',
-      alt: 'Digital drawing of Antwerp',
-      desc: 'Digital drawing, July 2021',
+      desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       src: antwerpDark,
       maxWidth: 800,
       id: 'drawing',
       alt: 'Digital drawing of Antwerp',
-      desc: 'Digital drawing, July 2021',
-    },
-  ],
-  [
-    {
-      src: snickers,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Digital drawing of Archduke Snickers',
-      desc: 'Digital drawing, July 2021',
-    },
-    {
-      src: tipper,
-      maxWidth: 400,
-      id: 'drawing',
-      alt: 'Digital drawing of Commander Tipper',
-      desc: 'Digital drawing, July 2021',
+      desc: 'Digital drawing, 11x14", July 2021',
     },
   ],
   [
@@ -203,6 +180,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       alt: 'Drawing of a couple',
       desc: 'Graphite, 19.5x25.5", March 2020',
+    },
+  ],
+  [
+    {
+      src: digitalDog,
+      maxWidth: 500,
+      id: 'drawing',
+      alt: 'Digital drawing of a dog',
+      desc: 'Digital drawing, 8x10", Sept 2021',
     },
   ],
   [
@@ -256,6 +242,22 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       alt: 'Drawing with actual photo',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+  ],
+  [
+    {
+      src: snickers,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Digital drawing of Archduke Snickers',
+      desc: 'Digital drawing, 8x10", July 2021',
+    },
+    {
+      src: tipper,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Digital drawing of Commander Tipper',
+      desc: 'Digital drawing, 8x10", July 2021',
     },
   ],
   [
