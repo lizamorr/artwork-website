@@ -11,7 +11,7 @@
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
-  font-family: 'Montserrat', regular;
+  font-family: 'Epilogue', sans-serif;
   font-variant: all-small-caps;
 }
 .gallery-grid {
@@ -63,7 +63,7 @@
       line-height: 1;
       color: black;
       font-size: 1.3rem;
-      font-family: 'Montserrat', regular;
+      font-family: 'Epilogue', sans-serif;
       font-variant: all-small-caps;
       text-align: center;
     }
@@ -93,12 +93,13 @@
       letter-spacing: 0.1rem;
       color: black;
       font-size: 1.3rem;
-      font-family: 'Montserrat', regular;
+      font-family: 'Epilogue', sans-serif;
       justify-content: space-evenly;
       font-variant: all-small-caps;
       &:hover {
         font-weight: bolder;
         cursor: pointer;
+        text-decoration-line: underline;
       }
     }
   }
