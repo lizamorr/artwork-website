@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Component should render correctly 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <div
+      className="spinner"
+    >
+      <div
+        className="spinner-border"
+        role="status"
+      >
+        <span
+          className="sr-only"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="about-container"
+    >
+      <div
+        className="img-follow"
+      >
+        <img
+          alt="Me in Paris"
+          className="paris-photo"
+          onLoad={[Function]}
+          src="test-file-stub"
+        />
+        <div
+          className="instagram-container"
+        >
+          <a
+            href="https://instagram.com/lizamorrisonart/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Instagram"
+              className="instagram"
+              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        className="about-paragraph"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+    <div
+      className="footer"
+      id="footer"
+    >
+      © Liza Morrison 2021
+    </div>
+  </div>,
+]
+`;

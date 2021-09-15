@@ -41,7 +41,6 @@ const About: React.FC = () => {
             <img src={aboutText} />
           </div>
         </div>
-
         <Footer />
       </div>
     </>

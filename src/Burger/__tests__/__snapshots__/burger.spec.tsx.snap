@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Burger Component should render correctly 1`] = `
+<div
+  aria-label="Toggle menu"
+  className="burger"
+  onClick={[Function]}
+>
+  <span />
+  <span />
+  <span />
+</div>
+`;
