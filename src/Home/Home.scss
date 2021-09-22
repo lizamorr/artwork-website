@@ -15,7 +15,7 @@
   .title {
     position: absolute;
     width: 90%;
-    margin-top: 25vh;
+    margin-top: 29vh;
     // fade in
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -28,30 +28,48 @@
     .antwerp-photo {
       left: -140%;
     }
+    .title {
+      margin-top: 16vh;
+    }
   }
   @media only screen and (max-width: 413px) and (min-width: 338px) {
     .antwerp-photo {
       left: -120%;
+    }
+    .title {
+      margin-top: 17vh;
     }
   }
   @media only screen and (max-width: 413px) and (min-width: 373px) {
     .antwerp-photo {
       left: -100%;
     }
+    .title {
+      margin-top: 18vh;
+    }
   }
   @media only screen and (max-width: 474px) and (min-width: 414px) {
     .antwerp-photo {
       left: -80%;
+    }
+    .title {
+      margin-top: 20vh;
     }
   }
   @media only screen and (max-width: 539px) and (min-width: 475px) {
     .antwerp-photo {
       left: -60%;
     }
+    .title {
+      margin-top: 22vh;
+    }
   }
   @media only screen and (max-width: 730px) and (min-width: 540px) {
     .antwerp-photo {
       left: -40%;
+    }
+    .title {
+      margin-top: 24vh;
     }
   }
 
