@@ -1,14 +1,11 @@
 .about-container {
-  margin: 65px 5% 0% 5%;
+  margin: 65px 10% 0 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   .img-follow {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
   }
   .about-paragraph {
     flex: 2;

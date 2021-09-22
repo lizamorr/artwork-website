@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import title from './liza-morrison-art.png';
-import antwerp from './antwerp.jpg';
+import antwerp from '../Gallery/Images/antwerp-multi.png';
 
 const Home: React.FC = () => {
   return (

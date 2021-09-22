@@ -145,14 +145,14 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      src: antwerpMulti,
+      src: antwerpBlack,
       maxWidth: 800,
       id: 'drawing',
       alt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
     },
     {
-      src: antwerpBlack,
+      src: antwerpMulti,
       maxWidth: 800,
       id: 'drawing',
       alt: 'Digital drawing of Antwerp',
