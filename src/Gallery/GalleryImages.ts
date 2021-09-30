@@ -124,6 +124,7 @@ import antwerpBlack from './Images/antwerp-black.png';
 import antwerpDark from './Images/antwerp-dark.png';
 import antwerpMulti from './Images/antwerp-multi.png';
 import digitalDog from './Images/digital-dog.jpg';
+import kathy from './Images/kathy.jpg';
 
 interface IGalleryImage {
   src: string;
@@ -245,6 +246,13 @@ export const imageGroups: IGalleryImage[][] = [
     },
   ],
   [
+    {
+      src: kathy,
+      maxWidth: 400,
+      id: 'drawing',
+      alt: 'Digital drawing of dog',
+      desc: 'Digital drawing, 8x10", Sept 2021',
+    },
     {
       src: snickers,
       maxWidth: 400,
