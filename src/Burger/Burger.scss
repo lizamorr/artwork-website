@@ -3,8 +3,8 @@
   top: 0.1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 2rem;
+  justify-content: space-evenly;
+  height: 2.2rem;
   width: 2rem;
   cursor: pointer;
   z-index: 10;
@@ -14,7 +14,7 @@
     height: 0.18rem;
     background: black;
     border-radius: 4px;
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
     position: relative;
     transform-origin: 1px;
   }
@@ -38,7 +38,7 @@
     height: 0.18rem;
     background: black;
     border-radius: 4px;
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
     position: relative;
     transform-origin: 1px;
   }
