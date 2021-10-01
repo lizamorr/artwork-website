@@ -11,17 +11,20 @@
     position: fixed;
     top: 0;
     left: 0;
+    animation-duration: 2s;
   }
   .title {
     position: absolute;
     width: 90%;
     margin-top: 29vh;
-    // fade in
+    animation-duration: 1s;
+  }
+
+  .fade-in {
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
   }
 
   @media only screen and (max-width: 337px) {

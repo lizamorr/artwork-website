@@ -7,8 +7,8 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="home-screen">
-        <img src={antwerp} className="antwerp-photo" alt="Antwerp" />
-        <img src={title} className="title" alt="Liza Morrison Art" />
+        <img src={antwerp} className="antwerp-photo fade-in" alt="Antwerp" />
+        <img src={title} className="title fade-in" alt="Liza Morrison Art" />
       </div>
       <Footer isHome={true} />
     </>
