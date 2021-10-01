@@ -1,7 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  .contact-title {
+  &-title {
     font-family: 'Epilogue', sans-serif;
     display: flex;
     justify-content: center;
@@ -25,15 +25,17 @@
   .low-opacity {
     opacity: 0.5;
   }
-  .contact-form {
+  &-form {
     position: relative;
     img {
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-      min-width: 900px;
+      min-height: 100%;
+      min-width: 990px;
       width: 100%;
       height: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
     form {
       width: 100%;
