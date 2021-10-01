@@ -3,15 +3,7 @@ import React from 'react';
 
 const Menu = () => {
   return (
-    <div
-      className={
-        window.location.href.includes('/gallery') ||
-        window.location.href.includes('/about') ||
-        window.location.href.includes('/contact')
-          ? 'menu--white'
-          : 'menu'
-      }
-    >
+    <div>
       {!window.location.href.includes('/gallery') && (
         <Link to="/gallery">Gallery</Link>
       )}
