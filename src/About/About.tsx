@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
-import parisPhoto from './me-paris.jpg';
-import aboutText from './about-text.jpg';
+import parisPhoto from './me-paris-compressed.jpg';
+import aboutText from './about-text-compressed.jpg';
 
 const About: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);

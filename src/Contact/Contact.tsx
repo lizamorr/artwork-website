@@ -4,7 +4,7 @@ import emailjs, { init } from 'emailjs-com';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Check from './check.svg';
-import plantAnatomy from './plant-anatomy-edit.jpg';
+import plantAnatomy from './plant-anatomy-compressed.jpg';
 
 const Contact: React.FC = () => {
   const [mailerState, setMailerState] = useState({

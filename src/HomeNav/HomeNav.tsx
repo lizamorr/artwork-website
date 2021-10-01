@@ -1,5 +1,5 @@
 import React from 'react';
-import initials from './initials.jpg';
+import initials from './initials-compressed.png';
 import { Link } from 'react-router-dom';
 
 const HomeNav: React.FC = () => {
