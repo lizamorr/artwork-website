@@ -1,9 +1,15 @@
+.contact-title {
+  font-family: 'Epilogue', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10vh 10px 20px 10px;
+}
 .contact-form {
   form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
     padding-bottom: 2vh;
     .spinner {
       position: absolute;

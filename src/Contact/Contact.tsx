@@ -54,6 +54,10 @@ const Contact: React.FC = () => {
 
   return (
     <>
+      <p className="contact-title">
+        Interested in your own custom commission? Contact me using the form
+        below:
+      </p>
       <div className="contact-form">
         <form method="POST" onSubmit={submitEmail}>
           {isSendingEmail && <LoadingSpinner />}
