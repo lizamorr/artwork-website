@@ -77,7 +77,7 @@ const Gallery: React.FC = () => {
                   axis="horizontal"
                   key={index}
                   centerMode={false}
-                  emulateTouch={true}
+                  emulateTouch={false}
                   showThumbs={false}
                   autoPlay={false}
                 >
