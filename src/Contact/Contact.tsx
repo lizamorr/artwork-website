@@ -12,7 +12,6 @@ const Contact: React.FC = () => {
     message: '',
   });
   const [isSendingEmail, setIsSendingEmail] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const [isEmailSent, setIsEmailSent] = useState(false);
 
   const handleStateChange = (e: any): void => {
@@ -55,67 +54,60 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <div style={{ display: isLoading ? 'block' : 'none' }}>
-        <LoadingSpinner />
-      </div>
-      <div style={{ display: isLoading ? 'none' : 'block' }}>
-        <div onLoad={() => setIsLoading(false)} className="contact-form">
-          <form method="POST" onSubmit={submitEmail}>
-            {isSendingEmail && <LoadingSpinner />}
-            {isEmailSent && <img src={Check} className="check" />}
-            <fieldset
-              className={isSendingEmail || isEmailSent ? 'low-opacity' : ''}
+      <div className="contact-form">
+        <form method="POST" onSubmit={submitEmail}>
+          {isSendingEmail && <LoadingSpinner />}
+          {isEmailSent && <img src={Check} className="check" />}
+          <fieldset
+            className={isSendingEmail || isEmailSent ? 'low-opacity' : ''}
+          >
+            <input
+              placeholder="Name"
+              onChange={handleStateChange}
+              name="name"
+              value={mailerState.name}
+            />
+            <input
+              placeholder="Email"
+              onChange={handleStateChange}
+              name="email"
+              value={mailerState.email}
+            />
+            <textarea
+              placeholder="Message"
+              onChange={handleStateChange}
+              name="message"
+              value={mailerState.message}
+            />
+            <button
+              disabled={
+                !mailerState.email || !mailerState.name || !mailerState.message
+              }
+              className={
+                mailerState.email && mailerState.name && mailerState.message
+                  ? 'send-btn'
+                  : 'send-btn--none'
+              }
             >
-              <input
-                placeholder="Name"
-                onChange={handleStateChange}
-                name="name"
-                value={mailerState.name}
-              />
-              <input
-                placeholder="Email"
-                onChange={handleStateChange}
-                name="email"
-                value={mailerState.email}
-              />
-              <textarea
-                placeholder="Message"
-                onChange={handleStateChange}
-                name="message"
-                value={mailerState.message}
-              />
-              <button
-                disabled={
-                  !mailerState.email ||
-                  !mailerState.name ||
-                  !mailerState.message
-                }
-                className={
-                  mailerState.email && mailerState.name && mailerState.message
-                    ? 'send-btn'
-                    : 'send-btn--none'
-                }
-              >
-                <span>Send</span>
-              </button>
-            </fieldset>
-          </form>
-          <div className="instagram-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://instagram.com/lizamorrisonart/"
-            >
-              <img
-                alt="Instagram"
-                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
-                className="instagram"
-              />
-            </a>
-          </div>
+              <span>Send</span>
+            </button>
+          </fieldset>
+        </form>
+        <div className="instagram-container">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/lizamorrisonart/"
+          >
+            <img
+              alt="Instagram"
+              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
+              className="instagram"
+            />
+          </a>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
