@@ -1,124 +1,113 @@
-.contact-title {
-  font-family: 'Epilogue', sans-serif;
+.contact {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 10vh 10px 20px 10px;
-}
-.contact-form {
-  form {
+  flex-direction: column;
+  .contact-title {
+    font-family: 'Epilogue', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 2vh;
-    .spinner {
+    text-align: center;
+    margin: 10vh 10px 20px 10px;
+  }
+  .spinner,
+  .check {
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+  }
+  .check {
+    width: 5em;
+    height: 5em;
+    align-self: center;
+  }
+  .low-opacity {
+    opacity: 0.5;
+  }
+  .contact-form {
+    position: relative;
+    img {
+      width: 100%;
       position: absolute;
-      margin-top: 0;
-      z-index: 1;
+      z-index: -1;
+      min-height: 100%;
+      min-width: 900px;
+      width: 100%;
+      height: auto;
     }
-    .check {
-      width: 5em;
-      height: 5em;
-      position: absolute;
-      margin-top: 0;
-      z-index: 1;
-    }
-    .low-opacity {
-      opacity: 0.5;
-    }
-    fieldset {
-      background-image: url('plant-anatomy-edit.jpg');
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 80%;
-      border: none;
-      background-size: cover;
-      border-radius: 10px;
-      padding: 5%;
-      input {
-        border: none;
-        border-bottom: groove;
-        margin-bottom: 10px;
-        font-family: 'Epilogue', sans-serif;
-        letter-spacing: 0.1rem;
-        font-size: larger;
-        background: white;
-        padding: 8px;
-        border-radius: 5px;
-        font-variant: all-small-caps;
-        font-weight: bold;
-      }
-      ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: black;
-        opacity: 1; /* Firefox */
-      }
-
-      :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: black;
-      }
-
-      ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: black;
-      }
-      textarea {
-        min-height: 200px;
-        border: none;
-        border-bottom: groove;
-        font-family: 'Epilogue', sans-serif;
-        letter-spacing: 0.1rem;
-        font-size: larger;
-        background: white;
-        padding: 8px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        font-variant: all-small-caps;
-        font-weight: bold;
-      }
-      .send-btn--none {
-        opacity: 0;
-      }
-      .send-btn {
-        border: none;
-        background: none;
-        font-family: 'Epilogue', sans-serif;
-        font-weight: bolder;
-        letter-spacing: 0.1rem;
-        font-size: 1.4rem;
-        font-variant: all-small-caps;
-        cursor: pointer;
-        text-align: center;
-        -webkit-text-stroke: thin;
-        transition: all 0.2344s;
-        &:focus {
-          outline: 0;
+    form {
+      width: 100%;
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 15%;
+        input {
+          border: none;
+          border-bottom: groove;
+          margin-bottom: 10px;
+          font-family: 'Epilogue', sans-serif;
+          letter-spacing: 0.1rem;
+          font-size: medium;
+          background: white;
+          padding: 8px;
+          border-radius: 5px;
         }
-        span {
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-          transition: 0.5s;
-          top: -4px;
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: black;
+          opacity: 1; /* Firefox */
         }
-        span:after {
-          content: '\00bb';
-          position: absolute;
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: black;
+        }
+
+        ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: black;
+        }
+        textarea {
+          min-height: 200px;
+          border: none;
+          border-bottom: groove;
+          font-family: 'Epilogue', sans-serif;
+          letter-spacing: 0.1rem;
+          font-size: medium;
+          background: white;
+          padding: 8px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        .send-btn--none {
           opacity: 0;
-          top: -4px;
-          right: -20px;
-          transition: 0.5s;
-          font-size: larger;
         }
-      }
-      .send-btn:hover span {
-        padding-right: 15px;
-      }
-      .send-btn:hover span:after {
-        opacity: 1;
-        right: 0;
+        .send-btn {
+          border: none;
+          background: none;
+          font-family: 'Epilogue', sans-serif;
+          font-weight: bolder;
+          letter-spacing: 0.1rem;
+          font-size: 1.4rem;
+          font-variant: all-small-caps;
+          cursor: pointer;
+          text-align: center;
+          -webkit-text-stroke: thin;
+          &:focus {
+            outline: 0;
+          }
+          span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            top: 12px;
+            background: white;
+            padding: 2px 20px;
+            border-radius: 8px;
+            border: solid;
+          }
+        }
       }
     }
   }
@@ -129,6 +118,8 @@
       width: 25px;
       height: 25px;
       object-fit: cover;
+      background-color: white;
+      border-radius: 8px;
     }
   }
 }

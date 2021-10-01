@@ -4,6 +4,7 @@ import emailjs, { init } from 'emailjs-com';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Check from './check.svg';
+import plantAnatomy from './plant-anatomy-edit.jpg';
 
 const Contact: React.FC = () => {
   const [mailerState, setMailerState] = useState({
@@ -54,49 +55,58 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <p className="contact-title">
-        Interested in your own custom commission? Contact me using the form
-        below:
-      </p>
-      <div className="contact-form">
-        <form method="POST" onSubmit={submitEmail}>
-          {isSendingEmail && <LoadingSpinner />}
-          {isEmailSent && <img src={Check} className="check" />}
-          <fieldset
-            className={isSendingEmail || isEmailSent ? 'low-opacity' : ''}
-          >
-            <input
-              placeholder="Name"
-              onChange={handleStateChange}
-              name="name"
-              value={mailerState.name}
-            />
-            <input
-              placeholder="Email"
-              onChange={handleStateChange}
-              name="email"
-              value={mailerState.email}
-            />
-            <textarea
-              placeholder="Message"
-              onChange={handleStateChange}
-              name="message"
-              value={mailerState.message}
-            />
-            <button
-              disabled={
-                !mailerState.email || !mailerState.name || !mailerState.message
-              }
-              className={
-                mailerState.email && mailerState.name && mailerState.message
-                  ? 'send-btn'
-                  : 'send-btn--none'
-              }
-            >
-              <span>Send</span>
-            </button>
-          </fieldset>
-        </form>
+      <div className="contact">
+        <p className="contact-title">
+          Interested in your own custom commission? Contact me using the form
+          below:
+        </p>
+        {isSendingEmail && <LoadingSpinner />}
+        {isEmailSent && <img src={Check} className="check" />}
+        <div
+          className={
+            isSendingEmail || isEmailSent
+              ? 'low-opacity contact-form'
+              : 'contact-form'
+          }
+        >
+          <img src={plantAnatomy} />
+          <form method="POST" onSubmit={submitEmail}>
+            <fieldset>
+              <input
+                placeholder="Name"
+                onChange={handleStateChange}
+                name="name"
+                value={mailerState.name}
+              />
+              <input
+                placeholder="Email"
+                onChange={handleStateChange}
+                name="email"
+                value={mailerState.email}
+              />
+              <textarea
+                placeholder="Message"
+                onChange={handleStateChange}
+                name="message"
+                value={mailerState.message}
+              />
+              <button
+                disabled={
+                  !mailerState.email ||
+                  !mailerState.name ||
+                  !mailerState.message
+                }
+                className={
+                  mailerState.email && mailerState.name && mailerState.message
+                    ? 'send-btn'
+                    : 'send-btn--none'
+                }
+              >
+                <span>Send</span>
+              </button>
+            </fieldset>
+          </form>
+        </div>
         <div className="instagram-container">
           <a
             target="_blank"
