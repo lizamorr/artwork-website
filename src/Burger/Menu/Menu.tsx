@@ -3,7 +3,7 @@ import React from 'react';
 
 const Menu = () => {
   return (
-    <div>
+    <div className="menu">
       {!window.location.href.includes('/gallery') && (
         <Link to="/gallery">Gallery</Link>
       )}
