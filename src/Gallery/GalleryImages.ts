@@ -19,7 +19,6 @@ import converse from './Images/converse-min.jpg';
 import couple from './Images/couple-min.jpg';
 import couple2 from './Images/couple2-min.jpg';
 import dinah from './Images/dinah-min.jpg';
-import dogsMini from './Images/dogs-mini-min.jpg';
 import dogsPortrait from './Images/dogs-portrait-min.jpg';
 import gift from './Images/gift-min.jpg';
 import grinch from './Images/grinch-min.jpg';
@@ -42,7 +41,6 @@ import mountainEtching from './Images/mountain-etching-min.jpg';
 import octopus from './Images/octopus-min.jpg';
 import parentsPrint from './Images/parents-print-min.jpg';
 import penguins from './Images/penguins-min.jpg';
-import pieMini from './Images/pie-mini-min.jpg';
 import pipelineEtch from './Images/pipeline-etch-min.jpg';
 import plantAnatomy from './Images/plant-anatomy-min.jpg';
 import recipe from './Images/recipe-min.jpg';
@@ -68,7 +66,6 @@ import momGooey from './Images/mom-gooey-min.jpg';
 import emma from './Images/emma-min.jpg';
 import emmaFrame from './Images/emma-frame-min.jpg';
 import bracelet1 from './Images/bracelet1-min.jpg';
-import bracelet2 from './Images/bracelet2-min.jpg';
 import kanyeFrame from './Images/kanye-frame-min.jpg';
 import steveFrame from './Images/steve-frame-min.jpg';
 import picassoPortrait from './Images/picasso-portrait-min.jpg';
@@ -88,7 +85,6 @@ import guyDog from './Images/guy-dog-min.jpg';
 import danSkye from './Images/dan-skye-min.jpg';
 import carlySteveWedding from './Images/carly-steve-wedding-min.jpg';
 import whiteDog from './Images/white-dog-min.jpg';
-import trideltChill from './Images/tridelt-chill-min.jpg';
 import abbeyPs from './Images/abbey-ps-min.jpg';
 import plantsBees from './Images/plants-bees-min.jpg';
 import julieMe from './Images/julie-me-min.jpg';
@@ -114,7 +110,6 @@ import titanicJon from './Images/titanic-jon-min.jpg';
 import carlyStevePic from './Images/carly-steve-pic-min.jpg';
 import carlySteve from './Images/carly-steve-min.jpg';
 import puzzle from './Images/puzzle-min.jpg';
-import puzzleBox from './Images/puzzle-box-min.jpg';
 import derekTurtle from './Images/derek-turtle-min.jpg';
 import grogoOrnament from './Images/grogo-ornament-min.jpg';
 import snickers from './Images/snickers-min.jpg';
@@ -521,13 +516,6 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Handmade puzzle',
       desc: 'Custom puzzle, 1000 pieces, Dec 2018',
     },
-    {
-      src: puzzleBox,
-      maxWidth: 245,
-      id: 'misc',
-      alt: 'Handmade puzzle',
-      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
-    },
   ],
   [
     {
@@ -555,13 +543,6 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Mini painting of Tipper and Snickers',
       desc: 'Acrylic, 3x4", Feb 2021',
     },
-    {
-      src: dogsMini,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini painting of Tipper and Snickers photoshopped in photo',
-      desc: 'Acrylic, 3x4", Feb 2021',
-    },
   ],
   [
     {
@@ -569,13 +550,6 @@ export const imageGroups: IGalleryImage[][] = [
       maxWidth: 300,
       id: 'painting',
       alt: 'Mini painting of proper pie',
-      desc: 'Acrylic, 3x3", Feb 2021',
-    },
-    {
-      src: pieMini,
-      maxWidth: 300,
-      id: 'painting',
-      alt: 'Mini painting of proper pie photoshopped in photo',
       desc: 'Acrylic, 3x3", Feb 2021',
     },
   ],
@@ -1011,13 +985,6 @@ export const imageGroups: IGalleryImage[][] = [
       alt: 'Tridelta banner',
       desc: 'Acrylic, 2015',
     },
-    {
-      src: trideltChill,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Tridelt and chill banner',
-      desc: 'Acrylic, 2015',
-    },
   ],
   [
     {
@@ -1035,13 +1002,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       alt: 'Leather beaded bracelet',
       desc: 'Leather beaded wrap bracelet, 2013',
-    },
-    {
-      src: bracelet2,
-      maxWidth: 400,
-      id: 'misc',
-      alt: 'Leather beaded bracelet',
-      desc: 'Leather beaded wrap bracelet, 2017',
     },
   ],
   [
@@ -1193,6 +1153,15 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      src: ladyDog,
+      maxWidth: 300,
+      id: 'drawing',
+      alt: 'Charcoal drawing of a lady and her dog',
+      desc: 'Charcoal, 5x7", Aug 2020',
+    },
+  ],
+  [
+    {
       src: wallArt2,
       maxWidth: 500,
       id: 'misc',
@@ -1205,15 +1174,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       alt: 'Wall art',
       desc: 'Framed wall art',
-    },
-  ],
-  [
-    {
-      src: ladyDog,
-      maxWidth: 300,
-      id: 'drawing',
-      alt: 'Charcoal drawing of a lady and her dog',
-      desc: 'Charcoal, 5x7", Aug 2020',
     },
   ],
 ];
