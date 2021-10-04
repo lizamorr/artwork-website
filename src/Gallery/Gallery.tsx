@@ -80,6 +80,7 @@ const Gallery: React.FC = () => {
                   emulateTouch={false}
                   showThumbs={false}
                   autoPlay={false}
+                  preventMovementUntilSwipeScrollTolerance={true}
                 >
                   {imgGroup.map((photo, index) => (
                     <div
