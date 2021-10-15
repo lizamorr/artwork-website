@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { imageGroups } from './GalleryImages';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
+import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
@@ -49,63 +48,37 @@ const Gallery: React.FC = () => {
               return imgGroup.length === 1 ? (
                 <div className="photo-item" key={index}>
                   <img
-                    src={imgGroup[0].src}
-                    alt={imgGroup[0].alt}
+                    src={imgGroup[0].original}
+                    alt={imgGroup[0].originalAlt}
                     key={index}
                     id={imgGroup[0].id}
                     style={{
-                      maxWidth: imgGroup[0].maxWidth,
+                      maxWidth: imgGroup[0].originalWidth,
                       width: '100%',
                       height: 'auto',
+                      margin: '15px',
                     }}
                     onLoad={() => onImgLoaded()}
                   />
-                  <div
-                    style={{ maxWidth: imgGroup[0].maxWidth }}
+                  <p
+                    style={{ maxWidth: imgGroup[0].originalWidth }}
                     className="photo-desc"
                   >
                     {imgGroup[0].desc}
-                  </div>
+                  </p>
                 </div>
               ) : (
-                <Carousel
-                  className="img-carousel"
-                  showStatus={false}
-                  showIndicators={true}
-                  showArrows={false}
-                  swipeable={true}
-                  axis="horizontal"
-                  key={index}
-                  centerMode={false}
-                  emulateTouch={false}
-                  showThumbs={false}
-                  autoPlay={false}
-                  preventMovementUntilSwipeScrollTolerance={true}
-                >
-                  {imgGroup.map((photo, index) => (
-                    <div
-                      className="photo-item"
-                      style={{
-                        maxWidth: photo.maxWidth,
-                      }}
-                      key={index}
-                    >
-                      <img
-                        src={photo.src}
-                        alt={photo.alt}
-                        key={index}
-                        id={photo.id}
-                        onLoad={() => onImgLoaded()}
-                      />
-                      <div
-                        style={{ maxWidth: photo.maxWidth }}
-                        className="photo-desc"
-                      >
-                        {photo.desc}
-                      </div>
-                    </div>
-                  ))}
-                </Carousel>
+                <div>
+                  <ImageGallery
+                    items={imgGroup}
+                    showThumbnails={false}
+                    showFullscreenButton={false}
+                    showPlayButton={false}
+                    showBullets={true}
+                    additionalClass="img-carousel"
+                  />
+                  <p className="photo-desc">{imgGroup[0].desc}</p>
+                </div>
               );
             })}
           </div>
