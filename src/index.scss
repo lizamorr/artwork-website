@@ -1,7 +1,7 @@
 @import './Home/Home.scss';
-@import './HomeNav/HomeNav.scss';
-@import './Burger/Burger.scss';
-@import './Burger/Menu/Menu.scss';
+@import './Header/Header.scss';
+@import './NavMenu/NavMenu.scss';
+@import './NavMenu/Menu/Menu.scss';
 @import './Footer/Footer.scss';
 @import './Gallery/Gallery.scss';
 @import './About/About.scss';
@@ -10,12 +10,13 @@
 @import '~react-image-gallery/styles/scss/image-gallery.scss';
 
 .body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   width: 100%;
+  max-width: 144rem;
   overflow-x: hidden;
   .container {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     max-width: 100%;
   }

@@ -22,7 +22,7 @@
   font-variant: all-small-caps;
 }
 .gallery-grid {
-  margin-top: 75px;
+  margin-top: 2rem;
   .gallery-images {
     text-align: center;
     display: flex;
@@ -58,6 +58,9 @@
     line-height: 1;
     color: black;
     font-size: 1.3rem;
+    @media screen and (min-width: 1200px) {
+      font-size: 1.8rem;
+    }
     font-family: 'Epilogue', sans-serif;
     font-variant: all-small-caps;
     text-align: center;
@@ -77,16 +80,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     &--underlined {
       text-decoration-line: underline;
       font-weight: bolder;
     }
     span {
-      font-size: 2rem;
       letter-spacing: 0.1rem;
       color: black;
       font-size: 1.3rem;
+      @media screen and (min-width: 1200px) {
+        font-size: 2rem;
+      }
       font-family: 'Epilogue', sans-serif;
       justify-content: space-evenly;
       font-variant: all-small-caps;

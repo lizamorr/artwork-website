@@ -1,0 +1,20 @@
+.nav-menu {
+  align-self: baseline;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  opacity: 1 !important;
+  @media screen and (min-width: 767px) {
+    .menu-icon,
+    .close-icon {
+      font-size: 55px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .menu-icon,
+    .close-icon {
+      font-size: 62px;
+    }
+  }
+}

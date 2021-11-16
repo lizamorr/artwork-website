@@ -1,10 +1,10 @@
-import Burger from '../Burger';
+import NavMenu from '../NavMenu';
 import renderer from 'react-test-renderer';
 import React from 'react';
 
-describe('Burger Component', () => {
+describe('NavMenu Component', () => {
   it('should render correctly', () => {
-    const component = renderer.create(<Burger />).toJSON();
+    const component = renderer.create(<NavMenu />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });

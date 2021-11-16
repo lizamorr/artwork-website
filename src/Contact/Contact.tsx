@@ -90,35 +90,24 @@ const Contact: React.FC = () => {
                 name="message"
                 value={mailerState.message}
               />
-              <button
-                disabled={
-                  !mailerState.email ||
-                  !mailerState.name ||
-                  !mailerState.message
-                }
-                className={
-                  mailerState.email && mailerState.name && mailerState.message
-                    ? 'send-btn'
-                    : 'send-btn--none'
-                }
-              >
-                <span>Send</span>
-              </button>
+              <div className="send-btn__container">
+                <button
+                  disabled={
+                    !mailerState.email ||
+                    !mailerState.name ||
+                    !mailerState.message
+                  }
+                  className={
+                    mailerState.email && mailerState.name && mailerState.message
+                      ? 'send-btn'
+                      : 'send-btn--none'
+                  }
+                >
+                  <span>Send</span>
+                </button>
+              </div>
             </fieldset>
           </form>
-        </div>
-        <div className="instagram-container">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://instagram.com/lizamorrisonart/"
-          >
-            <img
-              alt="Instagram"
-              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
-              className="instagram"
-            />
-          </a>
         </div>
       </div>
       <Footer />

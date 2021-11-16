@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Burger Component should render correctly 1`] = `
+exports[`NavMenu Component should render correctly 1`] = `
 <div
   aria-label="Toggle menu"
-  className="menu-icon"
+  className="nav-menu"
   onClick={[Function]}
 >
   <style
@@ -16,7 +16,7 @@ exports[`Burger Component should render correctly 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ha5wk2-MuiSvgIcon-root"
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium menu-icon css-1ha5wk2-MuiSvgIcon-root"
     data-testid="MenuIcon"
     focusable="false"
     viewBox="0 0 24 24"
