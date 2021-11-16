@@ -19,13 +19,9 @@
         height: 3rem;
         width: 3.5rem;
         cursor: pointer;
-        @media screen and (min-width: 767px) {
+        @media screen and (min-width: 1200px) {
           height: 4rem;
           width: 4.5rem;
-        }
-        @media screen and (min-width: 1200px) {
-          height: 6rem;
-          width: 6.5rem;
         }
       }
     }

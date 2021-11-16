@@ -8,10 +8,10 @@
     margin: 2rem;
     font-size: 1rem;
     @media screen and (min-width: 767px) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     @media screen and (min-width: 1200px) {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   }
   .spinner,
@@ -35,8 +35,8 @@
     position: relative;
     img {
       max-width: 144rem;
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
       position: fixed;
       z-index: -1;
     }
@@ -45,7 +45,7 @@
       fieldset {
         display: flex;
         flex-direction: column;
-        padding: 5rem 2rem 0rem 2rem;
+        padding: 1rem 2rem 0rem 2rem;
         max-width: 60rem;
         margin: 0 auto;
         input {
@@ -53,17 +53,14 @@
           border: none;
           border-bottom: groove;
           margin-bottom: 10px;
-
           letter-spacing: 0.1rem;
           font-size: medium;
           background: white;
           padding: 8px;
           border-radius: 5px;
-          @media screen and (min-width: 767px) {
-            font-size: 1.4rem;
-          }
+          font-size: 1rem;
           @media screen and (min-width: 1200px) {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
           }
         }
         ::placeholder {
@@ -93,11 +90,9 @@
           padding: 8px;
           border-radius: 5px;
           margin-bottom: 10px;
-          @media screen and (min-width: 767px) {
-            font-size: 1.4rem;
-          }
+          font-size: 1rem;
           @media screen and (min-width: 1200px) {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
           }
         }
         .send-btn__container {
