@@ -3,6 +3,7 @@ import { imageGroups } from './GalleryImages';
 import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Gallery: React.FC = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
@@ -95,7 +96,7 @@ const Gallery: React.FC = () => {
           className="scroll-btn"
           onClick={() => scrollToTop()}
         >
-          Top
+          <ArrowUpwardIcon />
         </div>
       )}
       <div className="gallery-grid">

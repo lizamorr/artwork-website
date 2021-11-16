@@ -1,15 +1,15 @@
 .about-container {
-  margin: 65px 10% 0 10%;
+  margin: 75px 10% 0 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   .img-follow {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 20px 0 20px;
   }
   .about-paragraph {
-    flex: 2;
     display: flex;
     justify-content: center;
     img {
@@ -20,7 +20,6 @@
     }
   }
   .paris-photo {
-    flex: 1;
     border-radius: 10px;
     display: block;
     max-width: 350px;
