@@ -29,17 +29,25 @@
 
   @media only screen and (max-width: 767px) {
     .antwerp-photo {
-      left: -20rem;
+      left: -40rem;
     }
   }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) and (max-width: 990px) {
+    .antwerp-photo {
+      left: -20rem;
+    }
     .title {
       margin-top: 8rem;
     }
   }
   @media only screen and (min-width: 1400px) {
     .title {
-      margin-top: 16rem;
+      margin-top: 10rem;
+    }
+  }
+  @media only screen and (min-width: 2000px) {
+    .title {
+      margin-top: 20rem;
     }
   }
 
