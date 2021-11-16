@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   &-title {
-    font-family: 'Epilogue', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -54,7 +53,7 @@
           border: none;
           border-bottom: groove;
           margin-bottom: 10px;
-          font-family: 'Epilogue', sans-serif;
+
           letter-spacing: 0.1rem;
           font-size: medium;
           background: white;
@@ -87,7 +86,7 @@
           min-height: 200px;
           border: none;
           border-bottom: groove;
-          font-family: 'Epilogue', sans-serif;
+
           letter-spacing: 0.1rem;
           font-size: medium;
           background: white;
@@ -121,7 +120,7 @@
             span {
               cursor: pointer;
               display: inline-block;
-              font-family: 'Epilogue', sans-serif;
+
               font-weight: bolder;
               letter-spacing: 0.1rem;
               font-size: 1.4rem;

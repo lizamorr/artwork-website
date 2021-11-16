@@ -11,14 +11,12 @@
   cursor: pointer;
   padding: 8px 10px;
   border-radius: 4px;
-  font-family: 'Epilogue', sans-serif;
   font-variant: all-small-caps;
 }
 .image-gallery-description {
   letter-spacing: 0.1rem;
   line-height: 1;
   font-size: 1.3rem !important;
-  font-family: 'Epilogue', sans-serif;
   font-variant: all-small-caps;
 }
 .gallery-grid {
@@ -61,7 +59,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 1.8rem;
     }
-    font-family: 'Epilogue', sans-serif;
+
     font-variant: all-small-caps;
     text-align: center;
   }
@@ -92,7 +90,7 @@
       @media screen and (min-width: 1200px) {
         font-size: 2rem;
       }
-      font-family: 'Epilogue', sans-serif;
+
       justify-content: space-evenly;
       font-variant: all-small-caps;
       &:hover {
