@@ -15,8 +15,7 @@
     .header__initials {
       flex: 1;
       &-img {
-        top: 0.5rem;
-        left: 0.5rem;
+        margin-top: -0.5rem;
         height: 3rem;
         width: 3.5rem;
         cursor: pointer;
