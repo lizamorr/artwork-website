@@ -56,10 +56,6 @@ const Contact: React.FC = () => {
   return (
     <>
       <div className="contact">
-        <p className="contact-title">
-          Interested in your own custom commission? Contact me using the form
-          below:
-        </p>
         {isSendingEmail && <LoadingSpinner />}
         {isEmailSent && <img src={Check} className="check" />}
         <div
@@ -69,7 +65,6 @@ const Contact: React.FC = () => {
               : 'contact-form'
           }
         >
-          <img src={plantAnatomy} />
           <form method="POST" onSubmit={submitEmail}>
             <fieldset>
               <input

@@ -17,6 +17,7 @@
     width: 90%;
     margin-top: 29vh;
     animation-duration: 1s;
+    margin-top: 6rem;
   }
 
   .fade-in {
@@ -26,20 +27,19 @@
     animation-timing-function: ease-in;
   }
 
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 767px) {
     .antwerp-photo {
-      left: -180%;
-    }
-    .title {
-      margin-top: 6rem;
+      left: -20rem;
     }
   }
-  @media only screen and (max-width: 1040px) and (min-width: 421px) {
-    .antwerp-photo {
-      left: -40%;
-    }
+  @media only screen and (min-width: 1200px) {
     .title {
       margin-top: 8rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .title {
+      margin-top: 16rem;
     }
   }
 

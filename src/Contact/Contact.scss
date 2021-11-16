@@ -1,27 +1,16 @@
 .contact {
   display: flex;
   flex-direction: column;
-  &-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 2rem;
-    font-size: 1rem;
-    @media screen and (min-width: 767px) {
-      font-size: 1.2rem;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 1.4rem;
-    }
-  }
+  align-items: center;
   .spinner,
   .check {
     display: flex;
     justify-content: center;
-    margin-top: 16rem;
+    margin-top: 12rem;
     position: absolute;
     z-index: 1;
     border-radius: 8px;
+    align-self: center;
   }
   .check {
     width: 5em;
@@ -32,22 +21,21 @@
     opacity: 0.5;
   }
   &-form {
-    position: relative;
-    img {
-      max-width: 144rem;
-      width: 100%;
-      height: auto;
-      position: fixed;
-      z-index: -1;
-    }
+    background-image: url('./cool-background.svg');
+    background-position-x: center;
+    border-radius: 1.2rem;
+    margin: 2rem 4rem;
+    box-shadow: 5px 10px 18px #888888;
+    max-width: 75rem;
+    margin: 2rem;
+    width: 100%;
     form {
       width: 100%;
       fieldset {
         display: flex;
         flex-direction: column;
         padding: 1rem 2rem 0rem 2rem;
-        max-width: 60rem;
-        margin: 0 auto;
+        margin: 2rem;
         input {
           width: 100%;
           border: none;
@@ -83,7 +71,6 @@
           min-height: 200px;
           border: none;
           border-bottom: groove;
-
           letter-spacing: 0.1rem;
           font-size: medium;
           background: white;
@@ -105,7 +92,7 @@
             background: white;
             padding: 2px 20px;
             border-radius: 8px;
-            border: solid;
+            border: 2px solid;
             cursor: pointer;
             align-self: center;
             width: fit-content;
