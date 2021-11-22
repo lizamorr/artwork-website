@@ -3,9 +3,8 @@
 ## [lizamorrisonart.com](https://lizamorrisonart.com)
 
 - React, TypeScript, NodeJS
-- Microsoft Azure Web App
 - Bundled with webpack
-- Deployed using GitHub Actions
+- Deployed using Vercel
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
