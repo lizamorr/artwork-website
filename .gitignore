@@ -6,3 +6,5 @@ scode/
 dist/
 logs
 .eslintcache
+
+.vercel
