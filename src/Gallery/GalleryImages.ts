@@ -120,6 +120,8 @@ import antwerpDark from './Images/antwerp-dark-min.png';
 import antwerpMulti from './Images/antwerp-multi-min.png';
 import digitalDog from './Images/digital-dog-min.jpg';
 import kathy from './Images/kathy-min.jpg';
+import skippy from './Images/skippy-min.jpg';
+import caduceus from './Images/caduceus-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -261,6 +263,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
+    },
+  ],
+  [
+    {
+      original: skippy,
+      originalWidth: 400,
+      id: 'drawing',
+      originalAlt: 'Digital drawing of Skip Lester',
+      desc: 'Digital drawing, 8x10", Nov 2021',
     },
   ],
   [
@@ -434,6 +445,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of Robin Williams framed',
       desc: 'Blue pen, 9x12", 2014',
+    },
+  ],
+  [
+    {
+      original: caduceus,
+      originalWidth: 400,
+      id: 'drawing',
+      originalAlt: 'Digital drawing of a caduceus',
+      desc: 'Digital drawing, 30x30", Oct 2021',
     },
   ],
   [
