@@ -122,6 +122,7 @@ import digitalDog from './Images/digital-dog-min.jpg';
 import kathy from './Images/kathy-min.jpg';
 import skippy from './Images/skippy-min.jpg';
 import caduceus from './Images/caduceus-min.jpg';
+import wedding from './Images/wedding-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -240,6 +241,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing with actual photo',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+    },
+  ],
+  [
+    {
+      original: wedding,
+      originalWidth: 600,
+      id: 'drawing',
+      originalAlt: 'Digital drawing of bride and groom',
+      desc: 'Digital drawing, 14x11", Dec 2021',
     },
   ],
   [
