@@ -123,6 +123,19 @@ import kathy from './Images/kathy-min.jpg';
 import skippy from './Images/skippy-min.jpg';
 import caduceus from './Images/caduceus-min.jpg';
 import wedding from './Images/wedding-min.jpg';
+import boyDigital from './Images/boy-digital-min.jpg';
+import julieDigital from './Images/julie-digital-min.jpg';
+import meDigital from './Images/me-digital-min.jpg';
+import shelbysBlood from './Images/shelbys-blood-min.jpg';
+import shelbysOriginal from './Images/shelbys-original-min.jpg';
+import shelbysSmoke from './Images/shelbys-smoke-min.jpg';
+import shelbysFull from './Images/shelbys-full-min.jpg';
+import antwerpClose1 from './Images/antwerp-close1-min.jpg';
+import antwerpClose2 from './Images/antwerp-close2-min.jpg';
+import antwerpClose3 from './Images/antwerp-close3-min.jpg';
+import antwerpClose4 from './Images/antwerp-close4-min.jpg';
+import antwerpClose5 from './Images/antwerp-close5-min.jpg';
+import witcher from './Images/witcher-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -135,9 +148,39 @@ interface IGalleryImage {
 export const imageGroups: IGalleryImage[][] = [
   [
     {
+      original: shelbysOriginal,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
+      desc: 'Digital drawing, 11x14", Jan 2022',
+    },
+    {
+      original: shelbysFull,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
+      desc: 'Digital drawing, 11x14", Jan 2022',
+    },
+    {
+      original: shelbysBlood,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
+      desc: 'Digital drawing, 11x14", Jan 2022',
+    },
+    {
+      original: shelbysSmoke,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
+      desc: 'Digital drawing, 11x14", Jan 2022',
+    },
+  ],
+  [
+    {
       original: morrisons,
       originalWidth: 600,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of family',
       desc: 'Digital drawing, 10x8", Aug 2021',
     },
@@ -146,23 +189,60 @@ export const imageGroups: IGalleryImage[][] = [
     {
       original: antwerpBlack,
       originalWidth: 800,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       original: antwerpMulti,
       originalWidth: 800,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       original: antwerpDark,
       originalWidth: 800,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
+    },
+  ],
+  [
+    {
+      original: antwerpClose1,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Giclée print of Antwerp',
+      desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+    },
+    {
+      original: antwerpClose2,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Giclée print of Antwerp',
+      desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+    },
+    {
+      original: antwerpClose3,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Giclée print of Antwerp',
+      desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+    },
+    {
+      original: antwerpClose4,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Giclée print of Antwerp',
+      desc: 'Giclée  Hahnemühle Photo Rag print, 11x14", July 2021',
+    },
+    {
+      original: antwerpClose5,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Giclée print of Antwerp',
+      desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
     },
   ],
   [
@@ -185,7 +265,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       original: digitalDog,
       originalWidth: 500,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of a dog',
       desc: 'Digital drawing, 8x10", Sept 2021',
     },
@@ -247,30 +327,66 @@ export const imageGroups: IGalleryImage[][] = [
     {
       original: wedding,
       originalWidth: 600,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of bride and groom',
       desc: 'Digital drawing, 14x11", Dec 2021',
     },
   ],
   [
     {
+      original: boyDigital,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of boy',
+      desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: witcher,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the witcher',
+      desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: julieDigital,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Julie',
+      desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: meDigital,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Liza',
+      desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
       original: kathy,
       originalWidth: 400,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of dog',
       desc: 'Digital drawing, 8x10", Sept 2021',
     },
     {
       original: snickers,
       originalWidth: 400,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Archduke Snickers',
       desc: 'Digital drawing, 8x10", July 2021',
     },
     {
       original: tipper,
       originalWidth: 400,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
     },
@@ -279,7 +395,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       original: skippy,
       originalWidth: 400,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of Skip Lester',
       desc: 'Digital drawing, 8x10", Nov 2021',
     },
@@ -461,7 +577,7 @@ export const imageGroups: IGalleryImage[][] = [
     {
       original: caduceus,
       originalWidth: 400,
-      id: 'drawing',
+      id: 'digital',
       originalAlt: 'Digital drawing of a caduceus',
       desc: 'Digital drawing, 30x30", Oct 2021',
     },

@@ -10,6 +10,7 @@ const Gallery: React.FC = () => {
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
   const [isDrawingSelected, setIsDrawingSelected] = useState(false);
   const [isPaintingSelected, setIsPaintingSelected] = useState(false);
+  const [isDigitalSelected, setIsDigitalSelected] = useState(false);
   const [isMiscSelected, setIsMiscSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [counter, setCounter] = useState(0);
@@ -112,6 +113,7 @@ const Gallery: React.FC = () => {
               setIsDrawingSelected(true);
               setIsPaintingSelected(false);
               setIsMiscSelected(false);
+              setIsDigitalSelected(false);
             }}
           >
             Drawings
@@ -127,9 +129,26 @@ const Gallery: React.FC = () => {
               setIsDrawingSelected(false);
               setIsPaintingSelected(true);
               setIsMiscSelected(false);
+              setIsDigitalSelected(false);
             }}
           >
             Paintings
+          </span>
+          <span
+            className={isDigitalSelected ? 'gallery-type--underlined' : ''}
+            onClick={() => {
+              setImageGroups(
+                imageGroups.filter((imgGroup) =>
+                  imgGroup.find((img) => img.id.includes('digital'))
+                )
+              );
+              setIsDrawingSelected(false);
+              setIsPaintingSelected(false);
+              setIsMiscSelected(false);
+              setIsDigitalSelected(true);
+            }}
+          >
+            Digital
           </span>
           <span
             className={isMiscSelected ? 'gallery-type--underlined' : ''}
@@ -142,6 +161,7 @@ const Gallery: React.FC = () => {
               setIsDrawingSelected(false);
               setIsPaintingSelected(false);
               setIsMiscSelected(true);
+              setIsDigitalSelected(false);
             }}
           >
             Misc
