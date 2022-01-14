@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Menu from './Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 const NavMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +12,9 @@ const NavMenu: React.FC = () => {
       aria-label="Toggle menu"
     >
       {!isOpen ? (
-        <MenuIcon className="menu-icon" sx={{ fontSize: 40 }} />
+        <MenuRoundedIcon className="menu-icon" sx={{ fontSize: 40 }} />
       ) : (
-        <CloseIcon className="close-icon" sx={{ fontSize: 40 }} />
+        <CloseRoundedIcon className="close-icon" sx={{ fontSize: 40 }} />
       )}
       {isOpen && <Menu />}
     </div>
