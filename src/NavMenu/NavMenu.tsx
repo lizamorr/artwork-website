@@ -12,16 +12,7 @@ const NavMenu: React.FC = () => {
       aria-label="Toggle menu"
     >
       {!isOpen ? (
-        <MenuRoundedIcon
-          className={
-            window.location.href.includes('gallery') ||
-            window.location.href.includes('contact') ||
-            window.location.href.includes('about')
-              ? 'menu-icon'
-              : 'menu-icon--animated'
-          }
-          sx={{ fontSize: 40 }}
-        />
+        <MenuRoundedIcon className="menu-icon" sx={{ fontSize: 40 }} />
       ) : (
         <CloseRoundedIcon className="close-icon" sx={{ fontSize: 40 }} />
       )}

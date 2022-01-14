@@ -6,63 +6,6 @@
   margin: 0;
   opacity: 1 !important;
 
-  .menu-icon--animated {
-    border-radius: 8px;
-
-    -webkit-animation: glowing 3000ms infinite;
-    -moz-animation: glowing 3000ms infinite;
-    -o-animation: glowing 3000ms infinite;
-    animation: glowing 3000ms infinite;
-
-    @-webkit-keyframes glowing {
-      20% {
-        -webkit-box-shadow: 0 0 10px #e5f4facc;
-      }
-      50% {
-        -webkit-box-shadow: 0 0 40px #eeee;
-      }
-      100% {
-        -webkit-box-shadow: 0 0 10px #eeee;
-      }
-    }
-
-    @-moz-keyframes glowing {
-      20% {
-        -moz-box-shadow: 0 0 10px #e5f4facc;
-      }
-      50% {
-        -moz-box-shadow: 0 0 40px #eeee;
-      }
-      100% {
-        -moz-box-shadow: 0 0 10px #eeee;
-      }
-    }
-
-    @-o-keyframes glowing {
-      20% {
-        box-shadow: 0 0 10px #e5f4facc;
-      }
-      50% {
-        box-shadow: 0 0 40px #eeee;
-      }
-      100% {
-        box-shadow: 0 0 10px #eeee;
-      }
-    }
-
-    @keyframes glowing {
-      20% {
-        box-shadow: 0 0 10px #e5f4facc;
-      }
-      50% {
-        box-shadow: 0 0 40px #eeee;
-      }
-      100% {
-        box-shadow: 0 0 10px #eeee;
-      }
-    }
-  }
-
   @media screen and (min-width: 767px) {
     .menu-icon--animated,
     .menu-icon,
