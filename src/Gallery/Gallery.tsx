@@ -4,6 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { dividerClasses } from '@mui/material';
 
 const Gallery: React.FC = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
@@ -102,70 +103,90 @@ const Gallery: React.FC = () => {
       )}
       <div className="gallery-grid">
         <div className="gallery-type">
-          <span
-            className={isDrawingSelected ? 'gallery-type--underlined' : ''}
-            onClick={() => {
-              setImageGroups(
-                imageGroups.filter((imgGroup) =>
-                  imgGroup.find((img) => img.id.includes('drawing'))
-                )
-              );
-              setIsDrawingSelected(true);
-              setIsPaintingSelected(false);
-              setIsMiscSelected(false);
-              setIsDigitalSelected(false);
-            }}
+          <div
+            id="blue"
+            className={isDrawingSelected ? 'gallery-type--background-blue' : ''}
           >
-            Drawings
-          </span>
-          <span
-            className={isPaintingSelected ? 'gallery-type--underlined' : ''}
-            onClick={() => {
-              setImageGroups(
-                imageGroups.filter((imgGroup) =>
-                  imgGroup.find((img) => img.id.includes('painting'))
-                )
-              );
-              setIsDrawingSelected(false);
-              setIsPaintingSelected(true);
-              setIsMiscSelected(false);
-              setIsDigitalSelected(false);
-            }}
+            <span
+              onClick={() => {
+                setImageGroups(
+                  imageGroups.filter((imgGroup) =>
+                    imgGroup.find((img) => img.id.includes('drawing'))
+                  )
+                );
+                setIsDrawingSelected(true);
+                setIsPaintingSelected(false);
+                setIsMiscSelected(false);
+                setIsDigitalSelected(false);
+              }}
+            >
+              Drawings
+            </span>
+          </div>
+          <div
+            id="yellow"
+            className={
+              isPaintingSelected ? 'gallery-type--background-yellow' : ''
+            }
           >
-            Paintings
-          </span>
-          <span
-            className={isDigitalSelected ? 'gallery-type--underlined' : ''}
-            onClick={() => {
-              setImageGroups(
-                imageGroups.filter((imgGroup) =>
-                  imgGroup.find((img) => img.id.includes('digital'))
-                )
-              );
-              setIsDrawingSelected(false);
-              setIsPaintingSelected(false);
-              setIsMiscSelected(false);
-              setIsDigitalSelected(true);
-            }}
+            <span
+              onClick={() => {
+                setImageGroups(
+                  imageGroups.filter((imgGroup) =>
+                    imgGroup.find((img) => img.id.includes('painting'))
+                  )
+                );
+                setIsDrawingSelected(false);
+                setIsPaintingSelected(true);
+                setIsMiscSelected(false);
+                setIsDigitalSelected(false);
+              }}
+            >
+              Paintings
+            </span>
+          </div>
+          <div
+            id="green"
+            className={
+              isDigitalSelected ? 'gallery-type--background-green' : ''
+            }
           >
-            Digital
-          </span>
-          <span
-            className={isMiscSelected ? 'gallery-type--underlined' : ''}
-            onClick={() => {
-              setImageGroups(
-                imageGroups.filter((imgGroup) =>
-                  imgGroup.find((img) => img.id.includes('misc'))
-                )
-              );
-              setIsDrawingSelected(false);
-              setIsPaintingSelected(false);
-              setIsMiscSelected(true);
-              setIsDigitalSelected(false);
-            }}
+            <span
+              onClick={() => {
+                setImageGroups(
+                  imageGroups.filter((imgGroup) =>
+                    imgGroup.find((img) => img.id.includes('digital'))
+                  )
+                );
+                setIsDrawingSelected(false);
+                setIsPaintingSelected(false);
+                setIsMiscSelected(false);
+                setIsDigitalSelected(true);
+              }}
+            >
+              Digital
+            </span>
+          </div>
+          <div
+            id="pink"
+            className={isMiscSelected ? 'gallery-type--background-pink' : ''}
           >
-            Misc
-          </span>
+            <span
+              onClick={() => {
+                setImageGroups(
+                  imageGroups.filter((imgGroup) =>
+                    imgGroup.find((img) => img.id.includes('misc'))
+                  )
+                );
+                setIsDrawingSelected(false);
+                setIsPaintingSelected(false);
+                setIsMiscSelected(true);
+                setIsDigitalSelected(false);
+              }}
+            >
+              Misc
+            </span>
+          </div>
         </div>
         {renderImages()}
       </div>
