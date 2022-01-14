@@ -16,15 +16,7 @@
     position: absolute;
     width: 90%;
     margin-top: 29vh;
-    animation-duration: 1s;
     margin-top: 6rem;
-  }
-
-  .fade-in {
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
   }
 
   @media only screen and (max-width: 767px) {
