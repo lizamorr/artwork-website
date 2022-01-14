@@ -65,7 +65,7 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 420px) {
     .gallery-type {
       align-content: center;
       width: 100%;
@@ -75,28 +75,28 @@
 
       #blue:hover,
       &--background-blue {
-        background: url(./stroke-blue.jpg) no-repeat;
+        background: url(./stroke-blue-min.jpg) no-repeat;
         background-size: 60% 95% !important;
         background-position-x: center;
         padding: 3px 25px;
       }
       #yellow:hover,
       &--background-yellow {
-        background: url(./stroke-yellow.jpg) no-repeat;
+        background: url(./stroke-yellow-min.jpg) no-repeat;
         background-size: 60% 95% !important;
         background-position-x: center;
         padding: 3px 25px;
       }
       #green:hover,
       &--background-green {
-        background: url(./stroke-green.jpg) no-repeat;
+        background: url(./stroke-green-min.jpg) no-repeat;
         background-size: 60% 95% !important;
         background-position-x: center;
         padding: 3px 25px;
       }
       #pink:hover,
       &--background-pink {
-        background: url(./stroke-pink.jpg) no-repeat;
+        background: url(./stroke-pink-min.jpg) no-repeat;
         background-size: 60% 95% !important;
         background-position-x: center;
         padding: 3px 25px;
@@ -111,25 +111,25 @@
     margin-bottom: 2rem;
 
     &--background-blue {
-      background: url(./stroke-blue.jpg) no-repeat;
+      background: url(./stroke-blue-min.jpg) no-repeat;
       background-size: 100% 95%;
       background-position-x: center;
       padding: 3px 25px;
     }
     &--background-yellow {
-      background: url(./stroke-yellow.jpg) no-repeat;
+      background: url(./stroke-yellow-min.jpg) no-repeat;
       background-size: 100% 95%;
       background-position-x: center;
       padding: 3px 25px;
     }
     &--background-green {
-      background: url(./stroke-green.jpg) no-repeat;
+      background: url(./stroke-green-min.jpg) no-repeat;
       background-size: 100% 95%;
       background-position-x: center;
       padding: 3px 25px;
     }
     &--background-pink {
-      background: url(./stroke-pink.jpg) no-repeat;
+      background: url(./stroke-pink-min.jpg) no-repeat;
       background-size: 100% 95%;
       background-position-x: center;
       padding: 3px 25px;
@@ -138,7 +138,7 @@
     #blue {
       &:hover {
         cursor: pointer;
-        background: url(./stroke-blue.jpg) no-repeat;
+        background: url(./stroke-blue-min.jpg) no-repeat;
         background-size: 100% 95%;
         background-position-x: center;
         padding: 3px 25px;
@@ -147,7 +147,7 @@
     #yellow {
       &:hover {
         cursor: pointer;
-        background: url(./stroke-yellow.jpg) no-repeat;
+        background: url(./stroke-yellow-min.jpg) no-repeat;
         background-size: 100% 95%;
         background-position-x: center;
         padding: 3px 25px;
@@ -156,7 +156,7 @@
     #green {
       &:hover {
         cursor: pointer;
-        background: url(./stroke-green.jpg) no-repeat;
+        background: url(./stroke-green-min.jpg) no-repeat;
         background-size: 100% 95%;
         background-position-x: center;
         padding: 3px 25px;
@@ -165,7 +165,7 @@
     #pink {
       &:hover {
         cursor: pointer;
-        background: url(./stroke-pink.jpg) no-repeat;
+        background: url(./stroke-pink-min.jpg) no-repeat;
         background-size: 100% 95%;
         background-position-x: center;
         padding: 3px 25px;
