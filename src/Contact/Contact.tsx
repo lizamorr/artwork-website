@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import emailjs, { init } from 'emailjs-com';
+import emailjs, { init } from '@emailjs/browser';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Check from './check.svg';
