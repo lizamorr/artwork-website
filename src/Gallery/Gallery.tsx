@@ -4,9 +4,8 @@ import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import { dividerClasses } from '@mui/material';
 
-const Gallery: React.FC = () => {
+const Gallery = () => {
   const [imgGroups, setImageGroups] = useState(imageGroups);
   const [isScrollBtnDisplayed, setIsScrollBtnDisplayed] = useState(false);
   const [isDrawingSelected, setIsDrawingSelected] = useState(false);
@@ -53,7 +52,7 @@ const Gallery: React.FC = () => {
                   <img
                     src={imgGroup[0].original}
                     alt={imgGroup[0].originalAlt}
-                    key={index}
+                    key={0}
                     id={imgGroup[0].id}
                     style={{
                       maxWidth: imgGroup[0].originalWidth,

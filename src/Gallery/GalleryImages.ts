@@ -136,6 +136,9 @@ import antwerpClose3 from './Images/antwerp-close3-min.jpg';
 import antwerpClose4 from './Images/antwerp-close4-min.jpg';
 import antwerpClose5 from './Images/antwerp-close5-min.jpg';
 import witcher from './Images/witcher-min.jpg';
+import agresti from './Images/agresti-min.jpg';
+import lucasOne from './Images/lucas-one-min.jpg';
+import lucas from './Images/lucas-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -146,6 +149,15 @@ interface IGalleryImage {
 }
 
 export const imageGroups: IGalleryImage[][] = [
+  [
+    {
+      original: lucas,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Lucas',
+      desc: 'Digital drawing, 6x4", Jan 2022',
+    },
+  ],
   [
     {
       original: shelbysOriginal,
@@ -183,6 +195,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of family',
       desc: 'Digital drawing, 10x8", Aug 2021',
+    },
+  ],
+  [
+    {
+      original: agresti,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the Agrestis',
+      desc: 'Digital drawing, 9x12", Jan 2022',
     },
   ],
   [
@@ -335,7 +356,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: boyDigital,
-      originalWidth: 400,
+      originalWidth: 500,
       id: 'digital',
       originalAlt: 'Digital drawing of boy',
       desc: 'Digital drawing, 8x10", Jan 2022',
@@ -344,10 +365,19 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: witcher,
-      originalWidth: 400,
+      originalWidth: 500,
       id: 'digital',
       originalAlt: 'Digital drawing of the witcher',
       desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: lucasOne,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Lucas',
+      desc: 'Digital drawing, 6x6", Jan 2022',
     },
   ],
   [

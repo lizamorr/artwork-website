@@ -3,7 +3,7 @@ import Footer from '../Footer';
 import title from './liza-morrison-art-compressed.png';
 import antwerp from './antwerp-multi-compressed.png';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <>
       <div className="home-screen">

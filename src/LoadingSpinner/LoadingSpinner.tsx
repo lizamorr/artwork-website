@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoadingSpinner: React.FC = () => {
+const LoadingSpinner = () => {
   return (
     <div className="spinner">
       <div className="spinner-border" role="status">

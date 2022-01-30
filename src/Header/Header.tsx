@@ -3,7 +3,7 @@ import initials from './initials-compressed.png';
 import { Link } from 'react-router-dom';
 import NavMenu from '../NavMenu';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="header__container">
       <div className="header__flex">

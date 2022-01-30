@@ -3,7 +3,7 @@ import Menu from './Menu';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
-const NavMenu: React.FC = () => {
+const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div

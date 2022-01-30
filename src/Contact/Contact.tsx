@@ -5,7 +5,7 @@ import Footer from '../Footer';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Check from './check.svg';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [mailerState, setMailerState] = useState({
     name: '',
     email: '',

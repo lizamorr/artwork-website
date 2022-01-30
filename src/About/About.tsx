@@ -4,7 +4,7 @@ import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import parisPhoto from './me-paris-compressed.jpg';
 import aboutText from './about-text-min.jpg';
 
-const About: React.FC = () => {
+const About = () => {
   const [isLoading, setIsLoading] = useState(true);
   const imgLoaded = () => {
     setIsLoading(false);
