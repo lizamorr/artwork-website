@@ -15,7 +15,7 @@
   .title {
     position: absolute;
     width: 90%;
-    margin-top: 14rem;
+    margin-top: 12rem;
   }
 
   @media only screen and (max-width: 767px) {
@@ -31,9 +31,14 @@
       margin-top: 13rem;
     }
   }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 991px) and (max-width: 1399px) {
     .title {
       margin-top: 16rem;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .title {
+      margin-top: 18rem;
     }
   }
   @media only screen and (min-width: 2000px) {

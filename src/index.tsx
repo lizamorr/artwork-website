@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, HashRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import Gallery from './Gallery';
@@ -11,15 +11,15 @@ import './favicon.ico';
 import './web.config';
 
 ReactDOM.render(
-  <HashRouter basename="/">
+  <BrowserRouter>
     <Header />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/about" component={About} />
-      <Route path="*" component={Home} />
-    </Switch>
-  </HashRouter>,
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
