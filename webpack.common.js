@@ -9,6 +9,9 @@ module.exports = {
   target: "node",
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    alias: {
+      process: "process/browser",
+    },
   },
   entry: {
     app: "./src/index.tsx",
@@ -67,6 +70,9 @@ module.exports = {
     contentBase: "./",
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      process: "process/browser",
+    }),
     new webpack.DefinePlugin({ "process.env": JSON.stringify("process.env") }),
     new MiniCssExtractPlugin(),
     new Dotenv({ path: path.resolve(__dirname, ".env") }),
