@@ -15,6 +15,7 @@
     "npm": "^7.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-error-overlay": "6.0.9",
     "react-image-gallery": "^1.2.7",
     "react-router-dom": "^6.2.1",
     "rimraf": "^3.0.2",
@@ -24,6 +25,7 @@
     "react-error-overlay": "6.0.9"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "webpack serve --open --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js",
     "clean": "rm -rf node_modules",
