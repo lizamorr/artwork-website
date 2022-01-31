@@ -36,7 +36,8 @@ const Contact = () => {
       setIsSendingEmail(false);
       setIsEmailSent(true);
       resetForm();
-    } catch {
+    } catch (err) {
+      console.log(err);
       alert(
         'Whoops, please try again. If the problem persists, email me at lizammorrison@gmail.com instead.'
       );
