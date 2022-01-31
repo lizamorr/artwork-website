@@ -10,7 +10,7 @@ const Home = () => {
         <img src={antwerp} className="antwerp-photo" alt="Antwerp" />
         <img src={title} className="title fade-in" alt="Liza Morrison Art" />
       </div>
-      <Footer isHome={true} />
+      <Footer />
     </>
   );
 };

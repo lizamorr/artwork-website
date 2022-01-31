@@ -139,6 +139,7 @@ import witcher from './Images/witcher-min.jpg';
 import agresti from './Images/agresti-min.jpg';
 import lucasOne from './Images/lucas-one-min.jpg';
 import lucas from './Images/lucas-min.jpg';
+import pancake from './Images/pancake-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -405,6 +406,13 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of dog',
       desc: 'Digital drawing, 8x10", Sept 2021',
+    },
+    {
+      original: pancake,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of King Pancake',
+      desc: 'Digital drawing, 8x10", October 2021',
     },
     {
       original: snickers,

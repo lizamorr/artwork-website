@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Footer(props: { isHome?: boolean }) {
+function Footer() {
   return (
-    <div id="footer" className={props.isHome ? 'footer-home' : 'footer'}>
-      © Liza Morrison 2021
+    <div id="footer" className="footer">
+      {`© Liza Morrison ${new Date().getFullYear()}`}
     </div>
   );
 }

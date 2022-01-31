@@ -1,6 +1,6 @@
 .scroll-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 30px;
   z-index: 1;
   border: none;
@@ -10,6 +10,7 @@
   padding: 8px 10px;
   border-radius: 4px;
   color: white;
+  z-index: 99;
 }
 .image-gallery-description {
   letter-spacing: 0.1rem;
@@ -108,7 +109,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin: 5rem 0 2rem 0rem;
 
     &--background-blue {
       background: url(./stroke-blue-min.jpg) no-repeat;
