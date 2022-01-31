@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { webpack } = require("webpack");
 
 module.exports = {
   target: "node",
@@ -66,6 +67,7 @@ module.exports = {
     contentBase: "./",
   },
   plugins: [
+    new webpack.DefinePlugin({ "process.env": JSON.stringify("process.env") }),
     new MiniCssExtractPlugin(),
     new Dotenv({ path: path.resolve(__dirname, ".env") }),
     new CleanWebpackPlugin(),
