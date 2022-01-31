@@ -60,6 +60,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^27.2.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^0.28.7",
