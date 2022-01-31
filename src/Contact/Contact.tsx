@@ -26,7 +26,6 @@ const Contact = () => {
     setIsSendingEmail(true);
     try {
       init(process.env.USER_ID ? process.env.USER_ID : '');
-      console.log(process.env.USER_ID);
       await emailjs.sendForm(
         'service_art',
         'template_art',
@@ -36,8 +35,7 @@ const Contact = () => {
       setIsSendingEmail(false);
       setIsEmailSent(true);
       resetForm();
-    } catch (err) {
-      console.log(err);
+    } catch {
       alert(
         'Whoops, please try again. If the problem persists, email me at lizammorrison@gmail.com instead.'
       );
