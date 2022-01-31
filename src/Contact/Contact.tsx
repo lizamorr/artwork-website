@@ -22,10 +22,11 @@ const Contact = () => {
   };
 
   const submitEmail = async (e: any): Promise<void> => {
-    setIsSendingEmail(true);
     e.preventDefault();
+    setIsSendingEmail(true);
     try {
       init(process.env.USER_ID ? process.env.USER_ID : '');
+      console.log(process.env.USER_ID);
       await emailjs.sendForm(
         'service_art',
         'template_art',
