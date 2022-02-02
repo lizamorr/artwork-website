@@ -1,58 +1,22 @@
 .home-screen {
   overflow: hidden;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  .antwerp-photo {
-    min-height: 100%;
-    min-width: 1400px;
-    width: 100%;
-    height: auto;
+  #labrinth {
+    object-fit: cover;
+    width: auto;
+    height: 100vh;
     position: fixed;
-    top: 35px;
-    left: 0;
+    top: 0;
   }
   .title {
-    position: absolute;
-    width: 90%;
-    margin-top: 12rem;
-  }
-
-  @media only screen and (max-width: 767px) {
-    .antwerp-photo {
-      left: -40rem;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 990px) {
-    .antwerp-photo {
-      left: -20rem;
-    }
-    .title {
-      margin-top: 13rem;
-    }
-  }
-  @media only screen and (min-width: 991px) and (max-width: 1399px) {
-    .title {
-      margin-top: 16rem;
-    }
-  }
-  @media only screen and (min-width: 1400px) {
-    .title {
-      margin-top: 18rem;
-    }
-  }
-  @media only screen and (min-width: 2000px) {
-    .title {
-      margin-top: 25rem;
-    }
-  }
-
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

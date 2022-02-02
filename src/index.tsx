@@ -9,6 +9,7 @@ import Header from './Header';
 import './index.scss';
 import './favicon.ico';
 import './web.config';
+import './Home/labrinth.mp4';
 
 ReactDOM.render(
   <BrowserRouter>
