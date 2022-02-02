@@ -8,3 +8,4 @@ logs
 .eslintcache
 
 .vercel
+vercel.json

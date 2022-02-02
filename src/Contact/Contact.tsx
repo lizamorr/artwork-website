@@ -22,8 +22,8 @@ const Contact = () => {
   };
 
   const submitEmail = async (e: any): Promise<void> => {
-    setIsSendingEmail(true);
     e.preventDefault();
+    setIsSendingEmail(true);
     try {
       init(process.env.USER_ID ? process.env.USER_ID : '');
       await emailjs.sendForm(
