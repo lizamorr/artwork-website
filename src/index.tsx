@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import Gallery from './Gallery';
@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-      <Route path="*" element={<Home />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
