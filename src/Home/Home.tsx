@@ -6,9 +6,14 @@ const Home = () => {
   return (
     <>
       <div className="home-screen">
-        <video autoPlay muted loop id="labrinth">
-          <source src="./labrinth.mp4" type="video/mp4" />
-        </video>
+        <video
+          src="./labrinth.mp4"
+          playsInline
+          autoPlay
+          muted
+          loop
+          id="labrinth"
+        />
         <img src={title} className="title" alt="Liza Morrison Art" />
       </div>
       <Footer />
