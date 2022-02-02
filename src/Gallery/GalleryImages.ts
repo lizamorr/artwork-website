@@ -140,6 +140,7 @@ import agresti from './Images/agresti-min.jpg';
 import lucasOne from './Images/lucas-one-min.jpg';
 import lucas from './Images/lucas-min.jpg';
 import pancake from './Images/pancake-min.jpg';
+import labrinth from './Images/labrinth-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -150,6 +151,15 @@ interface IGalleryImage {
 }
 
 export const imageGroups: IGalleryImage[][] = [
+  [
+    {
+      original: labrinth,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Labrinth',
+      desc: 'Digital drawing, 8x8", Feb 2022',
+    },
+  ],
   [
     {
       original: lucas,
