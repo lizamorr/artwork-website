@@ -15,11 +15,11 @@ ReactDOM.render(
   <BrowserRouter>
     <Header />
     <Routes>
+      <Route path="*" element={<Navigate to="/" />} />
       <Route path="/" element={<Home />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
