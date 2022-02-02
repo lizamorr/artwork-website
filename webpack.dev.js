@@ -5,7 +5,7 @@ module.exports = merge(common, {
   mode: "development",
   devtool: false,
   devServer: {
-    contentBase: "./build",
     port: 8080,
+    static: "./build",
   },
 });

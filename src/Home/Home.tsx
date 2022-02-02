@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className="home-screen">
         <video autoPlay muted loop id="labrinth">
-          <source src="./labrinth.mov" type="video/mov" />
+          <source src="./labrinth.mp4" type="video/mp4" />
         </video>
         <img src={title} className="title" alt="Liza Morrison Art" />
       </div>

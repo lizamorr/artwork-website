@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  target: "node",
+  target: "web",
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
@@ -78,13 +78,12 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: "./",
+    static: "./",
   },
   plugins: [
     new webpack.ProvidePlugin({
       process: "process/browser",
     }),
-    new webpack.DefinePlugin({ "process.env": JSON.stringify("process.env") }),
     new MiniCssExtractPlugin(),
     new Dotenv({ path: path.resolve(__dirname, ".env") }),
     new CleanWebpackPlugin(),
