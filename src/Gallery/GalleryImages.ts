@@ -141,6 +141,8 @@ import lucasOne from './Images/lucas-one-min.jpg';
 import lucas from './Images/lucas-min.jpg';
 import pancake from './Images/pancake-min.jpg';
 import labrinth from './Images/labrinth-min.jpg';
+import henry from './Images/henry-min.jpg';
+import hogie from './Images/hogie-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -162,11 +164,29 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      original: hogie,
+      originalWidth: 600,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Hogie',
+      desc: 'Digital drawing, 18x24", March 2022',
+    },
+  ],
+  [
+    {
       original: lucas,
       originalWidth: 600,
       id: 'digital',
       originalAlt: 'Digital drawing of Lucas',
       desc: 'Digital drawing, 6x4", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: henry,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Henry',
+      desc: 'Digital drawing, 8x10", Feb 2022',
     },
   ],
   [
