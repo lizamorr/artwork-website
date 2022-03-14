@@ -41,8 +41,8 @@ const Gallery = () => {
   const renderImages = (): JSX.Element => {
     return (
       <>
-        <div style={{ display: isLoading ? 'block' : 'none' }}>
-          <FancyLoadingSpinner />
+        <div className="gallery--flex">
+          {isLoading && <FancyLoadingSpinner />}
         </div>
         <div style={{ display: isLoading ? 'none' : 'block' }}>
           <div className="gallery-images">
