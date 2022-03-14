@@ -97,7 +97,7 @@ const Contact = () => {
                       : 'send-btn--none'
                   }
                 >
-                  <span>Send</span>
+                  <div>Send</div>
                 </button>
               </div>
             </fieldset>
