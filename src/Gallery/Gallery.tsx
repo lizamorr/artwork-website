@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { imageGroups } from './GalleryImages';
 import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import FancyLoadingSpinner from '../LoadingSpinner/FancyLoadingSpinner';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Gallery = () => {
@@ -42,7 +42,7 @@ const Gallery = () => {
     return (
       <>
         <div style={{ display: isLoading ? 'block' : 'none' }}>
-          <LoadingSpinner />
+          <FancyLoadingSpinner />
         </div>
         <div style={{ display: isLoading ? 'none' : 'block' }}>
           <div className="gallery-images">
