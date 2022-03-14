@@ -48,6 +48,7 @@
           letter-spacing: 0.1rem;
           background: inherit;
           backdrop-filter: invert(100%);
+          -webkit-backdrop-filter: invert(100%);
           padding: 8px;
           border-radius: 5px;
           font-size: 1rem;
@@ -78,6 +79,7 @@
           letter-spacing: 0.1rem;
           background: inherit;
           backdrop-filter: invert(100%);
+          -webkit-backdrop-filter: invert(100%);
           padding: 8px;
           border-radius: 5px;
           margin-bottom: 10px;

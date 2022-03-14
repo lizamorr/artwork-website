@@ -73,35 +73,6 @@
       flex-direction: column !important;
       line-height: 1.4;
       text-align: center;
-
-      #blue:hover,
-      &--background-blue {
-        background: url(./stroke-blue-min.jpg) no-repeat;
-        background-size: 60% 95% !important;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-      #yellow:hover,
-      &--background-yellow {
-        background: url(./stroke-yellow-min.jpg) no-repeat;
-        background-size: 60% 95% !important;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-      #green:hover,
-      &--background-green {
-        background: url(./stroke-green-min.jpg) no-repeat;
-        background-size: 60% 95% !important;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-      #pink:hover,
-      &--background-pink {
-        background: url(./stroke-pink-min.jpg) no-repeat;
-        background-size: 60% 95% !important;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
     }
   }
   .gallery-type {
@@ -115,78 +86,26 @@
       margin: 8rem 0 2rem 0;
     }
 
-    &--background-blue {
-      background: url(./stroke-blue-min.jpg) no-repeat;
-      background-size: 100% 95%;
-      background-position-x: center;
-      padding: 3px 25px;
+    &--selected {
+      text-decoration-line: underline;
+      text-underline-position: under;
+      cursor: pointer;
     }
-    &--background-yellow {
-      background: url(./stroke-yellow-min.jpg) no-repeat;
-      background-size: 100% 95%;
-      background-position-x: center;
-      padding: 3px 25px;
-    }
-    &--background-green {
-      background: url(./stroke-green-min.jpg) no-repeat;
-      background-size: 100% 95%;
-      background-position-x: center;
-      padding: 3px 25px;
-    }
-    &--background-pink {
-      background: url(./stroke-pink-min.jpg) no-repeat;
-      background-size: 100% 95%;
-      background-position-x: center;
-      padding: 3px 25px;
-    }
-
-    #blue {
-      &:hover {
-        cursor: pointer;
-        background: url(./stroke-blue-min.jpg) no-repeat;
-        background-size: 100% 95%;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-    }
-    #yellow {
-      &:hover {
-        cursor: pointer;
-        background: url(./stroke-yellow-min.jpg) no-repeat;
-        background-size: 100% 95%;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-    }
-    #green {
-      &:hover {
-        cursor: pointer;
-        background: url(./stroke-green-min.jpg) no-repeat;
-        background-size: 100% 95%;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-    }
-    #pink {
-      &:hover {
-        cursor: pointer;
-        background: url(./stroke-pink-min.jpg) no-repeat;
-        background-size: 100% 95%;
-        background-position-x: center;
-        padding: 3px 25px;
-      }
-    }
-
     span {
+      cursor: pointer;
       letter-spacing: 0.1rem;
       color: black;
       font-size: 1.2rem;
+      justify-content: space-evenly;
+      font-variant: all-small-caps;
+      &:hover {
+        text-decoration-line: underline;
+        text-underline-position: under;
+        cursor: pointer;
+      }
       @media screen and (min-width: 1200px) {
         font-size: 1.6rem;
       }
-
-      justify-content: space-evenly;
-      font-variant: all-small-caps;
     }
   }
 }

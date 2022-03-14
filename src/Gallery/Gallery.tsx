@@ -102,10 +102,7 @@ const Gallery = () => {
       )}
       <div className="gallery-grid">
         <div className="gallery-type">
-          <div
-            id="blue"
-            className={isDrawingSelected ? 'gallery-type--background-blue' : ''}
-          >
+          <div className={isDrawingSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
                 setImageGroups(
@@ -122,12 +119,7 @@ const Gallery = () => {
               Drawings
             </span>
           </div>
-          <div
-            id="yellow"
-            className={
-              isPaintingSelected ? 'gallery-type--background-yellow' : ''
-            }
-          >
+          <div className={isPaintingSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
                 setImageGroups(
@@ -144,12 +136,7 @@ const Gallery = () => {
               Paintings
             </span>
           </div>
-          <div
-            id="green"
-            className={
-              isDigitalSelected ? 'gallery-type--background-green' : ''
-            }
-          >
+          <div className={isDigitalSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
                 setImageGroups(
@@ -166,10 +153,7 @@ const Gallery = () => {
               Digital
             </span>
           </div>
-          <div
-            id="pink"
-            className={isMiscSelected ? 'gallery-type--background-pink' : ''}
-          >
+          <div className={isMiscSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
                 setImageGroups(
