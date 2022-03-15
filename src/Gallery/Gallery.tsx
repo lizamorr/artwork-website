@@ -33,7 +33,7 @@ const Gallery = () => {
   };
   const onImgLoaded = (): void => {
     setCounter(counter + 1);
-    if (counter > 10) {
+    if (counter > 12) {
       setIsLoading(false);
     }
   };
