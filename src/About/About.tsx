@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Footer from '../Footer';
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import parisPhoto from './me-paris-compressed.jpg';
 import aboutText from './about-text-min.jpg';
+import FancyLoadingSpinner from '../LoadingSpinner/FancyLoadingSpinner';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,9 +11,11 @@ const About = () => {
   };
   return (
     <>
-      <div style={{ display: isLoading ? 'block' : 'none' }}>
-        <LoadingSpinner />
-      </div>
+      {isLoading && (
+        <div className="about-loader">
+          <FancyLoadingSpinner />
+        </div>
+      )}
       <div style={{ display: isLoading ? 'none' : 'block' }}>
         <div className="about-container">
           <div className="img-follow">

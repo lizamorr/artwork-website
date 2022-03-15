@@ -3,25 +3,31 @@
 exports[`About Component should render correctly 1`] = `
 Array [
   <div
-    style={
-      Object {
-        "display": "block",
-      }
-    }
+    className="about-loader"
   >
     <div
-      className="spinner"
+      className="fancy-spinner"
     >
       <div
-        className="spinner-border"
-        role="status"
-      >
-        <span
-          className="sr-only"
-        >
-          Loading...
-        </span>
-      </div>
+        className="img"
+        id="img1"
+      />
+      <div
+        className="img"
+        id="img2"
+      />
+      <div
+        className="img"
+        id="img3"
+      />
+      <div
+        className="img"
+        id="img4"
+      />
+      <div
+        className="img"
+        id="img5"
+      />
     </div>
   </div>,
   <div

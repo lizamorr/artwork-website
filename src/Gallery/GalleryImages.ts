@@ -1,7 +1,6 @@
 import curry from './Images/curry-min.jpg';
 import eagles from './Images/eagles-min.jpg';
 import odellAndSaquon from './Images/odell-and-saquon-min.jpg';
-import saquon from './Images/saquon-min.jpg';
 import fatherDaughter from './Images/father-daughter-min.jpg';
 import robinWilliams from './Images/robin-min.jpg';
 import woriginalAlterWhite from './Images/walter-white-min.jpg';
@@ -70,7 +69,6 @@ import kanyeFrame from './Images/kanye-frame-min.jpg';
 import steveFrame from './Images/steve-frame-min.jpg';
 import picassoPortrait from './Images/picasso-portrait-min.jpg';
 import llama from './Images/llama-min.jpg';
-import converses from './Images/converses-min.jpg';
 import ladyDog from './Images/lady-dog-min.jpg';
 import smallConverse from './Images/small-converse-min.jpg';
 import pot from './Images/pot-min.jpg';
@@ -85,20 +83,17 @@ import guyDog from './Images/guy-dog-min.jpg';
 import danSkye from './Images/dan-skye-min.jpg';
 import carlySteveWedding from './Images/carly-steve-wedding-min.jpg';
 import whiteDog from './Images/white-dog-min.jpg';
-import abbeyPs from './Images/abbey-ps-min.jpg';
 import plantsBees from './Images/plants-bees-min.jpg';
 import julieMe from './Images/julie-me-min.jpg';
 import shamim from './Images/shamim-min.jpg';
 import lionGouche from './Images/lion-gouche-min.jpg';
 import plantAnatomyFrame from './Images/plant-anatomy-frame-min.jpg';
-import odell from './Images/odell-min.jpg';
 import artFestival from './Images/art-festival-min.jpg';
 import wallArt from './Images/wall-art-min.jpg';
 import wallArt2 from './Images/wall-art2-min.jpg';
 import streetArtFish from './Images/street-art-fish-min.jpg';
 import miniBeach from './Images/mini-beach-min.jpg';
 import abstract from './Images/abstract-min.jpg';
-import moon from './Images/moon-min.jpg';
 import zion from './Images/zion-min.jpg';
 import zion2 from './Images/zion2-min.jpg';
 import obama from './Images/obama-min.jpg';
@@ -230,6 +225,29 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      original: titanic,
+      originalWidth: 600,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic',
+      desc: 'Oil, 48x36", May 2021',
+    },
+    {
+      original: titanicFrame,
+      originalWidth: 600,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic framed',
+      desc: 'Oil, 48x36", May 2021',
+    },
+    {
+      original: titanicJon,
+      originalWidth: 500,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
+      desc: 'Oil, 48x36", May 2021',
+    },
+  ],
+  [
+    {
       original: agresti,
       originalWidth: 600,
       id: 'digital',
@@ -240,21 +258,21 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: antwerpBlack,
-      originalWidth: 800,
+      originalWidth: 900,
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       original: antwerpMulti,
-      originalWidth: 800,
+      originalWidth: 900,
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
     },
     {
       original: antwerpDark,
-      originalWidth: 800,
+      originalWidth: 900,
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
@@ -324,29 +342,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: titanic,
-      originalWidth: 600,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic',
-      desc: 'Oil, 48x36", May 2021',
-    },
-    {
-      original: titanicFrame,
-      originalWidth: 600,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic framed',
-      desc: 'Oil, 48x36", May 2021',
-    },
-    {
-      original: titanicJon,
-      originalWidth: 500,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
-      desc: 'Oil, 48x36", May 2021',
-    },
-  ],
-  [
-    {
       original: carlySteveWedding,
       originalWidth: 600,
       id: 'drawing',
@@ -387,7 +382,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: boyDigital,
-      originalWidth: 500,
+      originalWidth: 400,
       id: 'digital',
       originalAlt: 'Digital drawing of boy',
       desc: 'Digital drawing, 8x10", Jan 2022',
@@ -457,15 +452,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
-    },
-  ],
-  [
-    {
-      original: skippy,
-      originalWidth: 400,
-      id: 'digital',
-      originalAlt: 'Digital drawing of Skip Lester',
-      desc: 'Digital drawing, 8x10", Nov 2021',
     },
   ],
   [
@@ -548,6 +534,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Connor with his Beetles painting',
       desc: 'Acrylic, Aug 2018',
+    },
+  ],
+  [
+    {
+      original: skippy,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Skip Lester',
+      desc: 'Digital drawing, 8x10", Nov 2021',
     },
   ],
   [
@@ -743,7 +738,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: grinch,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini painting of the Grinch',
       desc: 'Acrylic, 3x3", Dec 2016',
@@ -752,7 +747,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: dogsMiniStand,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini painting of Tipper and Snickers',
       desc: 'Acrylic, 3x4", Feb 2021',
@@ -761,7 +756,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: pieMiniStand,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini painting of proper pie',
       desc: 'Acrylic, 3x3", Feb 2021',
@@ -788,24 +783,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
-    },
-  ],
-  [
-    {
-      original: saquon,
-      originalWidth: 500,
-      id: 'drawing',
-      originalAlt: 'Giants blue pen drawing',
-      desc: 'Blue pen, 9x12", Dec 2018',
-    },
-  ],
-  [
-    {
-      original: odell,
-      originalWidth: 500,
-      id: 'drawing-watercolor',
-      originalAlt: 'Pen and watercolor drawing of Odell',
-      desc: 'Blue pen & watercolor, 9x12", Oct 2018',
     },
   ],
   [
@@ -883,7 +860,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: auntUncle,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Drawing of my aunt and uncle',
       desc: 'Graphite, conte & colored pencil, 8x8", Sept 2018',
@@ -901,7 +878,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: gift,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Ticket drawing as a gift',
       desc: 'Graphite, colored pencils & pen, 3.5x3.5" (portrait), Dec 2018',
@@ -910,7 +887,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: racoons,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Racoons drawing',
       desc: 'Colored pencil, 11x14", Feb 2019',
@@ -986,11 +963,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: maggieTommy,
+      original: mountainEtching,
       originalWidth: 400,
-      id: 'drawing',
-      originalAlt: 'Drawing of Tommy and Maggie',
-      desc: 'Charcoal, 9x12", 2013',
+      id: 'misc',
+      desc: 'Copper plate print, 4x6", 2016',
+      originalAlt: 'Etching of a mountain framed',
     },
   ],
   [
@@ -1004,11 +981,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: mountainEtching,
+      original: maggieTommy,
       originalWidth: 400,
-      id: 'misc',
-      desc: 'Copper plate print, 4x6", 2016',
-      originalAlt: 'Etching of a mountain framed',
+      id: 'drawing',
+      originalAlt: 'Drawing of Tommy and Maggie',
+      desc: 'Charcoal, 9x12", 2013',
     },
   ],
   [
@@ -1032,7 +1009,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: donutPrint,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'misc',
       originalAlt: 'Donut print',
       desc: 'Screenprint, 11x14", 2016',
@@ -1077,7 +1054,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: blackDog,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Acrylic painting of a black dog',
       desc: 'Acrylic, 11x14", 2017',
@@ -1086,7 +1063,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: llama,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini llama painting',
       desc: 'Acrylic, 3x3", Aug 2018',
@@ -1095,7 +1072,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: sammy,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Acrylic painting of Sammy',
       desc: 'Acrylic, 4x4", July 2020',
@@ -1103,17 +1080,8 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: moon,
-      originalWidth: 300,
-      id: 'painting',
-      originalAlt: 'Mini moon painting',
-      desc: 'Acrylic, 3x3", 2016',
-    },
-  ],
-  [
-    {
       original: bee,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini bumblebee painting',
       desc: 'Acrylic, 4x4", Aug 2020',
@@ -1122,7 +1090,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: grogo,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Small grogo painting',
       desc: 'Acrylic, 5x5", April 2020',
@@ -1131,7 +1099,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: whiteDog,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Acrylic painting of a white dog',
       desc: 'Acrylic, 11x14", Dec 2018',
@@ -1140,7 +1108,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: picassoPortrait,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Picasso-styled portraits',
       desc: 'Acrylic, 8x10", May 2020',
@@ -1148,26 +1116,8 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: penguins,
-      originalWidth: 300,
-      id: 'misc',
-      originalAlt: 'Painting of Crosby on a wood block',
-      desc: 'Acrylic on wood block, 5x6", 2015',
-    },
-  ],
-  [
-    {
-      original: abbeyPs,
-      originalWidth: 300,
-      id: 'painting',
-      originalAlt: 'Graduation painting for Abbey',
-      desc: 'Acrylic, 9x12", Aug 2020',
-    },
-  ],
-  [
-    {
       original: jeter,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini painting of Derek Jeter',
       desc: 'Acrylic, 3x3", 2014',
@@ -1176,7 +1126,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: miniBeach,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini beach painting',
       desc: 'Acrylic, 3x3", 2014',
@@ -1227,23 +1177,12 @@ export const imageGroups: IGalleryImage[][] = [
       desc: 'All three drawings were stolen at University of Richmond. Please contact me if you see them.',
     },
     {
-      original: converses,
-      originalWidth: 400,
-      id: 'drawing',
-      originalAlt: 'Converse drawings',
-      desc: 'Graphite (left) & pen (right), 2017',
-    },
-  ],
-  [
-    {
       original: converse,
       originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Drawing of up-close converse',
       desc: 'Graphite (created with only value and no line), 19x24", Jan 2017',
     },
-  ],
-  [
     {
       original: smallConverse,
       originalWidth: 400,
@@ -1255,7 +1194,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: plantsBees,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Blue pen drawing of honeybees and plants',
       desc: 'Blue Pen, 11x14", Feb 2018',
@@ -1273,7 +1212,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: pot,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'misc',
       originalAlt: 'Pot painting',
       desc: 'Acrylic, Aug 2020',
@@ -1291,7 +1230,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: poppiCarving,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'misc',
       originalAlt: 'Painted gnome carving from Poppi',
       desc: "Painted grandfather's gnome wood carving",
@@ -1300,7 +1239,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: grogoOrnament,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'misc',
       originalAlt: 'Painted baby grogo',
       desc: 'Created & painted ornament, Dec 2020',
@@ -1318,7 +1257,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: julieMe,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Julie and I round drawing',
       desc: 'Graphite & pen, 5x5", Feb 2019',
@@ -1327,7 +1266,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: danSkye,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'drawing',
       originalAlt: 'Small drawing of Dan and Skye',
       desc: 'Graphite, 5x7", 2018',
@@ -1336,10 +1275,19 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: shamim,
-      originalWidth: 300,
+      originalWidth: 400,
       id: 'misc',
       originalAlt: 'CarMax Christmas sweater',
       desc: 'Christmas Sweater, Dec 2020',
+    },
+  ],
+  [
+    {
+      original: ladyDog,
+      originalWidth: 400,
+      id: 'drawing',
+      originalAlt: 'Charcoal drawing of a lady and her dog',
+      desc: 'Charcoal, 5x7", Aug 2020',
     },
   ],
   [
@@ -1363,15 +1311,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Street Art festival',
       desc: 'RVA Street Art Festival, Aug 2017',
-    },
-  ],
-  [
-    {
-      original: ladyDog,
-      originalWidth: 300,
-      id: 'drawing',
-      originalAlt: 'Charcoal drawing of a lady and her dog',
-      desc: 'Charcoal, 5x7", Aug 2020',
     },
   ],
   [
