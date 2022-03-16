@@ -138,6 +138,7 @@ import pancake from './Images/pancake-min.jpg';
 import labrinth from './Images/labrinth-min.jpg';
 import henry from './Images/henry-min.jpg';
 import hogie from './Images/hogie-min.jpg';
+import capri from './Images/capri-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -244,6 +245,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
       desc: 'Oil, 48x36", May 2021',
+    },
+  ],
+  [
+    {
+      original: capri,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Capri, Italy',
+      desc: 'Digital drawing, 6x6", Feb 2022',
     },
   ],
   [
