@@ -6,6 +6,7 @@ Array [
     className="about-loader"
   >
     <svg
+      className="about-loader"
       fill="none"
       style={
         Object {

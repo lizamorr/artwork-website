@@ -78,6 +78,10 @@
   .gallery--flex {
     display: flex;
     justify-content: center;
+    svg {
+      position: fixed;
+      margin-top: 8rem;
+    }
   }
   .gallery-type {
     width: 100%;
@@ -92,7 +96,7 @@
 
     &--selected {
       text-decoration-line: underline;
-      text-underline-position: under;
+      text-underline-position: from-font;
       cursor: pointer;
     }
     span {
@@ -104,7 +108,7 @@
       font-variant: all-small-caps;
       &:hover {
         text-decoration-line: underline;
-        text-underline-position: under;
+        text-underline-position: from-font;
         cursor: pointer;
       }
       @media screen and (min-width: 1200px) {

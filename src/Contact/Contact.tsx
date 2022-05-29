@@ -56,7 +56,12 @@ const Contact = () => {
     <>
       <div className="contact">
         {isSendingEmail && (
-          <SpinnerDotted size="60" color="#a9a9a9" speed={70} />
+          <SpinnerDotted
+            size="60"
+            color="#020c20;"
+            speed={70}
+            className="spinner"
+          />
         )}
         {isEmailSent && <img src={Check} className="check" />}
         <div

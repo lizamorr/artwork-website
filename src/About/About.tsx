@@ -13,7 +13,12 @@ const About = () => {
     <>
       {isLoading && (
         <div className="about-loader">
-          <SpinnerDotted size="60" color="#a9a9a9" speed={70} />
+          <SpinnerDotted
+            size="60"
+            color="#a9a9a9"
+            speed={70}
+            className="about-loader"
+          />
         </div>
       )}
       <div style={{ display: isLoading ? 'none' : 'block' }}>
