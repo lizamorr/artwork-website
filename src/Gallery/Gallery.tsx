@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { imageGroups } from './GalleryImages';
 import ImageGallery from 'react-image-gallery';
 import Footer from '../Footer';
-import FancyLoadingSpinner from '../LoadingSpinner/FancyLoadingSpinner';
+import { SpinnerDotted } from 'spinners-react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Gallery = () => {
@@ -42,7 +42,7 @@ const Gallery = () => {
     return (
       <>
         <div className="gallery--flex">
-          {isLoading && <FancyLoadingSpinner />}
+          {isLoading && <SpinnerDotted size="60" color="#a9a9a9" speed={70} />}
         </div>
         <div style={{ display: isLoading ? 'none' : 'block' }}>
           <div className="gallery-images">

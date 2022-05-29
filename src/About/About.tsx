@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../Footer';
 import parisPhoto from './me-paris-compressed.jpg';
 import aboutText from './about-text-min.jpg';
-import FancyLoadingSpinner from '../LoadingSpinner/FancyLoadingSpinner';
+import { SpinnerDotted } from 'spinners-react';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +13,7 @@ const About = () => {
     <>
       {isLoading && (
         <div className="about-loader">
-          <FancyLoadingSpinner />
+          <SpinnerDotted size="60" color="#a9a9a9" speed={70} />
         </div>
       )}
       <div style={{ display: isLoading ? 'none' : 'block' }}>

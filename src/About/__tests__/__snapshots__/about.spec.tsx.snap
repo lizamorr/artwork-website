@@ -5,30 +5,126 @@ Array [
   <div
     className="about-loader"
   >
-    <div
-      className="fancy-spinner"
+    <svg
+      fill="none"
+      style={
+        Object {
+          "color": "#a9a9a9",
+          "overflow": "visible",
+          "width": "60px",
+        }
+      }
+      viewBox="0 0 66 66"
     >
-      <div
-        className="img"
-        id="img1"
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0s infinite",
+            "transform": "translate(22px, -20px)",
+          }
+        }
       />
-      <div
-        className="img"
-        id="img2"
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.14285714285714285s infinite",
+            "transform": "translate(29px, 0px)",
+          }
+        }
       />
-      <div
-        className="img"
-        id="img3"
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.2857142857142857s infinite",
+            "transform": "translate(22px, 20px)",
+          }
+        }
       />
-      <div
-        className="img"
-        id="img4"
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.42857142857142855s infinite",
+            "transform": "translate(0px, 30px)",
+          }
+        }
       />
-      <div
-        className="img"
-        id="img5"
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.5714285714285714s infinite",
+            "transform": "translate(-23px, 20px)",
+          }
+        }
       />
-    </div>
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.7142857142857142s infinite",
+            "transform": "translate(-30px, 0px)",
+          }
+        }
+      />
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 0.8571428571428571s infinite",
+            "transform": "translate(-23px, -20px)",
+          }
+        }
+      />
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={3}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-shrink 2.857142857142857s cubic-bezier(0, 0.9, 0, 0.9) 1s infinite",
+            "transform": "translate(0px, -30px)",
+          }
+        }
+      />
+      <circle
+        cx="33"
+        cy="33"
+        fill="currentColor"
+        r={6}
+        style={
+          Object {
+            "animation": "spinners-react-dotted-center 2.857142857142857s ease-out infinite",
+            "transformOrigin": "center",
+          }
+        }
+      />
+    </svg>
   </div>,
   <div
     style={

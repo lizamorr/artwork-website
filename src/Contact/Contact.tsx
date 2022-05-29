@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import emailjs, { init } from '@emailjs/browser';
 import Footer from '../Footer';
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { SpinnerDotted } from 'spinners-react';
 import Check from './check.svg';
 
 const Contact = () => {
@@ -55,7 +55,9 @@ const Contact = () => {
   return (
     <>
       <div className="contact">
-        {isSendingEmail && <LoadingSpinner />}
+        {isSendingEmail && (
+          <SpinnerDotted size="60" color="#a9a9a9" speed={70} />
+        )}
         {isEmailSent && <img src={Check} className="check" />}
         <div
           className={
