@@ -105,6 +105,7 @@ const Gallery = () => {
           <div className={isDrawingSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
+                setIsLoading(true);
                 setImageGroups(
                   imageGroups.filter((imgGroup) =>
                     imgGroup.find((img) => img.id.includes('drawing'))
@@ -114,6 +115,7 @@ const Gallery = () => {
                 setIsPaintingSelected(false);
                 setIsMiscSelected(false);
                 setIsDigitalSelected(false);
+                setIsLoading(false);
               }}
             >
               Drawings
@@ -122,6 +124,7 @@ const Gallery = () => {
           <div className={isPaintingSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
+                setIsLoading(true);
                 setImageGroups(
                   imageGroups.filter((imgGroup) =>
                     imgGroup.find((img) => img.id.includes('painting'))
@@ -131,6 +134,7 @@ const Gallery = () => {
                 setIsPaintingSelected(true);
                 setIsMiscSelected(false);
                 setIsDigitalSelected(false);
+                setIsLoading(false);
               }}
             >
               Paintings
@@ -139,6 +143,7 @@ const Gallery = () => {
           <div className={isDigitalSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
+                setIsLoading(true);
                 setImageGroups(
                   imageGroups.filter((imgGroup) =>
                     imgGroup.find((img) => img.id.includes('digital'))
@@ -148,6 +153,7 @@ const Gallery = () => {
                 setIsPaintingSelected(false);
                 setIsMiscSelected(false);
                 setIsDigitalSelected(true);
+                setIsLoading(false);
               }}
             >
               Digital
@@ -156,6 +162,7 @@ const Gallery = () => {
           <div className={isMiscSelected ? 'gallery-type--selected' : ''}>
             <span
               onClick={() => {
+                setIsLoading(true);
                 setImageGroups(
                   imageGroups.filter((imgGroup) =>
                     imgGroup.find((img) => img.id.includes('misc'))
@@ -165,6 +172,7 @@ const Gallery = () => {
                 setIsPaintingSelected(false);
                 setIsMiscSelected(true);
                 setIsDigitalSelected(false);
+                setIsLoading(false);
               }}
             >
               Misc
