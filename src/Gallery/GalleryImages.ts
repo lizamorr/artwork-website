@@ -139,6 +139,7 @@ import labrinth from './Images/labrinth-min.jpg';
 import henry from './Images/henry-min.jpg';
 import hogie from './Images/hogie-min.jpg';
 import capri from './Images/capri-min.jpg';
+import switzerland from './Images/switzerland-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -149,6 +150,15 @@ interface IGalleryImage {
 }
 
 export const imageGroups: IGalleryImage[][] = [
+  [
+    {
+      original: switzerland,
+      originalWidth: 800,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Switzerland',
+      desc: 'Digital painting, 52x24", April 2022',
+    },
+  ],
   [
     {
       original: labrinth,
