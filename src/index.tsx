@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import About from './About';
 import Contact from './Contact';
 import Gallery from './Gallery';
@@ -11,7 +11,8 @@ import './favicon.ico';
 import './web.config';
 import './Home/labrinth.mp4';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root') as HTMLElement);
+root.render(
   <BrowserRouter>
     <Header />
     <Routes>
@@ -21,6 +22,5 @@ ReactDOM.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
     </Routes>
-  </BrowserRouter>,
-  document.getElementById('root')
+  </BrowserRouter>
 );
