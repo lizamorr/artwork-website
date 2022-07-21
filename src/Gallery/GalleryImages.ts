@@ -139,7 +139,7 @@ import labrinth from './Images/labrinth-min.jpg';
 import henry from './Images/henry-min.jpg';
 import hogie from './Images/hogie-min.jpg';
 import capri from './Images/capri-min.jpg';
-import switzerland from './Images/switzerland-min.jpg';
+import switzerland from './Images/switzerland-min.webp';
 
 interface IGalleryImage {
   original: string;
