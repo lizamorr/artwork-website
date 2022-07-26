@@ -205,7 +205,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
-      loading: 'lazy',
     },
     {
       original: shelbysFull,
@@ -213,7 +212,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
-      loading: 'lazy',
     },
     {
       original: shelbysBlood,
@@ -221,7 +219,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
-      loading: 'lazy',
     },
     {
       original: shelbysSmoke,
@@ -229,7 +226,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
-      loading: 'lazy',
     },
   ],
   [
@@ -248,7 +244,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic',
       desc: 'Oil, 48x36", May 2021',
-      loading: 'lazy',
     },
     {
       original: titanicFrame,
@@ -256,7 +251,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic framed',
       desc: 'Oil, 48x36", May 2021',
-      loading: 'lazy',
     },
     {
       original: titanicJon,
@@ -264,7 +258,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
       desc: 'Oil, 48x36", May 2021',
-      loading: 'lazy',
     },
   ],
   [
@@ -292,7 +285,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpMulti,
@@ -300,7 +292,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpDark,
@@ -308,7 +299,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
-      loading: 'lazy',
     },
   ],
   [
@@ -318,7 +308,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpClose2,
@@ -326,7 +315,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpClose3,
@@ -334,7 +322,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpClose4,
@@ -342,7 +329,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée  Hahnemühle Photo Rag print, 11x14", July 2021',
-      loading: 'lazy',
     },
     {
       original: antwerpClose5,
@@ -350,7 +336,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
-      loading: 'lazy',
     },
   ],
   [
@@ -360,7 +345,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of a couple',
       desc: 'Graphite, 19.5x25.5", March 2020',
-      loading: 'lazy',
     },
     {
       original: couple2,
@@ -368,7 +352,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of a couple',
       desc: 'Graphite, 19.5x25.5", March 2020',
-      loading: 'lazy',
     },
   ],
   [
@@ -387,7 +370,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Wedding drawing for Carly and Steve',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
-      loading: 'lazy',
     },
     {
       original: carlySteve,
@@ -395,7 +377,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Carly and Steve with their drawing',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
-      loading: 'lazy',
     },
     {
       original: steveFrame,
@@ -403,7 +384,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Steve with drawing',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
-      loading: 'lazy',
     },
     {
       original: carlyStevePic,
@@ -411,7 +391,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing with actual photo',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
-      loading: 'lazy',
     },
   ],
   [
@@ -475,7 +454,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of dog',
       desc: 'Digital drawing, 8x10", Sept 2021',
-      loading: 'lazy',
     },
     {
       original: pancake,
@@ -483,7 +461,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of King Pancake',
       desc: 'Digital drawing, 8x10", October 2021',
-      loading: 'lazy',
     },
     {
       original: snickers,
@@ -491,7 +468,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Archduke Snickers',
       desc: 'Digital drawing, 8x10", July 2021',
-      loading: 'lazy',
     },
     {
       original: tipper,
@@ -499,7 +475,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
-      loading: 'lazy',
     },
   ],
   [
@@ -509,7 +484,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Ink drawing of plants',
       desc: 'Ink, 36x40", March 2017',
-      loading: 'lazy',
     },
     {
       original: plantAnatomyFrame,
@@ -517,7 +491,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Frame plant drawing',
       desc: 'Ink, 36x40", March 2017',
-      loading: 'lazy',
     },
   ],
   [
@@ -527,7 +500,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of Harvey Cedars sunrise',
       desc: 'Oil, Dec 2020',
-      loading: 'lazy',
     },
     {
       original: lbiPainting2,
@@ -535,7 +507,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of Harvey Cedars in house',
       desc: 'Oil, Dec 2020',
-      loading: 'lazy',
     },
   ],
   [
@@ -545,7 +516,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Large abstract painting',
       desc: 'Acrylic, 48x60", July 2019',
-      loading: 'lazy',
     },
     {
       original: abstract,
@@ -553,7 +523,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Large abstract painting',
       desc: 'Acrylic, 48x60", July 2019',
-      loading: 'lazy',
     },
   ],
   [
@@ -581,7 +550,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of the bandit Beetles',
       desc: 'Acrylic, Aug 2018',
-      loading: 'lazy',
     },
     {
       original: connorBeetles,
@@ -589,7 +557,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Connor with his Beetles painting',
       desc: 'Acrylic, Aug 2018',
-      loading: 'lazy',
     },
   ],
   [
@@ -608,7 +575,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of Zion',
       desc: 'Acrylic, 24x36", May 2020',
-      loading: 'lazy',
     },
     {
       original: zion2,
@@ -616,7 +582,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of Zion',
       desc: 'Acrylic, 24x36", May 2020',
-      loading: 'lazy',
     },
   ],
   [
@@ -626,7 +591,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Emma and Elyse wedding gift',
       desc: 'Graphite, 19.5x25.5", May 2019',
-      loading: 'lazy',
     },
     {
       original: emmaFrame,
@@ -634,7 +598,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Emma and Elyse wedding gift',
       desc: 'Graphite, 19.5x25.5", May 2019',
-      loading: 'lazy',
     },
   ],
   [
@@ -653,7 +616,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing-watercolor',
       originalAlt: 'Drawing of Udare and Shirley',
       desc: 'Watercolor & Graphite, 11x14", May 2020',
-      loading: 'lazy',
     },
     {
       original: udareShirleyFrame,
@@ -661,7 +623,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing-watercolor',
       originalAlt: 'Drawing of Udare and Shirley',
       desc: 'Watercolor & Graphite, 11x14", May 2020',
-      loading: 'lazy',
     },
   ],
   [
@@ -689,7 +650,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Pen drawing of Robin Williams',
       desc: 'Blue pen, 9x12", 2014',
-      loading: 'lazy',
     },
     {
       original: robinFrame,
@@ -697,7 +657,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of Robin Williams framed',
       desc: 'Blue pen, 9x12", 2014',
-      loading: 'lazy',
     },
   ],
   [
@@ -833,7 +792,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
-      loading: 'lazy',
     },
     {
       original: underwater2,
@@ -841,7 +799,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
-      loading: 'lazy',
     },
     {
       original: derekTurtle,
@@ -849,7 +806,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
-      loading: 'lazy',
     },
   ],
   [
@@ -967,7 +923,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of Kanye West',
       desc: 'Charcoal, 9x12", 2016',
-      loading: 'lazy',
     },
     {
       original: kanyeFrame,
@@ -975,7 +930,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Kanye frame',
       desc: 'Charcoal, 9x12", 2016',
-      loading: 'lazy',
     },
   ],
   [
@@ -1244,7 +1198,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Three drawings for class project',
       desc: 'All three drawings were stolen at University of Richmond. Please contact me if you see them.',
-      loading: 'lazy',
     },
     {
       original: converse,
@@ -1252,7 +1205,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of up-close converse',
       desc: 'Graphite (created with only value and no line), 19x24", Jan 2017',
-      loading: 'lazy',
     },
     {
       original: smallConverse,
@@ -1260,7 +1212,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Converse pen drawing',
       desc: 'Pen (created with only one line and no value), 19x24", Feb 2017',
-      loading: 'lazy',
     },
   ],
   [
@@ -1369,7 +1320,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Me holding a painted fish',
       desc: 'RVA Street Art Festival, Aug 2017',
-      loading: 'lazy',
     },
     {
       original: streetArtFish,
@@ -1377,7 +1327,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Me painting a wooden fish',
       desc: 'RVA Street Art Festival, Aug 2017',
-      loading: 'lazy',
     },
     {
       original: artFestival,
@@ -1385,7 +1334,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Street Art festival',
       desc: 'RVA Street Art Festival, Aug 2017',
-      loading: 'lazy',
     },
   ],
   [
@@ -1395,7 +1343,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Wall art',
       desc: 'Framed wall art',
-      loading: 'lazy',
     },
     {
       original: wallArt,
@@ -1403,7 +1350,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Wall art',
       desc: 'Framed wall art',
-      loading: 'lazy',
     },
   ],
 ];
