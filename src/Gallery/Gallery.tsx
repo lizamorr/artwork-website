@@ -51,8 +51,6 @@ const Gallery = ({ scrollPosition }: any) => {
                   src={imgGroup[0].original}
                   alt={imgGroup[0].originalAlt}
                   id={imgGroup[0].id}
-                  width={imgGroup[0].originalWidth}
-                  height="auto"
                   style={{
                     maxWidth: imgGroup[0].originalWidth,
                     width: '100%',

@@ -1,6 +1,6 @@
 import About from '../About';
-import renderer from 'react-test-renderer';
 import React from 'react';
+import renderer from 'react-test-renderer';
 
 describe('About Component', () => {
   it('should render correctly', () => {
