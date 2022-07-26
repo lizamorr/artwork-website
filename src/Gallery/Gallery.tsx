@@ -40,55 +40,52 @@ const Gallery = ({ scrollPosition }: any) => {
 
   const renderImages = (): JSX.Element => {
     return (
-      <div style={{ display: 'block' }}>
-        <div className="gallery-images">
-          {imgGroups.map((imgGroup, index) => {
-            return imgGroup.length === 1 ? (
-              <div className="photo-item" key={index}>
-                <LazyLoadImage
-                  scrollPosition={scrollPosition}
-                  effect="blur"
-                  src={imgGroup[0].original}
-                  alt={imgGroup[0].originalAlt}
-                  id={imgGroup[0].id}
-                  style={{
-                    maxWidth: imgGroup[0].originalWidth,
-                    width: '100%',
-                    height: 'auto',
-                    margin: '15px',
-                  }}
-                  afterLoad={() => setIsPhotoLoaded(true)}
-                />
-                {isPhotoLoaded && (
-                  <p
-                    style={{ maxWidth: imgGroup[0].originalWidth }}
-                    className="photo-desc"
-                  >
-                    {imgGroup[0].desc}
-                  </p>
-                )}
-              </div>
-            ) : (
-              <div>
-                <ImageGallery
-                  items={imgGroup}
-                  showThumbnails={isImgGalleryLoaded}
-                  showFullscreenButton={false}
-                  showPlayButton={false}
-                  showBullets={isImgGalleryLoaded}
-                  showNav={isImgGalleryLoaded}
-                  additionalClass="img-carousel"
-                  key={index}
-                  lazyLoad={true}
-                  onImageLoad={() => setIsImgGalleryLoaded(true)}
-                />
-                {isImgGalleryLoaded && (
-                  <p className="photo-desc">{imgGroup[0].desc}</p>
-                )}
-              </div>
-            );
-          })}
-        </div>
+      <div className="gallery-images">
+        {imgGroups.map((imgGroup, index) => {
+          return imgGroup.length === 1 ? (
+            <div className="photo-item" key={index}>
+              <LazyLoadImage
+                scrollPosition={scrollPosition}
+                effect="blur"
+                src={imgGroup[0].original}
+                alt={imgGroup[0].originalAlt}
+                id={imgGroup[0].id}
+                style={{
+                  maxWidth: imgGroup[0].originalWidth,
+                  width: '100%',
+                  height: 'auto',
+                  margin: 'auto auto 15px auto',
+                }}
+                afterLoad={() => setIsPhotoLoaded(true)}
+              />
+              {isPhotoLoaded && (
+                <p
+                  style={{ maxWidth: imgGroup[0].originalWidth }}
+                  className="photo-desc"
+                >
+                  {imgGroup[0].desc}
+                </p>
+              )}
+            </div>
+          ) : (
+            <div>
+              <ImageGallery
+                items={imgGroup}
+                showThumbnails={isImgGalleryLoaded}
+                showFullscreenButton={false}
+                showPlayButton={false}
+                showBullets={isImgGalleryLoaded}
+                showNav={isImgGalleryLoaded}
+                additionalClass="img-carousel"
+                key={index}
+                onImageLoad={() => setIsImgGalleryLoaded(true)}
+              />
+              {isImgGalleryLoaded && (
+                <p className="photo-desc">{imgGroup[0].desc}</p>
+              )}
+            </div>
+          );
+        })}
       </div>
     );
   };
