@@ -1,9 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
 import emailjs, { init } from '@emailjs/browser';
-import Footer from '../Footer';
-import { SpinnerDotted } from 'spinners-react';
+
 import Check from './check.svg';
+import Footer from '../Footer';
+import React from 'react';
+import { SpinnerDotted } from 'spinners-react';
+import { useState } from 'react';
 
 const Contact = () => {
   const [mailerState, setMailerState] = useState({
@@ -58,7 +59,7 @@ const Contact = () => {
         {isSendingEmail && (
           <SpinnerDotted
             size="60"
-            color="#020c20;"
+            color="#020c20"
             speed={70}
             className="spinner"
           />

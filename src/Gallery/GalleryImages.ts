@@ -1,145 +1,145 @@
-import curry from './Images/curry-min.jpg';
-import eagles from './Images/eagles-min.jpg';
-import odellAndSaquon from './Images/odell-and-saquon-min.jpg';
-import fatherDaughter from './Images/father-daughter-min.jpg';
-import robinWilliams from './Images/robin-min.jpg';
-import woriginalAlterWhite from './Images/walter-white-min.jpg';
-import tevlin from './Images/tevlin-min.jpg';
-import titanic from './Images/titanic-min.jpg';
-import titanicFrame from './Images/titanic-frame-min.jpg';
+import abstract from './Images/abstract-min.jpg';
+import abstractRoom from './Images/abstract-room-min.jpg';
+import agresti from './Images/agresti-min.jpg';
+import antwerpBlack from './Images/antwerp-black-min.png';
+import antwerpClose1 from './Images/antwerp-close1-min.jpg';
+import antwerpClose2 from './Images/antwerp-close2-min.jpg';
+import antwerpClose3 from './Images/antwerp-close3-min.jpg';
+import antwerpClose4 from './Images/antwerp-close4-min.jpg';
+import antwerpClose5 from './Images/antwerp-close5-min.jpg';
+import antwerpDark from './Images/antwerp-dark-min.png';
+import antwerpMulti from './Images/antwerp-multi-min.png';
+import artFestival from './Images/art-festival-min.jpg';
 import auntUncle from './Images/aunt-uncle-min.jpg';
 import banditBeetles from './Images/bandit-beetles-min.jpg';
+import bee from './Images/bee-min.jpg';
+import bigFish from './Images/big-fish-min.jpg';
 import blackDog from './Images/black-dog-min.jpg';
 import blueMoon from './Images/blue-moon-min.jpg';
+import boyDigital from './Images/boy-digital-min.jpg';
+import bracelet1 from './Images/bracelet1-min.jpg';
 import brendanFamily from './Images/brendan-family-min.jpg';
 import caCollage from './Images/ca-collage-min.jpg';
+import caduceus from './Images/caduceus-min.jpg';
+import capri from './Images/capri-min.jpg';
+import carlySteve from './Images/carly-steve-min.jpg';
+import carlyStevePic from './Images/carly-steve-pic-min.jpg';
+import carlySteveWedding from './Images/carly-steve-wedding-min.jpg';
 import connorBeetles from './Images/connor-beetles-min.jpg';
 import converse from './Images/converse-min.jpg';
 import couple from './Images/couple-min.jpg';
 import couple2 from './Images/couple2-min.jpg';
+import curry from './Images/curry-min.jpg';
+import danSkye from './Images/dan-skye-min.jpg';
+import derekTurtle from './Images/derek-turtle-min.jpg';
+import digitalDog from './Images/digital-dog-min.jpg';
 import dinah from './Images/dinah-min.jpg';
+import dogsMiniStand from './Images/dogs-mini-stand-min.jpg';
 import dogsPortrait from './Images/dogs-portrait-min.jpg';
+import donutPrint from './Images/donut-print-min.jpg';
+import eagles from './Images/eagles-min.jpg';
+import emma from './Images/emma-min.jpg';
+import emmaFrame from './Images/emma-frame-min.jpg';
+import fatherDaughter from './Images/father-daughter-min.jpg';
 import gift from './Images/gift-min.jpg';
 import grinch from './Images/grinch-min.jpg';
+import grogo from './Images/grogo-min.jpg';
+import grogoOrnament from './Images/grogo-ornament-min.jpg';
+import guyDog from './Images/guy-dog-min.jpg';
+import henry from './Images/henry-min.jpg';
+import hogie from './Images/hogie-min.jpg';
 import homeGift from './Images/home-gift-min.jpg';
 import houseGift from './Images/house-gift-min.jpg';
 import housewarming from './Images/housewarming-min.jpg';
 import jeter from './Images/jeter-min.jpg';
 import jonas from './Images/jonas-min.jpg';
+import julieDigital from './Images/julie-digital-min.jpg';
+import julieMe from './Images/julie-me-min.jpg';
 import kanye from './Images/kanye-min.jpg';
+import kanyeFrame from './Images/kanye-frame-min.jpg';
+import kathy from './Images/kathy-min.jpg';
 import kyleGf from './Images/kyle-gf-min.jpg';
+import labrinth from './Images/labrinth-min.jpg';
+import ladyDog from './Images/lady-dog-min.jpg';
 import lbiPainting from './Images/lbi-painting-min.jpg';
 import lbiPainting2 from './Images/lbi-painting2-min.jpg';
 import lbiPrint from './Images/lbi-print-min.jpg';
 import lewisGinter from './Images/lewis-ginter-min.jpg';
 import lionFruitLoops from './Images/lion-fruit-loops-min.jpg';
+import lionGouche from './Images/lion-gouche-min.jpg';
+import llama from './Images/llama-min.jpg';
+import lucas from './Images/lucas-min.jpg';
+import lucasOne from './Images/lucas-one-min.jpg';
 import maggieTommy from './Images/maggie-tommy-min.jpg';
 import mandalorian from './Images/mandalorian-min.jpg';
+import meDigital from './Images/me-digital-min.jpg';
 import michaelKobe from './Images/michael-kobe-min.jpg';
+import miniBeach from './Images/mini-beach-min.jpg';
+import momGooey from './Images/mom-gooey-min.jpg';
+import morrisons from './Images/morrisons-min.jpg';
 import mountainEtching from './Images/mountain-etching-min.jpg';
+import obama from './Images/obama-min.jpg';
 import octopus from './Images/octopus-min.jpg';
+import odellAndSaquon from './Images/odell-and-saquon-min.jpg';
+import paigeEmmy from './Images/paige-emmy-min.jpg';
+import pancake from './Images/pancake-min.jpg';
 import parentsPrint from './Images/parents-print-min.jpg';
 import penguins from './Images/penguins-min.jpg';
+import picassoPortrait from './Images/picasso-portrait-min.jpg';
+import pieMiniStand from './Images/pie-mini-stand-min.jpg';
 import pipelineEtch from './Images/pipeline-etch-min.jpg';
 import plantAnatomy from './Images/plant-anatomy-min.jpg';
+import plantAnatomyFrame from './Images/plant-anatomy-frame-min.jpg';
+import plantsBees from './Images/plants-bees-min.jpg';
+import poppiCarving from './Images/poppi-carving-min.jpg';
+import pot from './Images/pot-min.jpg';
+import puzzle from './Images/puzzle-min.jpg';
+import racoons from './Images/racoons-min.jpg';
 import recipe from './Images/recipe-min.jpg';
 import richmondPrint from './Images/richmond-print-min.jpg';
 import robinFrame from './Images/robin-frame-min.jpg';
+import robinWilliams from './Images/robin-min.jpg';
+import romain from './Images/romain-min.jpg';
 import sammy from './Images/sammy-min.jpg';
+import shamim from './Images/shamim-min.jpg';
+import shelbysBlood from './Images/shelbys-blood-min.jpg';
+import shelbysFull from './Images/shelbys-full-min.jpg';
+import shelbysOriginal from './Images/shelbys-original-min.jpg';
+import shelbysSmoke from './Images/shelbys-smoke-min.jpg';
 import shoeProject from './Images/shoe-project-min.jpg';
 import sine from './Images/sine-min.jpg';
 import sisterGift from './Images/sister-gift-min.jpg';
 import sisters from './Images/sisters-min.jpg';
+import skippy from './Images/skippy-min.jpg';
+import smallConverse from './Images/small-converse-min.jpg';
+import snickers from './Images/snickers-min.jpg';
+import steveFrame from './Images/steve-frame-min.jpg';
+import sticky from './Images/sticky-min.jpg';
+import streetArtFish from './Images/street-art-fish-min.jpg';
+import switzerland from './Images/switzerland-min.jpg';
 import tattoo from './Images/tattoo-min.jpg';
+import tevlin from './Images/tevlin-min.jpg';
+import tipper from './Images/tipper-min.jpg';
+import titanic from './Images/titanic-min.jpg';
+import titanicFrame from './Images/titanic-frame-min.jpg';
+import titanicJon from './Images/titanic-jon-min.jpg';
+import travis from './Images/travis-min.jpg';
 import tridelta from './Images/tridelta-min.jpg';
 import udareShirley from './Images/udare-shirley-min.jpg';
 import udareShirleyFrame from './Images/udare-shirley-frame-min.jpg';
 import underwater from './Images/underwater-min.jpg';
 import underwater2 from './Images/underwater2-min.jpg';
 import voodoo from './Images/voodoo-min.jpg';
-import westhamptonLake from './Images/westhampton-lake-min.jpg';
-import westhamptonLake2 from './Images/westhampton-lake2-min.jpg';
-import dogsMiniStand from './Images/dogs-mini-stand-min.jpg';
-import pieMiniStand from './Images/pie-mini-stand-min.jpg';
-import momGooey from './Images/mom-gooey-min.jpg';
-import emma from './Images/emma-min.jpg';
-import emmaFrame from './Images/emma-frame-min.jpg';
-import bracelet1 from './Images/bracelet1-min.jpg';
-import kanyeFrame from './Images/kanye-frame-min.jpg';
-import steveFrame from './Images/steve-frame-min.jpg';
-import picassoPortrait from './Images/picasso-portrait-min.jpg';
-import llama from './Images/llama-min.jpg';
-import ladyDog from './Images/lady-dog-min.jpg';
-import smallConverse from './Images/small-converse-min.jpg';
-import pot from './Images/pot-min.jpg';
-import bee from './Images/bee-min.jpg';
-import paigeEmmy from './Images/paige-emmy-min.jpg';
-import grogo from './Images/grogo-min.jpg';
-import romain from './Images/romain-min.jpg';
-import travis from './Images/travis-min.jpg';
-import poppiCarving from './Images/poppi-carving-min.jpg';
-import racoons from './Images/racoons-min.jpg';
-import guyDog from './Images/guy-dog-min.jpg';
-import danSkye from './Images/dan-skye-min.jpg';
-import carlySteveWedding from './Images/carly-steve-wedding-min.jpg';
-import whiteDog from './Images/white-dog-min.jpg';
-import plantsBees from './Images/plants-bees-min.jpg';
-import julieMe from './Images/julie-me-min.jpg';
-import shamim from './Images/shamim-min.jpg';
-import lionGouche from './Images/lion-gouche-min.jpg';
-import plantAnatomyFrame from './Images/plant-anatomy-frame-min.jpg';
-import artFestival from './Images/art-festival-min.jpg';
 import wallArt from './Images/wall-art-min.jpg';
 import wallArt2 from './Images/wall-art2-min.jpg';
-import streetArtFish from './Images/street-art-fish-min.jpg';
-import miniBeach from './Images/mini-beach-min.jpg';
-import abstract from './Images/abstract-min.jpg';
+import wedding from './Images/wedding-min.jpg';
+import westhamptonLake from './Images/westhampton-lake-min.jpg';
+import westhamptonLake2 from './Images/westhampton-lake2-min.jpg';
+import whiteDog from './Images/white-dog-min.jpg';
+import witcher from './Images/witcher-min.jpg';
+import woriginalAlterWhite from './Images/walter-white-min.jpg';
 import zion from './Images/zion-min.jpg';
 import zion2 from './Images/zion2-min.jpg';
-import obama from './Images/obama-min.jpg';
-import abstractRoom from './Images/abstract-room-min.jpg';
-import sticky from './Images/sticky-min.jpg';
-import donutPrint from './Images/donut-print-min.jpg';
-import bigFish from './Images/big-fish-min.jpg';
-import titanicJon from './Images/titanic-jon-min.jpg';
-import carlyStevePic from './Images/carly-steve-pic-min.jpg';
-import carlySteve from './Images/carly-steve-min.jpg';
-import puzzle from './Images/puzzle-min.jpg';
-import derekTurtle from './Images/derek-turtle-min.jpg';
-import grogoOrnament from './Images/grogo-ornament-min.jpg';
-import snickers from './Images/snickers-min.jpg';
-import tipper from './Images/tipper-min.jpg';
-import morrisons from './Images/morrisons-min.jpg';
-import antwerpBlack from './Images/antwerp-black-min.png';
-import antwerpDark from './Images/antwerp-dark-min.png';
-import antwerpMulti from './Images/antwerp-multi-min.png';
-import digitalDog from './Images/digital-dog-min.jpg';
-import kathy from './Images/kathy-min.jpg';
-import skippy from './Images/skippy-min.jpg';
-import caduceus from './Images/caduceus-min.jpg';
-import wedding from './Images/wedding-min.jpg';
-import boyDigital from './Images/boy-digital-min.jpg';
-import julieDigital from './Images/julie-digital-min.jpg';
-import meDigital from './Images/me-digital-min.jpg';
-import shelbysBlood from './Images/shelbys-blood-min.jpg';
-import shelbysOriginal from './Images/shelbys-original-min.jpg';
-import shelbysSmoke from './Images/shelbys-smoke-min.jpg';
-import shelbysFull from './Images/shelbys-full-min.jpg';
-import antwerpClose1 from './Images/antwerp-close1-min.jpg';
-import antwerpClose2 from './Images/antwerp-close2-min.jpg';
-import antwerpClose3 from './Images/antwerp-close3-min.jpg';
-import antwerpClose4 from './Images/antwerp-close4-min.jpg';
-import antwerpClose5 from './Images/antwerp-close5-min.jpg';
-import witcher from './Images/witcher-min.jpg';
-import agresti from './Images/agresti-min.jpg';
-import lucasOne from './Images/lucas-one-min.jpg';
-import lucas from './Images/lucas-min.jpg';
-import pancake from './Images/pancake-min.jpg';
-import labrinth from './Images/labrinth-min.jpg';
-import henry from './Images/henry-min.jpg';
-import hogie from './Images/hogie-min.jpg';
-import capri from './Images/capri-min.jpg';
-import switzerland from './Images/switzerland-min.jpg';
 
 interface IGalleryImage {
   original: string;
@@ -147,7 +147,10 @@ interface IGalleryImage {
   originalAlt: string;
   id: string;
   desc?: string;
+  loading?: ImageGalleryLoading;
 }
+
+type ImageGalleryLoading = 'lazy' | 'eager';
 
 export const imageGroups: IGalleryImage[][] = [
   [
@@ -202,6 +205,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
+      loading: 'lazy',
     },
     {
       original: shelbysFull,
@@ -209,6 +213,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
+      loading: 'lazy',
     },
     {
       original: shelbysBlood,
@@ -216,6 +221,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
+      loading: 'lazy',
     },
     {
       original: shelbysSmoke,
@@ -223,6 +229,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of the Shelbys from Peaky Blinders',
       desc: 'Digital drawing, 11x14", Jan 2022',
+      loading: 'lazy',
     },
   ],
   [
@@ -241,6 +248,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic',
       desc: 'Oil, 48x36", May 2021',
+      loading: 'lazy',
     },
     {
       original: titanicFrame,
@@ -248,6 +256,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic framed',
       desc: 'Oil, 48x36", May 2021',
+      loading: 'lazy',
     },
     {
       original: titanicJon,
@@ -255,6 +264,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
       desc: 'Oil, 48x36", May 2021',
+      loading: 'lazy',
     },
   ],
   [
@@ -282,6 +292,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpMulti,
@@ -289,6 +300,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpDark,
@@ -296,6 +308,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
       desc: 'Digital drawing, 11x14", July 2021',
+      loading: 'lazy',
     },
   ],
   [
@@ -305,6 +318,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpClose2,
@@ -312,6 +326,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpClose3,
@@ -319,6 +334,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpClose4,
@@ -326,6 +342,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée  Hahnemühle Photo Rag print, 11x14", July 2021',
+      loading: 'lazy',
     },
     {
       original: antwerpClose5,
@@ -333,6 +350,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Giclée print of Antwerp',
       desc: 'Giclée Hahnemühle Photo Rag print, 11x14", July 2021',
+      loading: 'lazy',
     },
   ],
   [
@@ -342,6 +360,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of a couple',
       desc: 'Graphite, 19.5x25.5", March 2020',
+      loading: 'lazy',
     },
     {
       original: couple2,
@@ -349,6 +368,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of a couple',
       desc: 'Graphite, 19.5x25.5", March 2020',
+      loading: 'lazy',
     },
   ],
   [
@@ -367,6 +387,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Wedding drawing for Carly and Steve',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+      loading: 'lazy',
     },
     {
       original: carlySteve,
@@ -374,6 +395,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Carly and Steve with their drawing',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+      loading: 'lazy',
     },
     {
       original: steveFrame,
@@ -381,6 +403,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Steve with drawing',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+      loading: 'lazy',
     },
     {
       original: carlyStevePic,
@@ -388,6 +411,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing with actual photo',
       desc: 'Graphite, 19.5x25.5", Dec 2020',
+      loading: 'lazy',
     },
   ],
   [
@@ -451,6 +475,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of dog',
       desc: 'Digital drawing, 8x10", Sept 2021',
+      loading: 'lazy',
     },
     {
       original: pancake,
@@ -458,6 +483,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of King Pancake',
       desc: 'Digital drawing, 8x10", October 2021',
+      loading: 'lazy',
     },
     {
       original: snickers,
@@ -465,6 +491,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Archduke Snickers',
       desc: 'Digital drawing, 8x10", July 2021',
+      loading: 'lazy',
     },
     {
       original: tipper,
@@ -472,6 +499,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
+      loading: 'lazy',
     },
   ],
   [
@@ -481,6 +509,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Ink drawing of plants',
       desc: 'Ink, 36x40", March 2017',
+      loading: 'lazy',
     },
     {
       original: plantAnatomyFrame,
@@ -488,6 +517,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Frame plant drawing',
       desc: 'Ink, 36x40", March 2017',
+      loading: 'lazy',
     },
   ],
   [
@@ -497,6 +527,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of Harvey Cedars sunrise',
       desc: 'Oil, Dec 2020',
+      loading: 'lazy',
     },
     {
       original: lbiPainting2,
@@ -504,6 +535,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Oil painting of Harvey Cedars in house',
       desc: 'Oil, Dec 2020',
+      loading: 'lazy',
     },
   ],
   [
@@ -513,6 +545,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Large abstract painting',
       desc: 'Acrylic, 48x60", July 2019',
+      loading: 'lazy',
     },
     {
       original: abstract,
@@ -520,6 +553,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Large abstract painting',
       desc: 'Acrylic, 48x60", July 2019',
+      loading: 'lazy',
     },
   ],
   [
@@ -547,6 +581,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of the bandit Beetles',
       desc: 'Acrylic, Aug 2018',
+      loading: 'lazy',
     },
     {
       original: connorBeetles,
@@ -554,6 +589,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Connor with his Beetles painting',
       desc: 'Acrylic, Aug 2018',
+      loading: 'lazy',
     },
   ],
   [
@@ -572,6 +608,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of Zion',
       desc: 'Acrylic, 24x36", May 2020',
+      loading: 'lazy',
     },
     {
       original: zion2,
@@ -579,6 +616,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of Zion',
       desc: 'Acrylic, 24x36", May 2020',
+      loading: 'lazy',
     },
   ],
   [
@@ -588,6 +626,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Emma and Elyse wedding gift',
       desc: 'Graphite, 19.5x25.5", May 2019',
+      loading: 'lazy',
     },
     {
       original: emmaFrame,
@@ -595,6 +634,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Emma and Elyse wedding gift',
       desc: 'Graphite, 19.5x25.5", May 2019',
+      loading: 'lazy',
     },
   ],
   [
@@ -613,6 +653,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing-watercolor',
       originalAlt: 'Drawing of Udare and Shirley',
       desc: 'Watercolor & Graphite, 11x14", May 2020',
+      loading: 'lazy',
     },
     {
       original: udareShirleyFrame,
@@ -620,6 +661,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing-watercolor',
       originalAlt: 'Drawing of Udare and Shirley',
       desc: 'Watercolor & Graphite, 11x14", May 2020',
+      loading: 'lazy',
     },
   ],
   [
@@ -647,6 +689,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Pen drawing of Robin Williams',
       desc: 'Blue pen, 9x12", 2014',
+      loading: 'lazy',
     },
     {
       original: robinFrame,
@@ -654,6 +697,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of Robin Williams framed',
       desc: 'Blue pen, 9x12", 2014',
+      loading: 'lazy',
     },
   ],
   [
@@ -789,6 +833,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
+      loading: 'lazy',
     },
     {
       original: underwater2,
@@ -796,6 +841,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
+      loading: 'lazy',
     },
     {
       original: derekTurtle,
@@ -803,6 +849,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Acrylic painting of a turtle',
       desc: 'Acrylic, 4x12" panels (5), Oct 2018',
+      loading: 'lazy',
     },
   ],
   [
@@ -920,6 +967,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of Kanye West',
       desc: 'Charcoal, 9x12", 2016',
+      loading: 'lazy',
     },
     {
       original: kanyeFrame,
@@ -927,6 +975,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Kanye frame',
       desc: 'Charcoal, 9x12", 2016',
+      loading: 'lazy',
     },
   ],
   [
@@ -1195,6 +1244,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Three drawings for class project',
       desc: 'All three drawings were stolen at University of Richmond. Please contact me if you see them.',
+      loading: 'lazy',
     },
     {
       original: converse,
@@ -1202,6 +1252,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Drawing of up-close converse',
       desc: 'Graphite (created with only value and no line), 19x24", Jan 2017',
+      loading: 'lazy',
     },
     {
       original: smallConverse,
@@ -1209,6 +1260,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'drawing',
       originalAlt: 'Converse pen drawing',
       desc: 'Pen (created with only one line and no value), 19x24", Feb 2017',
+      loading: 'lazy',
     },
   ],
   [
@@ -1317,6 +1369,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Me holding a painted fish',
       desc: 'RVA Street Art Festival, Aug 2017',
+      loading: 'lazy',
     },
     {
       original: streetArtFish,
@@ -1324,6 +1377,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Me painting a wooden fish',
       desc: 'RVA Street Art Festival, Aug 2017',
+      loading: 'lazy',
     },
     {
       original: artFestival,
@@ -1331,6 +1385,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Street Art festival',
       desc: 'RVA Street Art Festival, Aug 2017',
+      loading: 'lazy',
     },
   ],
   [
@@ -1340,6 +1395,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Wall art',
       desc: 'Framed wall art',
+      loading: 'lazy',
     },
     {
       original: wallArt,
@@ -1347,6 +1403,7 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Wall art',
       desc: 'Framed wall art',
+      loading: 'lazy',
     },
   ],
 ];

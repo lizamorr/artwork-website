@@ -1,7 +1,7 @@
-import React from 'react';
-import initials from './initials-compressed.png';
 import { Link } from 'react-router-dom';
 import NavMenu from '../NavMenu';
+import React from 'react';
+import initials from './initials-compressed.png';
 
 const Header = () => {
   return (
