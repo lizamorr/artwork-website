@@ -13,7 +13,6 @@ import artFestival from './Images/art-festival-min.jpg';
 import auntUncle from './Images/aunt-uncle-min.jpg';
 import banditBeetles from './Images/bandit-beetles-min.jpg';
 import bee from './Images/bee-min.jpg';
-import bigFish from './Images/big-fish-min.jpg';
 import blackDog from './Images/black-dog-min.jpg';
 import blueMoon from './Images/blue-moon-min.jpg';
 import boyDigital from './Images/boy-digital-min.jpg';
@@ -38,13 +37,13 @@ import dogsMiniStand from './Images/dogs-mini-stand-min.jpg';
 import dogsPortrait from './Images/dogs-portrait-min.jpg';
 import donutPrint from './Images/donut-print-min.jpg';
 import eagles from './Images/eagles-min.jpg';
+import eloise from './Images/emily-min.jpg';
 import emma from './Images/emma-min.jpg';
 import emmaFrame from './Images/emma-frame-min.jpg';
 import fatherDaughter from './Images/father-daughter-min.jpg';
 import gift from './Images/gift-min.jpg';
 import grinch from './Images/grinch-min.jpg';
 import grogo from './Images/grogo-min.jpg';
-import grogoOrnament from './Images/grogo-ornament-min.jpg';
 import guyDog from './Images/guy-dog-min.jpg';
 import henry from './Images/henry-min.jpg';
 import hogie from './Images/hogie-min.jpg';
@@ -54,13 +53,11 @@ import housewarming from './Images/housewarming-min.jpg';
 import jeter from './Images/jeter-min.jpg';
 import jonas from './Images/jonas-min.jpg';
 import julieDigital from './Images/julie-digital-min.jpg';
-import julieMe from './Images/julie-me-min.jpg';
 import kanye from './Images/kanye-min.jpg';
 import kanyeFrame from './Images/kanye-frame-min.jpg';
 import kathy from './Images/kathy-min.jpg';
 import kyleGf from './Images/kyle-gf-min.jpg';
 import labrinth from './Images/labrinth-min.jpg';
-import ladyDog from './Images/lady-dog-min.jpg';
 import lbiPainting from './Images/lbi-painting-min.jpg';
 import lbiPainting2 from './Images/lbi-painting2-min.jpg';
 import lbiPrint from './Images/lbi-print-min.jpg';
@@ -74,7 +71,6 @@ import maggieTommy from './Images/maggie-tommy-min.jpg';
 import mandalorian from './Images/mandalorian-min.jpg';
 import meDigital from './Images/me-digital-min.jpg';
 import michaelKobe from './Images/michael-kobe-min.jpg';
-import miniBeach from './Images/mini-beach-min.jpg';
 import momGooey from './Images/mom-gooey-min.jpg';
 import morrisons from './Images/morrisons-min.jpg';
 import mountainEtching from './Images/mountain-etching-min.jpg';
@@ -84,7 +80,6 @@ import odellAndSaquon from './Images/odell-and-saquon-min.jpg';
 import paigeEmmy from './Images/paige-emmy-min.jpg';
 import pancake from './Images/pancake-min.jpg';
 import parentsPrint from './Images/parents-print-min.jpg';
-import penguins from './Images/penguins-min.jpg';
 import picassoPortrait from './Images/picasso-portrait-min.jpg';
 import pieMiniStand from './Images/pie-mini-stand-min.jpg';
 import pipelineEtch from './Images/pipeline-etch-min.jpg';
@@ -93,7 +88,6 @@ import plantAnatomyFrame from './Images/plant-anatomy-frame-min.jpg';
 import plantsBees from './Images/plants-bees-min.jpg';
 import poppiCarving from './Images/poppi-carving-min.jpg';
 import pot from './Images/pot-min.jpg';
-import puzzle from './Images/puzzle-min.jpg';
 import racoons from './Images/racoons-min.jpg';
 import recipe from './Images/recipe-min.jpg';
 import richmondPrint from './Images/richmond-print-min.jpg';
@@ -101,7 +95,6 @@ import robinFrame from './Images/robin-frame-min.jpg';
 import robinWilliams from './Images/robin-min.jpg';
 import romain from './Images/romain-min.jpg';
 import sammy from './Images/sammy-min.jpg';
-import shamim from './Images/shamim-min.jpg';
 import shelbysBlood from './Images/shelbys-blood-min.jpg';
 import shelbysFull from './Images/shelbys-full-min.jpg';
 import shelbysOriginal from './Images/shelbys-original-min.jpg';
@@ -135,7 +128,6 @@ import wallArt2 from './Images/wall-art2-min.jpg';
 import wedding from './Images/wedding-min.jpg';
 import westhamptonLake from './Images/westhampton-lake-min.jpg';
 import westhamptonLake2 from './Images/westhampton-lake2-min.jpg';
-import whiteDog from './Images/white-dog-min.jpg';
 import witcher from './Images/witcher-min.jpg';
 import woriginalAlterWhite from './Images/walter-white-min.jpg';
 import zion from './Images/zion-min.jpg';
@@ -187,6 +179,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Lucas',
       desc: 'Digital drawing, 6x4", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: eloise,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Eloise',
+      desc: 'Digital drawing, 8x10", Sept 2022',
     },
   ],
   [
@@ -742,15 +743,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: puzzle,
-      originalWidth: 600,
-      id: 'misc',
-      originalAlt: 'Handmade puzzle',
-      desc: 'Custom puzzle, 1000 pieces, Dec 2018',
-    },
-  ],
-  [
-    {
       original: blueMoon,
       originalWidth: 500,
       id: 'painting',
@@ -1121,15 +1113,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: whiteDog,
-      originalWidth: 400,
-      id: 'painting',
-      originalAlt: 'Acrylic painting of a white dog',
-      desc: 'Acrylic, 11x14", Dec 2018',
-    },
-  ],
-  [
-    {
       original: picassoPortrait,
       originalWidth: 400,
       id: 'painting',
@@ -1143,15 +1126,6 @@ export const imageGroups: IGalleryImage[][] = [
       originalWidth: 400,
       id: 'painting',
       originalAlt: 'Mini painting of Derek Jeter',
-      desc: 'Acrylic, 3x3", 2014',
-    },
-  ],
-  [
-    {
-      original: miniBeach,
-      originalWidth: 400,
-      id: 'painting',
-      originalAlt: 'Mini beach painting',
       desc: 'Acrylic, 3x3", 2014',
     },
   ],
@@ -1261,15 +1235,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: grogoOrnament,
-      originalWidth: 400,
-      id: 'misc',
-      originalAlt: 'Painted baby grogo',
-      desc: 'Created & painted ornament, Dec 2020',
-    },
-  ],
-  [
-    {
       original: guyDog,
       originalWidth: 500,
       id: 'drawing',
@@ -1278,49 +1243,6 @@ export const imageGroups: IGalleryImage[][] = [
     },
   ],
   [
-    {
-      original: julieMe,
-      originalWidth: 400,
-      id: 'drawing',
-      originalAlt: 'Julie and I round drawing',
-      desc: 'Graphite & pen, 5x5", Feb 2019',
-    },
-  ],
-  [
-    {
-      original: danSkye,
-      originalWidth: 400,
-      id: 'drawing',
-      originalAlt: 'Small drawing of Dan and Skye',
-      desc: 'Graphite, 5x7", 2018',
-    },
-  ],
-  [
-    {
-      original: shamim,
-      originalWidth: 400,
-      id: 'misc',
-      originalAlt: 'CarMax Christmas sweater',
-      desc: 'Christmas Sweater, Dec 2020',
-    },
-  ],
-  [
-    {
-      original: ladyDog,
-      originalWidth: 400,
-      id: 'drawing',
-      originalAlt: 'Charcoal drawing of a lady and her dog',
-      desc: 'Charcoal, 5x7", Aug 2020',
-    },
-  ],
-  [
-    {
-      original: bigFish,
-      originalWidth: 500,
-      id: 'misc',
-      originalAlt: 'Me holding a painted fish',
-      desc: 'RVA Street Art Festival, Aug 2017',
-    },
     {
       original: streetArtFish,
       originalWidth: 475,
