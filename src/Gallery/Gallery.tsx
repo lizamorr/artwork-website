@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Footer from '../Footer';
 import ImageGallery from 'react-image-gallery';
+import { SpinnerDotted } from 'spinners-react';
 import { imageGroups } from './GalleryImages';
 
 const Gallery = ({ scrollPosition }: any) => {
@@ -20,6 +21,7 @@ const Gallery = ({ scrollPosition }: any) => {
   const [isMiscSelected, setIsMiscSelected] = useState(false);
   const [isPhotoLoaded, setIsPhotoLoaded] = useState(false);
   const [isImgGalleryLoaded, setIsImgGalleryLoaded] = useState(false);
+  const [imgCount, setImgCount] = useState(0);
 
   const scrollToTop = (): void => {
     document.body.scrollTop = 0;
@@ -41,51 +43,62 @@ const Gallery = ({ scrollPosition }: any) => {
   const renderImages = (): JSX.Element => {
     return (
       <div className="gallery-images">
-        {imgGroups.map((imgGroup, index) => {
-          return imgGroup.length === 1 ? (
-            <div className="photo-item" key={index}>
-              <LazyLoadImage
-                scrollPosition={scrollPosition}
-                effect="blur"
-                src={imgGroup[0].original}
-                alt={imgGroup[0].originalAlt}
-                id={imgGroup[0].id}
-                style={{
-                  maxWidth: imgGroup[0].originalWidth,
-                  width: '100%',
-                  height: 'auto',
-                  margin: 'auto auto 15px auto',
-                }}
-                afterLoad={() => setIsPhotoLoaded(true)}
-              />
-              {isPhotoLoaded && (
-                <p
-                  style={{ maxWidth: imgGroup[0].originalWidth }}
-                  className="photo-desc"
-                >
-                  {imgGroup[0].desc}
-                </p>
-              )}
-            </div>
-          ) : (
-            <div>
-              <ImageGallery
-                items={imgGroup}
-                showThumbnails={isImgGalleryLoaded}
-                showFullscreenButton={false}
-                showPlayButton={false}
-                showBullets={isImgGalleryLoaded}
-                showNav={isImgGalleryLoaded}
-                additionalClass="img-carousel"
-                key={index}
-                onImageLoad={() => setIsImgGalleryLoaded(true)}
-              />
-              {isImgGalleryLoaded && (
-                <p className="photo-desc">{imgGroup[0].desc}</p>
-              )}
-            </div>
-          );
-        })}
+        {imgCount < 1 && (
+          <div className="loading">
+            <SpinnerDotted color="black" />
+          </div>
+        )}
+        <div>
+          {imgGroups.map((imgGroup, index) => {
+            return imgGroup.length === 1 ? (
+              <div className="photo-item" key={index}>
+                <LazyLoadImage
+                  scrollPosition={scrollPosition}
+                  effect="blur"
+                  src={imgGroup[0].original}
+                  alt={imgGroup[0].originalAlt}
+                  id={imgGroup[0].id}
+                  style={{
+                    maxWidth: imgGroup[0].originalWidth,
+                    width: '100%',
+                    height: 'auto',
+                    margin: 'auto auto 15px auto',
+                  }}
+                  afterLoad={() => {
+                    setIsPhotoLoaded(true);
+                    setImgCount(imgCount + 1);
+                  }}
+                />
+                {isPhotoLoaded ? (
+                  <p
+                    style={{ maxWidth: imgGroup[0].originalWidth }}
+                    className="photo-desc"
+                  >
+                    {imgGroup[0].desc}
+                  </p>
+                ) : null}
+              </div>
+            ) : (
+              <div>
+                <ImageGallery
+                  items={imgGroup}
+                  showThumbnails={isImgGalleryLoaded}
+                  showFullscreenButton={false}
+                  showPlayButton={false}
+                  showBullets={isImgGalleryLoaded}
+                  showNav={isImgGalleryLoaded}
+                  additionalClass="img-carousel"
+                  key={index}
+                  lazyLoad={true}
+                  onImageLoad={() => setIsImgGalleryLoaded(true)}
+                />
+                {isImgGalleryLoaded ? (
+                  <p className="photo-desc">{imgGroup[0].desc}</p>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   };
