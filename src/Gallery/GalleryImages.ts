@@ -17,6 +17,7 @@ import blackDog from './Images/black-dog-min.jpg';
 import blueMoon from './Images/blue-moon-min.jpg';
 import boyDigital from './Images/boy-digital-min.jpg';
 import bracelet1 from './Images/bracelet1-min.jpg';
+import brendanElizabeth from './Images/brendan-elizabeth-min.jpg';
 import brendanFamily from './Images/brendan-family-min.jpg';
 import caCollage from './Images/ca-collage-min.jpg';
 import caduceus from './Images/caduceus-min.jpg';
@@ -29,7 +30,6 @@ import converse from './Images/converse-min.jpg';
 import couple from './Images/couple-min.jpg';
 import couple2 from './Images/couple2-min.jpg';
 import curry from './Images/curry-min.jpg';
-import danSkye from './Images/dan-skye-min.jpg';
 import derekTurtle from './Images/derek-turtle-min.jpg';
 import digitalDog from './Images/digital-dog-min.jpg';
 import dinah from './Images/dinah-min.jpg';
@@ -41,9 +41,9 @@ import eloise from './Images/emily-min.jpg';
 import emma from './Images/emma-min.jpg';
 import emmaFrame from './Images/emma-frame-min.jpg';
 import fatherDaughter from './Images/father-daughter-min.jpg';
+import fragner from './Images/fragner-min.jpg';
 import gift from './Images/gift-min.jpg';
 import grinch from './Images/grinch-min.jpg';
-import grogo from './Images/grogo-min.jpg';
 import guyDog from './Images/guy-dog-min.jpg';
 import henry from './Images/henry-min.jpg';
 import hogie from './Images/hogie-min.jpg';
@@ -80,14 +80,12 @@ import odellAndSaquon from './Images/odell-and-saquon-min.jpg';
 import paigeEmmy from './Images/paige-emmy-min.jpg';
 import pancake from './Images/pancake-min.jpg';
 import parentsPrint from './Images/parents-print-min.jpg';
-import picassoPortrait from './Images/picasso-portrait-min.jpg';
 import pieMiniStand from './Images/pie-mini-stand-min.jpg';
 import pipelineEtch from './Images/pipeline-etch-min.jpg';
 import plantAnatomy from './Images/plant-anatomy-min.jpg';
 import plantAnatomyFrame from './Images/plant-anatomy-frame-min.jpg';
 import plantsBees from './Images/plants-bees-min.jpg';
 import poppiCarving from './Images/poppi-carving-min.jpg';
-import pot from './Images/pot-min.jpg';
 import racoons from './Images/racoons-min.jpg';
 import recipe from './Images/recipe-min.jpg';
 import richmondPrint from './Images/richmond-print-min.jpg';
@@ -110,7 +108,6 @@ import steveFrame from './Images/steve-frame-min.jpg';
 import sticky from './Images/sticky-min.jpg';
 import streetArtFish from './Images/street-art-fish-min.jpg';
 import switzerland from './Images/switzerland-min.jpg';
-import tattoo from './Images/tattoo-min.jpg';
 import tevlin from './Images/tevlin-min.jpg';
 import tipper from './Images/tipper-min.jpg';
 import titanic from './Images/titanic-min.jpg';
@@ -123,13 +120,11 @@ import udareShirleyFrame from './Images/udare-shirley-frame-min.jpg';
 import underwater from './Images/underwater-min.jpg';
 import underwater2 from './Images/underwater2-min.jpg';
 import voodoo from './Images/voodoo-min.jpg';
-import wallArt from './Images/wall-art-min.jpg';
-import wallArt2 from './Images/wall-art2-min.jpg';
+import walterWhite from './Images/walter-white-min.jpg';
 import wedding from './Images/wedding-min.jpg';
 import westhamptonLake from './Images/westhampton-lake-min.jpg';
 import westhamptonLake2 from './Images/westhampton-lake2-min.jpg';
 import witcher from './Images/witcher-min.jpg';
-import woriginalAlterWhite from './Images/walter-white-min.jpg';
 import zion from './Images/zion-min.jpg';
 import zion2 from './Images/zion2-min.jpg';
 
@@ -174,11 +169,52 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      original: titanic,
+      originalWidth: 600,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic',
+      desc: 'Oil, 48x36", May 2021',
+    },
+    {
+      original: titanicFrame,
+      originalWidth: 600,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic framed',
+      desc: 'Oil, 48x36", May 2021',
+    },
+    {
+      original: titanicJon,
+      originalWidth: 500,
+      id: 'painting',
+      originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
+      desc: 'Oil, 48x36", May 2021',
+    },
+  ],
+  [
+    {
       original: lucas,
       originalWidth: 600,
       id: 'digital',
       originalAlt: 'Digital drawing of Lucas',
       desc: 'Digital drawing, 6x4", Jan 2022',
+    },
+  ],
+  [
+    {
+      original: fragner,
+      originalWidth: 700,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Fragners',
+      desc: 'Digital drawing, 18x24", Nov 2022',
+    },
+  ],
+  [
+    {
+      original: brendanElizabeth,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of Brendan & Elizabeth',
+      desc: 'Digital drawing, 11x14", Oct 2022',
     },
   ],
   [
@@ -236,29 +272,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of family',
       desc: 'Digital drawing, 10x8", Aug 2021',
-    },
-  ],
-  [
-    {
-      original: titanic,
-      originalWidth: 600,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic',
-      desc: 'Oil, 48x36", May 2021',
-    },
-    {
-      original: titanicFrame,
-      originalWidth: 600,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic framed',
-      desc: 'Oil, 48x36", May 2021',
-    },
-    {
-      original: titanicJon,
-      originalWidth: 500,
-      id: 'painting',
-      originalAlt: 'Oil painting of the Titanic with Jon and Pancake',
-      desc: 'Oil, 48x36", May 2021',
     },
   ],
   [
@@ -341,31 +354,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: couple,
-      originalWidth: 600,
-      id: 'drawing',
-      originalAlt: 'Drawing of a couple',
-      desc: 'Graphite, 19.5x25.5", March 2020',
-    },
-    {
-      original: couple2,
-      originalWidth: 600,
-      id: 'drawing',
-      originalAlt: 'Drawing of a couple',
-      desc: 'Graphite, 19.5x25.5", March 2020',
-    },
-  ],
-  [
-    {
-      original: digitalDog,
-      originalWidth: 500,
-      id: 'digital',
-      originalAlt: 'Digital drawing of a dog',
-      desc: 'Digital drawing, 8x10", Sept 2021',
-    },
-  ],
-  [
-    {
       original: carlySteveWedding,
       originalWidth: 600,
       id: 'drawing',
@@ -405,19 +393,35 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: boyDigital,
-      originalWidth: 400,
-      id: 'digital',
-      originalAlt: 'Digital drawing of boy',
-      desc: 'Digital drawing, 8x10", Jan 2022',
+      original: couple,
+      originalWidth: 600,
+      id: 'drawing',
+      originalAlt: 'Drawing of a couple',
+      desc: 'Graphite, 19.5x25.5", March 2020',
+    },
+    {
+      original: couple2,
+      originalWidth: 600,
+      id: 'drawing',
+      originalAlt: 'Drawing of a couple',
+      desc: 'Graphite, 19.5x25.5", March 2020',
     },
   ],
   [
     {
-      original: witcher,
+      original: digitalDog,
       originalWidth: 500,
       id: 'digital',
-      originalAlt: 'Digital drawing of the witcher',
+      originalAlt: 'Digital drawing of a dog',
+      desc: 'Digital drawing, 8x10", Sept 2021',
+    },
+  ],
+  [
+    {
+      original: boyDigital,
+      originalWidth: 400,
+      id: 'digital',
+      originalAlt: 'Digital drawing of boy',
       desc: 'Digital drawing, 8x10", Jan 2022',
     },
   ],
@@ -476,6 +480,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'digital',
       originalAlt: 'Digital drawing of Commander Tipper',
       desc: 'Digital drawing, 8x10", July 2021',
+    },
+  ],
+  [
+    {
+      original: sticky,
+      originalWidth: 500,
+      id: 'drawing',
+      originalAlt: 'Colored pencil drawing of Sticky Rice',
+      desc: 'Colored pencil, 9x12", Dec 2017',
     },
   ],
   [
@@ -546,6 +559,15 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
+      original: witcher,
+      originalWidth: 500,
+      id: 'digital',
+      originalAlt: 'Digital drawing of the witcher',
+      desc: 'Digital drawing, 8x10", Jan 2022',
+    },
+  ],
+  [
+    {
       original: banditBeetles,
       originalWidth: 600,
       id: 'painting',
@@ -558,6 +580,15 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Connor with his Beetles painting',
       desc: 'Acrylic, Aug 2018',
+    },
+  ],
+  [
+    {
+      original: dinah,
+      originalWidth: 400,
+      id: 'painting',
+      originalAlt: 'Oil painting of Dinah',
+      desc: 'Oil, 18x24", 2012',
     },
   ],
   [
@@ -689,29 +720,11 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: dinah,
-      originalWidth: 400,
-      id: 'painting',
-      originalAlt: 'Oil painting of Dinah',
-      desc: 'Oil, 18x24", 2012',
-    },
-  ],
-  [
-    {
       original: travis,
       originalWidth: 400,
       id: 'painting',
       originalAlt: 'Painting of Travis',
       desc: 'Acrylic, 16x16", Nov 2020',
-    },
-  ],
-  [
-    {
-      original: sticky,
-      originalWidth: 500,
-      id: 'drawing',
-      originalAlt: 'Colored pencil drawing of Sticky Rice',
-      desc: 'Colored pencil, 9x12", Dec 2017',
     },
   ],
   [
@@ -802,7 +815,7 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: woriginalAlterWhite,
+      original: walterWhite,
       originalWidth: 500,
       id: 'drawing',
       originalAlt: 'Drawing of WoriginalAlter White',
@@ -857,7 +870,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: jonas,
-      originalWidth: 400,
+      originalWidth: 300,
       id: 'drawing-watercolor',
       originalAlt: 'Drawing of Jonas',
       desc: 'Watercolor & Graphite, 9x12", June 2020',
@@ -875,7 +888,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: auntUncle,
-      originalWidth: 400,
+      originalWidth: 300,
       id: 'drawing',
       originalAlt: 'Drawing of my aunt and uncle',
       desc: 'Graphite, conte & colored pencil, 8x8", Sept 2018',
@@ -1059,15 +1072,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: tattoo,
-      originalWidth: 400,
-      id: 'misc',
-      originalAlt: 'Tatto design',
-      desc: 'Tatto design, 2018',
-    },
-  ],
-  [
-    {
       original: blackDog,
       originalWidth: 400,
       id: 'painting',
@@ -1087,7 +1091,7 @@ export const imageGroups: IGalleryImage[][] = [
   [
     {
       original: sammy,
-      originalWidth: 400,
+      originalWidth: 300,
       id: 'painting',
       originalAlt: 'Acrylic painting of Sammy',
       desc: 'Acrylic, 4x4", July 2020',
@@ -1100,24 +1104,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'painting',
       originalAlt: 'Mini bumblebee painting',
       desc: 'Acrylic, 4x4", Aug 2020',
-    },
-  ],
-  [
-    {
-      original: grogo,
-      originalWidth: 400,
-      id: 'painting',
-      originalAlt: 'Small grogo painting',
-      desc: 'Acrylic, 5x5", April 2020',
-    },
-  ],
-  [
-    {
-      original: picassoPortrait,
-      originalWidth: 400,
-      id: 'painting',
-      originalAlt: 'Picasso-styled portraits',
-      desc: 'Acrylic, 8x10", May 2020',
     },
   ],
   [
@@ -1208,15 +1194,6 @@ export const imageGroups: IGalleryImage[][] = [
   ],
   [
     {
-      original: pot,
-      originalWidth: 400,
-      id: 'misc',
-      originalAlt: 'Pot painting',
-      desc: 'Acrylic, Aug 2020',
-    },
-  ],
-  [
-    {
       original: romain,
       originalWidth: 500,
       id: 'drawing-watercolor',
@@ -1256,22 +1233,6 @@ export const imageGroups: IGalleryImage[][] = [
       id: 'misc',
       originalAlt: 'Street Art festival',
       desc: 'RVA Street Art Festival, Aug 2017',
-    },
-  ],
-  [
-    {
-      original: wallArt2,
-      originalWidth: 500,
-      id: 'misc',
-      originalAlt: 'Wall art',
-      desc: 'Framed wall art',
-    },
-    {
-      original: wallArt,
-      originalWidth: 500,
-      id: 'misc',
-      originalAlt: 'Wall art',
-      desc: 'Framed wall art',
     },
   ],
 ];
