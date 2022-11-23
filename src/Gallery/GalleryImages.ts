@@ -7,7 +7,6 @@ import antwerpClose2 from './Images/antwerp-close2-min.jpg';
 import antwerpClose3 from './Images/antwerp-close3-min.jpg';
 import antwerpClose4 from './Images/antwerp-close4-min.jpg';
 import antwerpClose5 from './Images/antwerp-close5-min.jpg';
-import antwerpDark from './Images/antwerp-dark-min.png';
 import antwerpMulti from './Images/antwerp-multi-min.png';
 import artFestival from './Images/art-festival-min.jpg';
 import auntUncle from './Images/aunt-uncle-min.jpg';
@@ -302,13 +301,6 @@ export const imageGroups: IGalleryImage[][] = [
     },
     {
       original: antwerpMulti,
-      originalWidth: 900,
-      id: 'digital',
-      originalAlt: 'Digital drawing of Antwerp',
-      desc: 'Digital drawing, 11x14", July 2021',
-    },
-    {
-      original: antwerpDark,
       originalWidth: 900,
       id: 'digital',
       originalAlt: 'Digital drawing of Antwerp',
