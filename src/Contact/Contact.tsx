@@ -4,7 +4,7 @@ import Check from './check.svg';
 import Footer from '../Footer';
 import React from 'react';
 import { SpinnerDotted } from 'spinners-react';
-import grinch from './grinch-min.jpg';
+import capri from './capri-min.jpg';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -73,7 +73,7 @@ const Contact = () => {
               : 'contact-form'
           }
         >
-          <img className="img" src={grinch} />
+          <img className="img" src={capri} />
           <form className="form" method="POST" onSubmit={submitEmail}>
             <fieldset>
               <input
